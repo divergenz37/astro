@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /guide/
 ---
 
 # Guide Contents
