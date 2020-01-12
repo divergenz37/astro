@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+{{ content }}
+<div>
+{% for chapter in site.guide %}
+{% if page.url == chapter.url %}
+<div class="prev">
+{% unless forloop.first %}
+{% assign previous = forloop.index0 | minus: 1 %}
+{% assign previouschapter = site.guide[previous] %}
+<a href="{{ previouschapter.url }}">
+<div>&lt;&nbsp;{{ previouschapter.title }}</div>
+{% endunless %}
+</div>
+<div class="next">
+{% unless forloop.last %}
+{% assign next = forloop.index0 | plus: 1 %}
+{% assign nextchapter = site.guide[next] %}
+<a href="{{ nextchapter.url }}">
+<div>{{ nextchapter.title }}&nbsp;&gt;</div>
+</a>
+{% endunless %}
+</div>
+{% break %}
+{% endif %}
+{% endfor %}
+<div style="clear: both;text-align: center;"><a href="./">return to index</a></div>
+</div>
+<script>
+    MathJax = {
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+            renderActions: {
+                findScript: [10, function (doc) {
+                    for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                        const display = !!node.type.match(/; *mode=display/);
+                        const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                        const text = document.createTextNode('');
+                        node.parentNode.replaceChild(text, node);
+                        math.start = {node: text, delim: '', n: 0};
+                        math.end = {node: text, delim: '', n: 0};
+                        doc.math.push(math);
+                    }
+                }, '']
+            }
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            packages: {
+                '[+]': ['boldsymbol']
+            },
+            tags: 'ams'
+        },
+        loader: {
+            load: ['[tex]/noerrors','[tex]/boldsymbol']
+        }
+    };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

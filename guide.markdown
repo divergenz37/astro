@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+# Guide Contents
+
+{% for guide in site.guide %}
+
+<h2><a href="{{ guide.url }}">{{ guide.title }}</a></h2>
+
+{% endfor %}
