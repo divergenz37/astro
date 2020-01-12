@@ -6,6 +6,6 @@ layout: default
 
 {% for guide in site.guide %}
 
-<h2><a href="{{ guide.url }}">{{ guide.title }}</a></h2>
+<h2><a href="{{ guide.url | relative_url }}">{{ guide.title }}</a></h2>
 
 {% endfor %}

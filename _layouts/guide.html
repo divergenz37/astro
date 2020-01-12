@@ -1,33 +1,10 @@
 ---
 layout: default
 ---
-
+{% include guide_nav.html %}
 {{ content }}
-<div>
-{% for chapter in site.guide %}
-{% if page.url == chapter.url %}
-<div class="prev">
-{% unless forloop.first %}
-{% assign previous = forloop.index0 | minus: 1 %}
-{% assign previouschapter = site.guide[previous] %}
-<a href="{{ previouschapter.url }}">
-<div>&lt;&nbsp;{{ previouschapter.title }}</div>
-{% endunless %}
-</div>
-<div class="next">
-{% unless forloop.last %}
-{% assign next = forloop.index0 | plus: 1 %}
-{% assign nextchapter = site.guide[next] %}
-<a href="{{ nextchapter.url }}">
-<div>{{ nextchapter.title }}&nbsp;&gt;</div>
-</a>
-{% endunless %}
-</div>
-{% break %}
-{% endif %}
-{% endfor %}
+{% include guide_nav.html %}
 <div style="clear: both;text-align: center;"><a href="./">return to index</a></div>
-</div>
 <script>
     MathJax = {
         options: {
