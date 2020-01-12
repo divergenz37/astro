@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Coordinate Systems | Astronomy</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Coordinate Systems" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Coordinate Systems Spherical trigonometry Basics Spherical cosine rule The spherical cosine rule is given by $$ \begin{equation} \cos{a} = \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A} \end{equation} $$ The relation can be proven using trigonometry, by considering a plane tangent to the sphere at the point $A$. Extend the lines $\overline{OB}$ and $\overline{OC}$ to meet the plane at points $B&#39;$ and $C&#39;$ respectively. Equating the planar cosine rules for the shared side $\overline{B&#39;C&#39;}$: $$ \begin{align*} \tan^2{b} + \tan^2{c} - 2 \tan{b}\tan{c}\cos{A} &amp;= \sec^2{b} + \sec^2{c} - 2 \sec{b}\sec{c}\cos{a}\\ 2 \sec{b}\sec{c}\cos{a} &amp;= 2 + 2 \tan{b}\tan{c}\cos{A}\\ \cos{a} &amp;= \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A} \end{align*} $$ where we have used the identity $\tan^2{\theta} + 1 = \sec^2{\theta}$. A proof using vector geometry is also straightforward. Let $\mathbf{a} = \overrightarrow{OA}$, $\mathbf{b} = \overrightarrow{OB}$, and $\mathbf{c} = \overrightarrow{OC}$ respectively. Then the plane containing $O$, $A$ and $B$ has normal vector $\mathbf{n}_{AB} = \mathbf{a} \times \mathbf{b}$, and the plane containing $O$, $A$ and $C$ has normal vector $\mathbf{n}_{AC} = \mathbf{a} \times \mathbf{c}$. The angle $A$ is equal to the angle between the two planes, which is equal to the angle between the two normal vectors. Using the geometrical definition of the dot product we have $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\cos{A}\\ &amp;= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\cos{A}\\ &amp;= \sin{c}\sin{b}\cos{A} \end{align*} $$ However, using the vector identity $(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$, we can also show that $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;=(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{a} \times \mathbf{c})\\ &amp;= (\mathbf{a} \cdot \mathbf{a})(\mathbf{b} \cdot \mathbf{c}) - (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{a})\\ &amp;= (1)(\cos{a}) - (\cos{b})(\cos{c}) \end{align*} $$ Equating these two results gives the spherical cosine rule. Spherical sine rule The spherical sine rule is given by $$ \begin{equation} \frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}} \end{equation} $$ The spherical sine rule can be derived from the spherical cosine rule. First, rearrange and square both sides of the equation: $$ \begin{align*} \cos{a} - \cos{b}\cos{c} &amp;= \sin{b}\sin{c}\cos{A}\\ \cos^2{a} + \cos^2{b}\cos^2{c} - 2\cos{a}\cos{b}\cos{c} &amp;= \sin^2{b}\sin^2{c}\cos^2{A} \end{align*} $$ However, we can rewrite the right hand side as follows: $$ \begin{align*} \sin^2{b}\sin^2{c}\cos^2{A} &amp;= \sin^2{b}\sin^2{c} - \sin^2{b}\sin^2{c}\sin^2{A}\\ &amp;= (1 - \cos^2{b})(1 - \cos^2{c}) - \sin^2{b}\sin^2{c}\sin^2{A}\\ &amp;= 1 - \cos^2{b} - \cos^2{c} + \cos^2{b}\cos^2{c} - \sin^2{b}\sin^2{c}\sin^2{A} \end{align*} $$ Using this result gives $$ \begin{align} \sin^2{b}\sin^2{c}\sin^2{A} &amp;= 1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c} \nonumber\\ \frac{\sin^2{A}}{\sin^2{a}} &amp;= \frac{1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c}}{\sin^2{a}\sin^2{b}\sin^2{c}} \label{eq:spherical-sine-constant} \end{align} $$ The quantity on the right in Equation $\ref{eq:spherical-sine-constant}$ is invariant when $A$ and $a$ are substituted for $B$ and $b$, or $C$ and $c$ respectively. Therefore, $$ \begin{equation} \frac{\sin^2{A}}{\sin^2{a}} = \frac{\sin^2{B}}{\sin^2{b}} = \frac{\sin^2{C}}{\sin^2{c}} \label{eq:spherical-sine-equality-squared} \end{equation} $$ Since the angles and sides in a spherical triangle are all less than 180° or $\pi$ radians, the sines of these quantities are all positive. Thus, the positive sign is adopted when taking the square root of Equation $\ref{eq:spherical-sine-equality-squared}$ to derive the spherical sine rule. The vector geometry proof involves the geometric property of the cross product. Using the same definitions as in the proof for the spherical cosine rule (see Spherical cosine rule), $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\sin{A}\\ &amp;= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\sin{A}\\ &amp;= \sin{c}\sin{b}\sin{A} \end{align*} $$ However, $$ \begin{align*} (\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c}) &amp;= (\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}))\mathbf{a}\\ \lvert(\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c})\rvert &amp;= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert\lvert\mathbf{a}\rvert\\ \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert \end{align*} $$ However, $\mathbf{b} \times \mathbf{c}$ produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by $\mathbf{b}$ and $\mathbf{c}$. The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ therefore gives the signed volume of the parallelepiped with sides formed by $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$. The value of this product is unchanged when the arguments undergo a circular shift: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{b} \cdot (\mathbf{c} \times \mathbf{a}) = \mathbf{c} \cdot (\mathbf{a} \times \mathbf{b}) $$ It is also unchanged when the order of the operations is swapped: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} $$ The value changes sign if the cyclic order of the arguments is changed: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = -\mathbf{a} \cdot (\mathbf{c} \times \mathbf{b}) $$ Given these properties, $\lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert = V$ where $V$ is the unsigned volume of the parallelepiped formed by $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$. (It is also 6 times the volume of the tetrahedron $OABC$.) Using this result, $$ \begin{align*} \sin{c}\sin{b}\sin{A} &amp;= V\\ \frac{\sin{A}}{\sin{a}} &amp;= \frac{V}{\sin{a}\sin{b}\sin{c}} \end{align*} $$ Applying similar principles for angles $B$ and $C$ results in the spherical sine rule, $$ \begin{equation} \frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}} = \frac{V}{\sin{a}\sin{b}\sin{c}} \end{equation} $$ Celestial coordinate systems Horizontal coordinate system Equatorial coordinate system Ecliptic coordinate system Galactic coordinate system Coordinate conversions" />
+<meta property="og:description" content="Coordinate Systems Spherical trigonometry Basics Spherical cosine rule The spherical cosine rule is given by $$ \begin{equation} \cos{a} = \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A} \end{equation} $$ The relation can be proven using trigonometry, by considering a plane tangent to the sphere at the point $A$. Extend the lines $\overline{OB}$ and $\overline{OC}$ to meet the plane at points $B&#39;$ and $C&#39;$ respectively. Equating the planar cosine rules for the shared side $\overline{B&#39;C&#39;}$: $$ \begin{align*} \tan^2{b} + \tan^2{c} - 2 \tan{b}\tan{c}\cos{A} &amp;= \sec^2{b} + \sec^2{c} - 2 \sec{b}\sec{c}\cos{a}\\ 2 \sec{b}\sec{c}\cos{a} &amp;= 2 + 2 \tan{b}\tan{c}\cos{A}\\ \cos{a} &amp;= \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A} \end{align*} $$ where we have used the identity $\tan^2{\theta} + 1 = \sec^2{\theta}$. A proof using vector geometry is also straightforward. Let $\mathbf{a} = \overrightarrow{OA}$, $\mathbf{b} = \overrightarrow{OB}$, and $\mathbf{c} = \overrightarrow{OC}$ respectively. Then the plane containing $O$, $A$ and $B$ has normal vector $\mathbf{n}_{AB} = \mathbf{a} \times \mathbf{b}$, and the plane containing $O$, $A$ and $C$ has normal vector $\mathbf{n}_{AC} = \mathbf{a} \times \mathbf{c}$. The angle $A$ is equal to the angle between the two planes, which is equal to the angle between the two normal vectors. Using the geometrical definition of the dot product we have $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\cos{A}\\ &amp;= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\cos{A}\\ &amp;= \sin{c}\sin{b}\cos{A} \end{align*} $$ However, using the vector identity $(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$, we can also show that $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;=(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{a} \times \mathbf{c})\\ &amp;= (\mathbf{a} \cdot \mathbf{a})(\mathbf{b} \cdot \mathbf{c}) - (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{a})\\ &amp;= (1)(\cos{a}) - (\cos{b})(\cos{c}) \end{align*} $$ Equating these two results gives the spherical cosine rule. Spherical sine rule The spherical sine rule is given by $$ \begin{equation} \frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}} \end{equation} $$ The spherical sine rule can be derived from the spherical cosine rule. First, rearrange and square both sides of the equation: $$ \begin{align*} \cos{a} - \cos{b}\cos{c} &amp;= \sin{b}\sin{c}\cos{A}\\ \cos^2{a} + \cos^2{b}\cos^2{c} - 2\cos{a}\cos{b}\cos{c} &amp;= \sin^2{b}\sin^2{c}\cos^2{A} \end{align*} $$ However, we can rewrite the right hand side as follows: $$ \begin{align*} \sin^2{b}\sin^2{c}\cos^2{A} &amp;= \sin^2{b}\sin^2{c} - \sin^2{b}\sin^2{c}\sin^2{A}\\ &amp;= (1 - \cos^2{b})(1 - \cos^2{c}) - \sin^2{b}\sin^2{c}\sin^2{A}\\ &amp;= 1 - \cos^2{b} - \cos^2{c} + \cos^2{b}\cos^2{c} - \sin^2{b}\sin^2{c}\sin^2{A} \end{align*} $$ Using this result gives $$ \begin{align} \sin^2{b}\sin^2{c}\sin^2{A} &amp;= 1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c} \nonumber\\ \frac{\sin^2{A}}{\sin^2{a}} &amp;= \frac{1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c}}{\sin^2{a}\sin^2{b}\sin^2{c}} \label{eq:spherical-sine-constant} \end{align} $$ The quantity on the right in Equation $\ref{eq:spherical-sine-constant}$ is invariant when $A$ and $a$ are substituted for $B$ and $b$, or $C$ and $c$ respectively. Therefore, $$ \begin{equation} \frac{\sin^2{A}}{\sin^2{a}} = \frac{\sin^2{B}}{\sin^2{b}} = \frac{\sin^2{C}}{\sin^2{c}} \label{eq:spherical-sine-equality-squared} \end{equation} $$ Since the angles and sides in a spherical triangle are all less than 180° or $\pi$ radians, the sines of these quantities are all positive. Thus, the positive sign is adopted when taking the square root of Equation $\ref{eq:spherical-sine-equality-squared}$ to derive the spherical sine rule. The vector geometry proof involves the geometric property of the cross product. Using the same definitions as in the proof for the spherical cosine rule (see Spherical cosine rule), $$ \begin{align*} \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\sin{A}\\ &amp;= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\sin{A}\\ &amp;= \sin{c}\sin{b}\sin{A} \end{align*} $$ However, $$ \begin{align*} (\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c}) &amp;= (\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}))\mathbf{a}\\ \lvert(\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c})\rvert &amp;= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert\lvert\mathbf{a}\rvert\\ \mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &amp;= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert \end{align*} $$ However, $\mathbf{b} \times \mathbf{c}$ produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by $\mathbf{b}$ and $\mathbf{c}$. The scalar triple product $\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$ therefore gives the signed volume of the parallelepiped with sides formed by $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$. The value of this product is unchanged when the arguments undergo a circular shift: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{b} \cdot (\mathbf{c} \times \mathbf{a}) = \mathbf{c} \cdot (\mathbf{a} \times \mathbf{b}) $$ It is also unchanged when the order of the operations is swapped: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c} $$ The value changes sign if the cyclic order of the arguments is changed: $$ \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = -\mathbf{a} \cdot (\mathbf{c} \times \mathbf{b}) $$ Given these properties, $\lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert = V$ where $V$ is the unsigned volume of the parallelepiped formed by $\mathbf{a}$, $\mathbf{b}$ and $\mathbf{c}$. (It is also 6 times the volume of the tetrahedron $OABC$.) Using this result, $$ \begin{align*} \sin{c}\sin{b}\sin{A} &amp;= V\\ \frac{\sin{A}}{\sin{a}} &amp;= \frac{V}{\sin{a}\sin{b}\sin{c}} \end{align*} $$ Applying similar principles for angles $B$ and $C$ results in the spherical sine rule, $$ \begin{equation} \frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}} = \frac{V}{\sin{a}\sin{b}\sin{c}} \end{equation} $$ Celestial coordinate systems Horizontal coordinate system Equatorial coordinate system Ecliptic coordinate system Galactic coordinate system Coordinate conversions" />
+<link rel="canonical" href="http://localhost:4000/astro/guide/coordinate" />
+<meta property="og:url" content="http://localhost:4000/astro/guide/coordinate" />
+<meta property="og:site_name" content="Astronomy" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-12T12:35:32+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/astro/guide/coordinate","headline":"Coordinate Systems","dateModified":"2020-01-12T12:35:32+00:00","datePublished":"2020-01-12T12:35:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/astro/guide/coordinate"},"description":"Coordinate Systems Spherical trigonometry Basics Spherical cosine rule The spherical cosine rule is given by $$ \\begin{equation} \\cos{a} = \\cos{b}\\cos{c} + \\sin{b}\\sin{c}\\cos{A} \\end{equation} $$ The relation can be proven using trigonometry, by considering a plane tangent to the sphere at the point $A$. Extend the lines $\\overline{OB}$ and $\\overline{OC}$ to meet the plane at points $B&#39;$ and $C&#39;$ respectively. Equating the planar cosine rules for the shared side $\\overline{B&#39;C&#39;}$: $$ \\begin{align*} \\tan^2{b} + \\tan^2{c} - 2 \\tan{b}\\tan{c}\\cos{A} &amp;= \\sec^2{b} + \\sec^2{c} - 2 \\sec{b}\\sec{c}\\cos{a}\\\\ 2 \\sec{b}\\sec{c}\\cos{a} &amp;= 2 + 2 \\tan{b}\\tan{c}\\cos{A}\\\\ \\cos{a} &amp;= \\cos{b}\\cos{c} + \\sin{b}\\sin{c}\\cos{A} \\end{align*} $$ where we have used the identity $\\tan^2{\\theta} + 1 = \\sec^2{\\theta}$. A proof using vector geometry is also straightforward. Let $\\mathbf{a} = \\overrightarrow{OA}$, $\\mathbf{b} = \\overrightarrow{OB}$, and $\\mathbf{c} = \\overrightarrow{OC}$ respectively. Then the plane containing $O$, $A$ and $B$ has normal vector $\\mathbf{n}_{AB} = \\mathbf{a} \\times \\mathbf{b}$, and the plane containing $O$, $A$ and $C$ has normal vector $\\mathbf{n}_{AC} = \\mathbf{a} \\times \\mathbf{c}$. The angle $A$ is equal to the angle between the two planes, which is equal to the angle between the two normal vectors. Using the geometrical definition of the dot product we have $$ \\begin{align*} \\mathbf{n}_{AB} \\cdot \\mathbf{n}_{AC} &amp;= \\lvert\\mathbf{n}_{AB}\\rvert\\lvert\\mathbf{n}_{AC}\\rvert\\cos{A}\\\\ &amp;= \\lvert\\mathbf{a} \\times \\mathbf{b}\\rvert\\lvert\\mathbf{a} \\times \\mathbf{c}\\rvert\\cos{A}\\\\ &amp;= \\sin{c}\\sin{b}\\cos{A} \\end{align*} $$ However, using the vector identity $(\\mathbf{a} \\times \\mathbf{b}) \\cdot (\\mathbf{c} \\times \\mathbf{d}) = (\\mathbf{a} \\cdot \\mathbf{c})(\\mathbf{b} \\cdot \\mathbf{d}) - (\\mathbf{a} \\cdot \\mathbf{d})(\\mathbf{b} \\cdot \\mathbf{c})$, we can also show that $$ \\begin{align*} \\mathbf{n}_{AB} \\cdot \\mathbf{n}_{AC} &amp;=(\\mathbf{a} \\times \\mathbf{b}) \\cdot (\\mathbf{a} \\times \\mathbf{c})\\\\ &amp;= (\\mathbf{a} \\cdot \\mathbf{a})(\\mathbf{b} \\cdot \\mathbf{c}) - (\\mathbf{a} \\cdot \\mathbf{c})(\\mathbf{b} \\cdot \\mathbf{a})\\\\ &amp;= (1)(\\cos{a}) - (\\cos{b})(\\cos{c}) \\end{align*} $$ Equating these two results gives the spherical cosine rule. Spherical sine rule The spherical sine rule is given by $$ \\begin{equation} \\frac{\\sin{A}}{\\sin{a}} = \\frac{\\sin{B}}{\\sin{b}} = \\frac{\\sin{C}}{\\sin{c}} \\end{equation} $$ The spherical sine rule can be derived from the spherical cosine rule. First, rearrange and square both sides of the equation: $$ \\begin{align*} \\cos{a} - \\cos{b}\\cos{c} &amp;= \\sin{b}\\sin{c}\\cos{A}\\\\ \\cos^2{a} + \\cos^2{b}\\cos^2{c} - 2\\cos{a}\\cos{b}\\cos{c} &amp;= \\sin^2{b}\\sin^2{c}\\cos^2{A} \\end{align*} $$ However, we can rewrite the right hand side as follows: $$ \\begin{align*} \\sin^2{b}\\sin^2{c}\\cos^2{A} &amp;= \\sin^2{b}\\sin^2{c} - \\sin^2{b}\\sin^2{c}\\sin^2{A}\\\\ &amp;= (1 - \\cos^2{b})(1 - \\cos^2{c}) - \\sin^2{b}\\sin^2{c}\\sin^2{A}\\\\ &amp;= 1 - \\cos^2{b} - \\cos^2{c} + \\cos^2{b}\\cos^2{c} - \\sin^2{b}\\sin^2{c}\\sin^2{A} \\end{align*} $$ Using this result gives $$ \\begin{align} \\sin^2{b}\\sin^2{c}\\sin^2{A} &amp;= 1 - \\cos^2{a} - \\cos^2{b} - \\cos^2{c} - 2\\cos{a}\\cos{b}\\cos{c} \\nonumber\\\\ \\frac{\\sin^2{A}}{\\sin^2{a}} &amp;= \\frac{1 - \\cos^2{a} - \\cos^2{b} - \\cos^2{c} - 2\\cos{a}\\cos{b}\\cos{c}}{\\sin^2{a}\\sin^2{b}\\sin^2{c}} \\label{eq:spherical-sine-constant} \\end{align} $$ The quantity on the right in Equation $\\ref{eq:spherical-sine-constant}$ is invariant when $A$ and $a$ are substituted for $B$ and $b$, or $C$ and $c$ respectively. Therefore, $$ \\begin{equation} \\frac{\\sin^2{A}}{\\sin^2{a}} = \\frac{\\sin^2{B}}{\\sin^2{b}} = \\frac{\\sin^2{C}}{\\sin^2{c}} \\label{eq:spherical-sine-equality-squared} \\end{equation} $$ Since the angles and sides in a spherical triangle are all less than 180° or $\\pi$ radians, the sines of these quantities are all positive. Thus, the positive sign is adopted when taking the square root of Equation $\\ref{eq:spherical-sine-equality-squared}$ to derive the spherical sine rule. The vector geometry proof involves the geometric property of the cross product. Using the same definitions as in the proof for the spherical cosine rule (see Spherical cosine rule), $$ \\begin{align*} \\mathbf{n}_{AB} \\cdot \\mathbf{n}_{AC} &amp;= \\lvert\\mathbf{n}_{AB}\\rvert\\lvert\\mathbf{n}_{AC}\\rvert\\sin{A}\\\\ &amp;= \\lvert\\mathbf{a} \\times \\mathbf{b}\\rvert\\lvert\\mathbf{a} \\times \\mathbf{c}\\rvert\\sin{A}\\\\ &amp;= \\sin{c}\\sin{b}\\sin{A} \\end{align*} $$ However, $$ \\begin{align*} (\\mathbf{a} \\times \\mathbf{b}) \\times (\\mathbf{a} \\times \\mathbf{c}) &amp;= (\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}))\\mathbf{a}\\\\ \\lvert(\\mathbf{a} \\times \\mathbf{b}) \\times (\\mathbf{a} \\times \\mathbf{c})\\rvert &amp;= \\lvert\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})\\rvert\\lvert\\mathbf{a}\\rvert\\\\ \\mathbf{n}_{AB} \\cdot \\mathbf{n}_{AC} &amp;= \\lvert\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})\\rvert \\end{align*} $$ However, $\\mathbf{b} \\times \\mathbf{c}$ produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by $\\mathbf{b}$ and $\\mathbf{c}$. The scalar triple product $\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})$ therefore gives the signed volume of the parallelepiped with sides formed by $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$. The value of this product is unchanged when the arguments undergo a circular shift: $$ \\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) = \\mathbf{b} \\cdot (\\mathbf{c} \\times \\mathbf{a}) = \\mathbf{c} \\cdot (\\mathbf{a} \\times \\mathbf{b}) $$ It is also unchanged when the order of the operations is swapped: $$ \\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) = (\\mathbf{a} \\times \\mathbf{b}) \\cdot \\mathbf{c} $$ The value changes sign if the cyclic order of the arguments is changed: $$ \\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c}) = -\\mathbf{a} \\cdot (\\mathbf{c} \\times \\mathbf{b}) $$ Given these properties, $\\lvert\\mathbf{a} \\cdot (\\mathbf{b} \\times \\mathbf{c})\\rvert = V$ where $V$ is the unsigned volume of the parallelepiped formed by $\\mathbf{a}$, $\\mathbf{b}$ and $\\mathbf{c}$. (It is also 6 times the volume of the tetrahedron $OABC$.) Using this result, $$ \\begin{align*} \\sin{c}\\sin{b}\\sin{A} &amp;= V\\\\ \\frac{\\sin{A}}{\\sin{a}} &amp;= \\frac{V}{\\sin{a}\\sin{b}\\sin{c}} \\end{align*} $$ Applying similar principles for angles $B$ and $C$ results in the spherical sine rule, $$ \\begin{equation} \\frac{\\sin{A}}{\\sin{a}} = \\frac{\\sin{B}}{\\sin{b}} = \\frac{\\sin{C}}{\\sin{c}} = \\frac{V}{\\sin{a}\\sin{b}\\sin{c}} \\end{equation} $$ Celestial coordinate systems Horizontal coordinate system Equatorial coordinate system Ecliptic coordinate system Galactic coordinate system Coordinate conversions","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/astro/feed.xml" title="Astronomy" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/astro/">Astronomy</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/astro/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div>
+    
+        
+    
+        
+    
+        
+        <div class="prev">
+        
+            
+            
+            <a href="/astro/guide/optics">
+            <div>&lt;&nbsp;Optics</div>
+            </a>
+        
+        </div>
+        <div class="next">
+        
+            
+            
+            <a href="/astro/guide/time">
+            <div>Time&nbsp;&gt;</div>
+            </a>
+        
+        </div>
+        
+</div>
+<h1 id="coordinate-systems">Coordinate Systems</h1>
+<!-- https://archive.org/details/SphericalAstronomy -->
+<h2 id="spherical-trigonometry">Spherical trigonometry</h2>
+<h3 id="basics">Basics</h3>
+
+<h3 id="spherical-cosine-rule">Spherical cosine rule</h3>
+<p>The spherical cosine rule is given by</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\cos{a} = \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A}
+\end{equation}
+$$</div>
+
+<p>The relation can be proven using trigonometry, by considering a plane tangent to the sphere at the point <span class="kdmath">$A$</span>. Extend the lines <span class="kdmath">$\overline{OB}$</span> and <span class="kdmath">$\overline{OC}$</span> to meet the plane at points <span class="kdmath">$B'$</span> and <span class="kdmath">$C'$</span> respectively.</p>
+
+<p>Equating the planar cosine rules for the shared side <span class="kdmath">$\overline{B'C'}$</span>:</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\tan^2{b} + \tan^2{c} - 2 \tan{b}\tan{c}\cos{A} &= \sec^2{b} + \sec^2{c} - 2 \sec{b}\sec{c}\cos{a}\\
+2 \sec{b}\sec{c}\cos{a} &= 2 + 2 \tan{b}\tan{c}\cos{A}\\
+\cos{a} &= \cos{b}\cos{c} + \sin{b}\sin{c}\cos{A}
+\end{align*}
+$$</div>
+
+<p>where we have used the identity <span class="kdmath">$\tan^2{\theta} + 1 = \sec^2{\theta}$</span>.</p>
+
+<p>A proof using vector geometry is also straightforward. Let <span class="kdmath">$\mathbf{a} = \overrightarrow{OA}$</span>, <span class="kdmath">$\mathbf{b} = \overrightarrow{OB}$</span>, and <span class="kdmath">$\mathbf{c} = \overrightarrow{OC}$</span> respectively. Then the plane containing <span class="kdmath">$O$</span>, <span class="kdmath">$A$</span> and <span class="kdmath">$B$</span> has normal vector <span class="kdmath">$\mathbf{n}_{AB} = \mathbf{a} \times \mathbf{b}$</span>, and the plane containing <span class="kdmath">$O$</span>, <span class="kdmath">$A$</span> and <span class="kdmath">$C$</span> has normal vector <span class="kdmath">$\mathbf{n}_{AC} = \mathbf{a} \times \mathbf{c}$</span>.</p>
+
+<p>The angle <span class="kdmath">$A$</span> is equal to the angle between the two planes, which is equal to the angle between the two normal vectors. Using the geometrical definition of the dot product we have</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\cos{A}\\
+&= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\cos{A}\\
+&= \sin{c}\sin{b}\cos{A}
+\end{align*}
+$$</div>
+
+<p>However, using the vector identity <span class="kdmath">$(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$</span>, we can also show that</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &=(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{a} \times \mathbf{c})\\
+&= (\mathbf{a} \cdot \mathbf{a})(\mathbf{b} \cdot \mathbf{c}) - (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{a})\\
+&= (1)(\cos{a}) - (\cos{b})(\cos{c})
+\end{align*}
+$$</div>
+
+<p>Equating these two results gives the spherical cosine rule.</p>
+<h3 id="spherical-sine-rule">Spherical sine rule</h3>
+<p>The spherical sine rule is given by</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}}
+\end{equation}
+$$</div>
+
+<p>The spherical sine rule can be derived from the spherical cosine rule. First, rearrange and square both sides of the equation:</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\cos{a} - \cos{b}\cos{c} &= \sin{b}\sin{c}\cos{A}\\
+\cos^2{a} + \cos^2{b}\cos^2{c} - 2\cos{a}\cos{b}\cos{c} &= \sin^2{b}\sin^2{c}\cos^2{A}
+\end{align*}
+$$</div>
+
+<p>However, we can rewrite the right hand side as follows:</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\sin^2{b}\sin^2{c}\cos^2{A} &= \sin^2{b}\sin^2{c} - \sin^2{b}\sin^2{c}\sin^2{A}\\
+&= (1 - \cos^2{b})(1 - \cos^2{c}) - \sin^2{b}\sin^2{c}\sin^2{A}\\
+&= 1 - \cos^2{b} - \cos^2{c} + \cos^2{b}\cos^2{c} - \sin^2{b}\sin^2{c}\sin^2{A}
+\end{align*}
+$$</div>
+
+<p>Using this result gives</p>
+
+<div class="kdmath">$$
+\begin{align}
+\sin^2{b}\sin^2{c}\sin^2{A} &= 1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c} \nonumber\\
+\frac{\sin^2{A}}{\sin^2{a}} &= \frac{1 - \cos^2{a} - \cos^2{b} - \cos^2{c} - 2\cos{a}\cos{b}\cos{c}}{\sin^2{a}\sin^2{b}\sin^2{c}} \label{eq:spherical-sine-constant}
+\end{align}
+$$</div>
+
+<p>The quantity on the right in Equation <span class="kdmath">$\ref{eq:spherical-sine-constant}$</span> is invariant when <span class="kdmath">$A$</span> and <span class="kdmath">$a$</span> are substituted for <span class="kdmath">$B$</span> and <span class="kdmath">$b$</span>, or <span class="kdmath">$C$</span> and <span class="kdmath">$c$</span> respectively. Therefore,</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{\sin^2{A}}{\sin^2{a}} = \frac{\sin^2{B}}{\sin^2{b}} = \frac{\sin^2{C}}{\sin^2{c}} \label{eq:spherical-sine-equality-squared}
+\end{equation}
+$$</div>
+
+<p>Since the angles and sides in a spherical triangle are all less than 180° or <span class="kdmath">$\pi$</span> radians, the sines of these quantities are all positive. Thus, the positive sign is adopted when taking the square root of Equation <span class="kdmath">$\ref{eq:spherical-sine-equality-squared}$</span> to derive the spherical sine rule.</p>
+
+<p>The vector geometry proof involves the geometric property of the cross product. Using the same definitions as in the proof for the spherical cosine rule (see <a href="#spherical-cosine-rule">Spherical cosine rule</a>),</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &= \lvert\mathbf{n}_{AB}\rvert\lvert\mathbf{n}_{AC}\rvert\sin{A}\\
+&= \lvert\mathbf{a} \times \mathbf{b}\rvert\lvert\mathbf{a} \times \mathbf{c}\rvert\sin{A}\\
+&= \sin{c}\sin{b}\sin{A}
+\end{align*}
+$$</div>
+
+<p>However,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+(\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c}) &= (\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}))\mathbf{a}\\
+\lvert(\mathbf{a} \times \mathbf{b}) \times (\mathbf{a} \times \mathbf{c})\rvert &= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert\lvert\mathbf{a}\rvert\\
+\mathbf{n}_{AB} \cdot \mathbf{n}_{AC} &= \lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert
+\end{align*}
+$$</div>
+
+<p>However, <span class="kdmath">$\mathbf{b} \times \mathbf{c}$</span> produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The <em>scalar triple product</em> <span class="kdmath">$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$</span> therefore gives the <em>signed volume</em> of the parallelepiped with sides formed by <span class="kdmath">$\mathbf{a}$</span>, <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The value of this product is unchanged when the arguments undergo a circular shift:</p>
+
+<div class="kdmath">$$
+\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{b} \cdot (\mathbf{c} \times \mathbf{a}) = \mathbf{c} \cdot (\mathbf{a} \times \mathbf{b})
+$$</div>
+
+<p>It is also unchanged when the order of the operations is swapped:</p>
+
+<div class="kdmath">$$
+\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = (\mathbf{a} \times \mathbf{b}) \cdot \mathbf{c}
+$$</div>
+
+<p>The value changes sign if the cyclic order of the arguments is changed:</p>
+
+<div class="kdmath">$$
+\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = -\mathbf{a} \cdot (\mathbf{c} \times \mathbf{b})
+$$</div>
+
+<p>Given these properties, <span class="kdmath">$\lvert\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})\rvert = V$</span> where <span class="kdmath">$V$</span> is the unsigned volume of the parallelepiped formed by <span class="kdmath">$\mathbf{a}$</span>, <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. (It is also 6 times the volume of the tetrahedron <span class="kdmath">$OABC$</span>.) Using this result,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\sin{c}\sin{b}\sin{A} &= V\\
+\frac{\sin{A}}{\sin{a}} &= \frac{V}{\sin{a}\sin{b}\sin{c}}
+\end{align*}
+$$</div>
+
+<p>Applying similar principles for angles <span class="kdmath">$B$</span> and <span class="kdmath">$C$</span> results in the spherical sine rule,</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{\sin{A}}{\sin{a}} = \frac{\sin{B}}{\sin{b}} = \frac{\sin{C}}{\sin{c}} = \frac{V}{\sin{a}\sin{b}\sin{c}}
+\end{equation}
+$$</div>
+
+<h2 id="celestial-coordinate-systems">Celestial coordinate systems</h2>
+
+<h3 id="horizontal-coordinate-system">Horizontal coordinate system</h3>
+
+<h3 id="equatorial-coordinate-system">Equatorial coordinate system</h3>
+
+<h3 id="ecliptic-coordinate-system">Ecliptic coordinate system</h3>
+
+<h3 id="galactic-coordinate-system">Galactic coordinate system</h3>
+
+<h3 id="coordinate-conversions">Coordinate conversions</h3>
+
+<div>
+    
+        
+    
+        
+    
+        
+        <div class="prev">
+        
+            
+            
+            <a href="/astro/guide/optics">
+            <div>&lt;&nbsp;Optics</div>
+            </a>
+        
+        </div>
+        <div class="next">
+        
+            
+            
+            <a href="/astro/guide/time">
+            <div>Time&nbsp;&gt;</div>
+            </a>
+        
+        </div>
+        
+</div>
+<div style="clear: both;text-align: center;"><a href="./">return to index</a></div>
+<script>
+    MathJax = {
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+            renderActions: {
+                findScript: [10, function (doc) {
+                    for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                        const display = !!node.type.match(/; *mode=display/);
+                        const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                        const text = document.createTextNode('');
+                        node.parentNode.replaceChild(text, node);
+                        math.start = {node: text, delim: '', n: 0};
+                        math.end = {node: text, delim: '', n: 0};
+                        doc.math.push(math);
+                    }
+                }, '']
+            }
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            packages: {
+                '[+]': ['boldsymbol']
+            },
+            tags: 'ams'
+        },
+        loader: {
+            load: ['[tex]/noerrors','[tex]/boldsymbol']
+        }
+    };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/astro/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Astronomy</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Astronomy</li><li><a class="u-email" href="mailto:"></a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/astro/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/astro/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A guide to astronomy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

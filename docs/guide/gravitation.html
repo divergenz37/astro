@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Gravitation | Astronomy</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Gravitation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Gravitation Newton’s law of universal gravitation Barycentric coordinates In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or barycentre Kepler’s laws of planetary motion Kepler’s first law Kepler’s first law states that every planet orbits the Sun in an ellipse, with the Sun at one focus. More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola. To prove Kepler’s first law, it is useful to introduce the concept of the Laplace-Runge-Lenz vector. For a central force $\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$, the Laplace-Runge-Lenz vector is defined as $$ \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation} $$ The vector is conserved in orbital motion of a particle under the influence of such a central force. Derivation of the Laplace-Runge-Lenz vector First, we note that $$ \begin{align*} \mathbf{F} \times \mathbf{L} &amp;= - \frac{k}{r^3} \mathbf{r} \times (\mathbf{r} \times \mathbf{p})\\ &amp;= - \frac{mk}{r^3} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) \end{align*} $$ Using the vector triple product identity $$ \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \cdot \mathbf{C})\mathbf{B} - (\mathbf{A} \cdot \mathbf{B})\mathbf{C} $$ we get $$ \begin{align*} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &amp;= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - (\mathbf{r} \cdot \mathbf{r})\dot{\mathbf{r}}\\ &amp;= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - r^2 \dot{\mathbf{r}} \end{align*} $$ Since $$ \begin{align*} \frac{\mathrm{d}}{\mathrm{d}t} (\mathbf{r} \cdot \mathbf{r}) &amp;= \frac{\mathrm{d}}{\mathrm{d}t}(r^2)\\ 2 \mathbf{r} \cdot \dot{\mathbf{r}} &amp;= 2 r \dot{r} \end{align*} $$ then $$ \begin{align*} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &amp;=r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}}\\ \mathbf{F} \times \mathbf{L} &amp;= - \frac{mk}{r^3} \left( r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}} \right)\\ &amp;= mk \left( \frac{1}{r}\dot{\mathbf{r}} - \frac{\dot{r}}{r^2}\mathbf{r} \right)\\ &amp;= mk \frac{\mathrm{d}}{\mathrm{d}t}( \frac{\mathbf{r}}{r}) \end{align*} $$ However, since $\mathbf{L} = \mathbf{r} \times \mathbf{p} = \mathbf{r} \times (m \dot{\mathbf{r}})$, $$ \begin{align*} \frac{\mathrm{d}}{\mathrm{d}t} \mathbf{L} &amp;= \dot{\mathbf{r}} \times \mathbf{p} + \mathbf{r} \times \frac{\mathrm{d}}{\mathrm{d}t} \mathbf{p}\\ &amp;= \mathbf{0} + \mathbf{r} \times \mathbf{F}\\ &amp;= \mathbf{r} \times - \frac{k}{r^3} \mathbf{r}\\ &amp;= \mathbf{0}\\ \therefore \frac{\mathrm{d}}{\mathrm{d}t}(\mathbf{p} \times \mathbf{L}) &amp;= \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} \times \mathbf{L} + \mathbf{p} \times \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{L}\\ &amp;= \mathbf{F} \times \mathbf{L}\\ \Rightarrow \mathbf{p} \times \mathbf{L} &amp;= \frac{mk}{r}\mathbf{r} + \mathbf{A} \end{align*} $$ where $\mathbf{A}$ is a constant vector of integration. Therefore, $\mathbf{A}$ represents the Laplace-Runge-Lenz vector. It is useful to note that $\mathbf{A}$ lies in the same plane as the orbit. This can be seen by rewriting $$ \mathbf{p} \times \mathbf{L} = m^2 \dot{\mathbf{r}} \times (\mathbf{r} \times \dot{\mathbf{r}}) = m^2 (\dot{r}^2 \mathbf{r} - (\dot{\mathbf{r}} \cdot \mathbf{r})\dot{\mathbf{r}}) $$ This produces a linear combination of $\mathbf{r}$ and $\dot{\mathbf{r}}$, both of which lie in the plane of the orbit. Application to Kepler’s first law For gravitation, the Laplace-Runge-Lenz vector is $$ \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{G M m^2}{r}\mathbf{r} $$ Take the dot product with $\mathbf{r}$ on both sides to get $$ \begin{align*} \mathbf{r} \cdot \mathbf{A} &amp;= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - \mathbf{r} \cdot (\frac{G M m^2}{r}\mathbf{r})\\ &amp;= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - G M m^2 r \end{align*} $$ Using the property $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \times \mathbf{B}) \cdot \mathbf{C}$, $$ \begin{align*} \mathbf{r} \cdot \mathbf{A} &amp;= (\mathbf{r} \times \mathbf{p}) \cdot \mathbf{L} - G M m^2 r\\ &amp;= \mathbf{L} \cdot \mathbf{L} - G M m^2 r\\ &amp;= L^2 - GMm^2 r \end{align*} $$ Let $\theta$ be the angle between $\mathbf{A}$ and $\mathbf{r}$. Because $\mathbf{L}$ and $\mathbf{A}$ are constants, define $p = \frac{L^2}{GMm^2}$ and $e = \frac{A}{GMm^2}$. Then $$ \begin{align} re \cos{\theta} &amp;= p - r \nonumber\\ r (1 + e \cos{\theta}) &amp;= p \nonumber\\ r &amp;= \frac{p}{1 + e \cos{\theta}} \end{align} $$ This is the equation of a conic section in polar coordinates, with the origin $(0,0)$ as a focus, $e$ the eccentricity of the conic section, and $p$ is the semi-latus rectum. The semi-latus rectum is related to the semi-major axis $a$ by $p = a (1 - e^2)$ for $e &lt; 1$ and $a (e^2 - 1)$ for $e &gt; 1$. Now, if we consider the dot product of $\mathbf{A}$ with itself, and use the fact that $\mathbf{p}$ and $\mathbf{L} = \mathbf{r} \times \mathbf{p}$ are perpendicular, we can derive an expression for $e$: $$ \begin{align} A^2 &amp;= (\mathbf{p} \times \mathbf{L}) \cdot (\mathbf{p} \times \mathbf{L}) + \frac{G^2 M^2 m^4}{r^2}\mathbf{r} \cdot \mathbf{r} - 2 \frac{G M m^2}{r} (\mathbf{p} \times \mathbf{L}) \cdot \mathbf{r} \nonumber\\ G^2 M^2 m^4 e^2 &amp;= p^2 L^2 + G^2 M^2 m^4 - \frac{2 G M m^2 L^2}{r} \nonumber\\ G^2 M^2 m^4 (e^2 - 1)&amp;= 2 m L^2 (\frac{p^2}{2m} - \frac{GMm}{r}) \nonumber\\ e^2 - 1&amp;= \frac{2 E L^2}{G^2 M^2 m^3} \end{align} $$ where $E = \frac{p^2}{2m} - \frac{GMm}{r}$ is the total energy of the object in orbit, i.e. the sum of its kinetic and gravitational potential energies. Kepler’s second law Kepler’s second law states that a line joining a planet and the Sun sweeps out area at a constant rate. If the distance between the planet and the Sun is $r$, and the position angle of the planet (measured about the Sun from some point in the orbit) is $\theta$, then the rate at which area is swept out is $$ \begin{equation} \frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \mathrm{constant} \end{equation} $$ For a test particle of mass $m$ under the gravitational influence of a large mass $M$, the acceleration of the test particle is $\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$. We have shown in the previous section that $\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$ is constant for an object moving under the influence of a central force like gravitation. Since $\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$, $$ \frac{\mathrm{d}\theta}{\mathrm{d}t} = \lvert\boldsymbol{\omega}\rvert = \frac{L}{mr^2} $$ A simple rearrangement directly leads to Kepler’s second law, which we can now write as $$ \begin{equation} \frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{2m} \end{equation} $$ Kepler’s third law Kepler’s third law states that the square of the period of an orbit is proportional to the cube of the semi-major axis of the orbit. Equivalently, this can be written as $$ \begin{equation} \frac{4\pi^2}{G M} a^3 = T^2 \Rightarrow T^2 \propto a^{3} \end{equation} $$ Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined. This law directly follows from the previous two. The area of an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$ is $$ \pi a b = \pi a^2 \sqrt{1 - e^2} $$ Since the rate at which the area of this ellipse is swept out is constant, the period is given by $$ \begin{align*} T &amp;= \frac{\pi a^2 \sqrt{1 - e^2}}{\frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t}}\\ &amp;= \frac{2 \pi m a^2 \sqrt{1 - e^2}}{L} \end{align*} $$ where we have used the result from the derivation of the second law. Squaring both sides yields $$ \begin{align*} T^2 &amp;= \frac{4 \pi^2 m^2 a^4 (1 - e^2)}{L^2}\\ &amp;= \frac{4 \pi^2 m^2 a^4 (1-e^2)}{G M m^2 p}\\ &amp;= \frac{4 \pi^2}{GM} a^3 \end{align*} $$ where we have used the properties of the semi-latus rectum $p = \frac{L^2}{GMm^2}$ and $p = a (1 - e^2)$ introduced earlier in the derivation of the first law. Important results in gravitation Shell theorem Consider a point $P$ located a distance $r$ away from (and outside) a spherical shell of radius $R$ and mass $M$ as shown in Figure \ref{fig:shell-theorem}. The mass per unit surface area of the shell is $\sigma = \frac{M}{4 \pi R^2}$. We intend to find the gravitational field from the shell at $P$. At an angle $\theta$ on the shell away from the line $\overline{OP}$, where $O$ is the centre of the shell, there is an infinitesimal circular strip of radius $R \sin{\theta}$ and width $R \mathrm{d}\theta$. Each point on this strip is at a distance $s$ away from $P$. The gravitational force acts at some angle $\phi$ away from the line $\overline{OP}$, but due to symmetry, the net contribution from the circular strip acts along the line of $\overline{OP}$. The differential gravitational field from a circular strip is given by $$ \begin{align*} \mathrm{d}g &amp;= \frac{G}{s^2} (2 \pi R \sin{\theta})(R \mathrm{d}\theta) \sigma \cos{\phi}\\ &amp;= (2 \pi R^2 G \sigma) \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta \end{align*} $$ Therefore, integrating over the whole sphere: $$ \begin{align*} g &amp;= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta \\ &amp;= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}}{s^2} \frac{r^2 + s^2 - R^2}{2rs} \mathrm{d}\theta\\ &amp;= (2 \pi R^2 G \sigma) \int_{s = r - R}^{s = r + R} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\ &amp;= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = r - R}^{s = r + R} 1 + \frac{r^2 - R^2}{s^2} {d}s\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = r-R}^{s = r+R}\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ 4R \right]\\ &amp;= \frac{G M}{r^2} \end{align*} $$ Hence, the field outside the spherical shell is equivalent to that of a point mass with the same total mass $M$ located at the centre of the shell. If $P$ is located inside the spherical shell, our limits of integration change, with $s = R - r$ when $\theta = 0$ and $s = R + r$ when $\theta = \pi$ instead. Then $$ \begin{align*} g &amp;= (2 \pi R^2 G \sigma) \int_{s = R - r}^{s = R + r} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\ &amp;= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = R - r}^{s = R + r} 1 + \frac{r^2 - R^2}{s^2} {d}s\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = R-r}^{s = R+r}\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ 0 \right] = 0 \end{align*} $$ Hence, the gravitational field is zero inside the shell. Gravitational binding energy of a sphere The gravitational binding energy of a uniform spherical object is the amount of energy needed to completely separate the components to reduce the gravitational potential to zero. Equivalently, it is the gravitational potential energy change when masses from infinity are assembled to form the spherical object. Due to the shell theorem, different parts of the spherical object experience different gravitational fields. This complicates the process of calculating the gravitational binding energy of the sphere. Consider a shell of radius $r &lt; R$ and thickness $\mathrm{d}r$. The mass of this shell is $4 \pi r^2 \rho \mathrm{d}r$. By the shell theorem, the portion of the sphere outside radius $r$ does not contribute to the gravitational field at $r$. Hence, the gravitational potential energy of this shell only comes from the portion of the sphere within radius $r$, and is $$ \begin{align*} \mathrm{d}U &amp;= - \frac{G (4 \pi r^2 \rho \mathrm{d}r) \left(\frac{4}{3} \pi r^3 \rho \right)}{r}\\ &amp;= - \frac{16 \pi^2 \rho^2 G}{3} r^4 \mathrm{d} r\\ \therefore U &amp;= - \frac{16 \pi^2 \rho^2 G}{3} \int_{0}^{R} r^4 \mathrm{d} r\\ &amp;= - \frac{16 \pi^2 \rho^2 G}{15} R^5\\ &amp;= - \frac{16 \pi^2 R^5 G}{15} \left( \frac{M}{\frac{4}{3} \pi R^3} \right)^2\\ &amp;= - \frac{3 G M^2}{5 R} \end{align*} $$ Tidal forces Roche limit Orbital mechanics Orbital elements To completely specify a planet’s orbit and its position, 6 orbital parameters are required, corresponding to the 6 degrees of freedom of the planet (3 degrees each in position and velocity). The typical set of orbital elements for a planet in the solar system are: $a$ the semi-major axis of the orbit; $e$ the eccentricity of the orbit; $i$ the inclination of the orbit, relative to the plane of the ecliptic; $\Omega$ the longitude of the ascending node, relative to the vernal equinox and measured in the plane of the ecliptic; $\pi$ the longitude of the perihelion; $L$ the mean longitude of the planet. The first five items describe the orbit itself, while the last provides information on where the planet is located in the orbit. Note that the quantities $\pi$ and $L$ are compound angles that are sums of angles measured in two planes: $\pi = \Omega + \omega$ where $\omega$ is the argument of perihelion, the angle between the ascending node and the perihelion measured in the plane of the orbit; $L = \pi + M = \Omega + \omega + M$ where $M$ is the mean anomaly of the planet measured in the plane of the orbit. Kepler’s equation Consider the orbit of a planet $P$ about the star $S$ as shown in Figure \ref{fig:eccentric-anomaly}. This orbit has a semi-major axis $a$ and eccentricity $e$. The true anomaly $\nu$ is the angle $QSP$, measured from the periapsis $Q$. The outer dashed circle (with centre $O$) is the auxiliary circle of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $P$, this line meets the auxiliary circle at a point $P&#39;$. The angle $QOP&#39;$ is defined as the eccentric anomaly. The eccentric anomaly is related to the true anomaly by the relation $$ \begin{equation} \tan{\frac{\nu}{2}} = \sqrt{\frac{1+e}{1-e}} \tan{\frac{E}{2}} \end{equation} $$ The distance $r$ between $P$ and $S$ can be calculated using the eccentric anomaly by $$ \begin{equation} r = a \left(1 - e \cos{E}\right) \end{equation} $$ Now consider a fictitious planet $R$ that has a circular orbit about $S$ with the same semi-major axis as $P$. Their orbits are shown in Figure \ref{fig:mean-anomaly}. Both $P$ and $R$ will complete their orbits in the same amount of time. Suppose also that when $P$ is at the periapsis $Q$, $R$ is at the point $Q&#39;$. Then, as $P$ and $R$ move about their orbits, the angle $Q&#39;SR$ describes the mean anomaly $M$ of the planet $P$. $M$ increases linearly with time, but $\nu$ does not (as a consequence of Kepler’s second law). The eccentric anomaly is related to the true anomaly by Kepler’s equation, which is $$ \begin{equation} E = M + e \sin{E} \end{equation} $$ where the angles are given in radians. Solving for $M$ when $E$ is known is straightforward. However, solving for $E$ given $M$ cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for $E$. Vis-viva equation The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by $$ \begin{equation} v^2 = GM \left(\frac{2}{r} - \frac{1}{a}\right) \end{equation} $$ The velocity of the object can be split into radial and tangential components. The radial component is $\frac{\mathrm{d}r}{\mathrm{d}t}$ and the tangential component is $r\frac{\mathrm{d}\theta}{\mathrm{d}t}$. The radial component is $$ \begin{align*} \frac{\mathrm{d}r}{\mathrm{d}t} &amp;= -\frac{p}{(1 + e \cos{\theta})^2} (- e \sin{\theta}) \frac{\mathrm{d}\theta}{\mathrm{d}t}\\ &amp;= \frac{r^2}{p} (e \sin{\theta})\frac{\mathrm{d}\theta}{\mathrm{d}t} \end{align*} $$ Since we know $r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{m} = h$, $$ \begin{align*} \frac{\mathrm{d}r}{\mathrm{d}t} &amp;= \frac{h}{p} (e \sin{\theta}) \end{align*} $$ The tangential component is $$ \begin{align*} r\frac{\mathrm{d}\theta}{\mathrm{d}t} &amp;= \frac{h}{r}\\ &amp;= \frac{h}{p} (1 + e \cos{\theta}) \end{align*} $$ Therefore, the overall velocity is $$ \begin{align*} v^2 &amp;= \left( \frac{\mathrm{d}r}{\mathrm{d}t} \right)^2 + \left( r\frac{\mathrm{d}\theta}{\mathrm{d}t} \right)\\ &amp;= \frac{h^2}{p^2} (e^2 \sin^2{\theta}) + \frac{h^2}{p^2} (1 + e \cos{\theta})^2\\ &amp;= \frac{h^2}{p^2} \left(1 + 2 e \cos{\theta} + e^2 \right)\\ &amp;= \frac{h^2}{p^2} \left(2(1 + e \cos{\theta}) - (1 - e^2) \right) \end{align*} $$ Using the fact that $p = \frac{h^2}{GM}$, and $p = a(1 - e^2)$, $$ \begin{align*} v^2 &amp;= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\ &amp;= GM \left(\frac{2}{r} - \frac{1}{a}\right) \end{align*} $$ Lagrangian points" />
+<meta property="og:description" content="Gravitation Newton’s law of universal gravitation Barycentric coordinates In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or barycentre Kepler’s laws of planetary motion Kepler’s first law Kepler’s first law states that every planet orbits the Sun in an ellipse, with the Sun at one focus. More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola. To prove Kepler’s first law, it is useful to introduce the concept of the Laplace-Runge-Lenz vector. For a central force $\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$, the Laplace-Runge-Lenz vector is defined as $$ \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation} $$ The vector is conserved in orbital motion of a particle under the influence of such a central force. Derivation of the Laplace-Runge-Lenz vector First, we note that $$ \begin{align*} \mathbf{F} \times \mathbf{L} &amp;= - \frac{k}{r^3} \mathbf{r} \times (\mathbf{r} \times \mathbf{p})\\ &amp;= - \frac{mk}{r^3} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) \end{align*} $$ Using the vector triple product identity $$ \mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \cdot \mathbf{C})\mathbf{B} - (\mathbf{A} \cdot \mathbf{B})\mathbf{C} $$ we get $$ \begin{align*} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &amp;= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - (\mathbf{r} \cdot \mathbf{r})\dot{\mathbf{r}}\\ &amp;= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - r^2 \dot{\mathbf{r}} \end{align*} $$ Since $$ \begin{align*} \frac{\mathrm{d}}{\mathrm{d}t} (\mathbf{r} \cdot \mathbf{r}) &amp;= \frac{\mathrm{d}}{\mathrm{d}t}(r^2)\\ 2 \mathbf{r} \cdot \dot{\mathbf{r}} &amp;= 2 r \dot{r} \end{align*} $$ then $$ \begin{align*} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &amp;=r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}}\\ \mathbf{F} \times \mathbf{L} &amp;= - \frac{mk}{r^3} \left( r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}} \right)\\ &amp;= mk \left( \frac{1}{r}\dot{\mathbf{r}} - \frac{\dot{r}}{r^2}\mathbf{r} \right)\\ &amp;= mk \frac{\mathrm{d}}{\mathrm{d}t}( \frac{\mathbf{r}}{r}) \end{align*} $$ However, since $\mathbf{L} = \mathbf{r} \times \mathbf{p} = \mathbf{r} \times (m \dot{\mathbf{r}})$, $$ \begin{align*} \frac{\mathrm{d}}{\mathrm{d}t} \mathbf{L} &amp;= \dot{\mathbf{r}} \times \mathbf{p} + \mathbf{r} \times \frac{\mathrm{d}}{\mathrm{d}t} \mathbf{p}\\ &amp;= \mathbf{0} + \mathbf{r} \times \mathbf{F}\\ &amp;= \mathbf{r} \times - \frac{k}{r^3} \mathbf{r}\\ &amp;= \mathbf{0}\\ \therefore \frac{\mathrm{d}}{\mathrm{d}t}(\mathbf{p} \times \mathbf{L}) &amp;= \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} \times \mathbf{L} + \mathbf{p} \times \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{L}\\ &amp;= \mathbf{F} \times \mathbf{L}\\ \Rightarrow \mathbf{p} \times \mathbf{L} &amp;= \frac{mk}{r}\mathbf{r} + \mathbf{A} \end{align*} $$ where $\mathbf{A}$ is a constant vector of integration. Therefore, $\mathbf{A}$ represents the Laplace-Runge-Lenz vector. It is useful to note that $\mathbf{A}$ lies in the same plane as the orbit. This can be seen by rewriting $$ \mathbf{p} \times \mathbf{L} = m^2 \dot{\mathbf{r}} \times (\mathbf{r} \times \dot{\mathbf{r}}) = m^2 (\dot{r}^2 \mathbf{r} - (\dot{\mathbf{r}} \cdot \mathbf{r})\dot{\mathbf{r}}) $$ This produces a linear combination of $\mathbf{r}$ and $\dot{\mathbf{r}}$, both of which lie in the plane of the orbit. Application to Kepler’s first law For gravitation, the Laplace-Runge-Lenz vector is $$ \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{G M m^2}{r}\mathbf{r} $$ Take the dot product with $\mathbf{r}$ on both sides to get $$ \begin{align*} \mathbf{r} \cdot \mathbf{A} &amp;= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - \mathbf{r} \cdot (\frac{G M m^2}{r}\mathbf{r})\\ &amp;= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - G M m^2 r \end{align*} $$ Using the property $\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \times \mathbf{B}) \cdot \mathbf{C}$, $$ \begin{align*} \mathbf{r} \cdot \mathbf{A} &amp;= (\mathbf{r} \times \mathbf{p}) \cdot \mathbf{L} - G M m^2 r\\ &amp;= \mathbf{L} \cdot \mathbf{L} - G M m^2 r\\ &amp;= L^2 - GMm^2 r \end{align*} $$ Let $\theta$ be the angle between $\mathbf{A}$ and $\mathbf{r}$. Because $\mathbf{L}$ and $\mathbf{A}$ are constants, define $p = \frac{L^2}{GMm^2}$ and $e = \frac{A}{GMm^2}$. Then $$ \begin{align} re \cos{\theta} &amp;= p - r \nonumber\\ r (1 + e \cos{\theta}) &amp;= p \nonumber\\ r &amp;= \frac{p}{1 + e \cos{\theta}} \end{align} $$ This is the equation of a conic section in polar coordinates, with the origin $(0,0)$ as a focus, $e$ the eccentricity of the conic section, and $p$ is the semi-latus rectum. The semi-latus rectum is related to the semi-major axis $a$ by $p = a (1 - e^2)$ for $e &lt; 1$ and $a (e^2 - 1)$ for $e &gt; 1$. Now, if we consider the dot product of $\mathbf{A}$ with itself, and use the fact that $\mathbf{p}$ and $\mathbf{L} = \mathbf{r} \times \mathbf{p}$ are perpendicular, we can derive an expression for $e$: $$ \begin{align} A^2 &amp;= (\mathbf{p} \times \mathbf{L}) \cdot (\mathbf{p} \times \mathbf{L}) + \frac{G^2 M^2 m^4}{r^2}\mathbf{r} \cdot \mathbf{r} - 2 \frac{G M m^2}{r} (\mathbf{p} \times \mathbf{L}) \cdot \mathbf{r} \nonumber\\ G^2 M^2 m^4 e^2 &amp;= p^2 L^2 + G^2 M^2 m^4 - \frac{2 G M m^2 L^2}{r} \nonumber\\ G^2 M^2 m^4 (e^2 - 1)&amp;= 2 m L^2 (\frac{p^2}{2m} - \frac{GMm}{r}) \nonumber\\ e^2 - 1&amp;= \frac{2 E L^2}{G^2 M^2 m^3} \end{align} $$ where $E = \frac{p^2}{2m} - \frac{GMm}{r}$ is the total energy of the object in orbit, i.e. the sum of its kinetic and gravitational potential energies. Kepler’s second law Kepler’s second law states that a line joining a planet and the Sun sweeps out area at a constant rate. If the distance between the planet and the Sun is $r$, and the position angle of the planet (measured about the Sun from some point in the orbit) is $\theta$, then the rate at which area is swept out is $$ \begin{equation} \frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \mathrm{constant} \end{equation} $$ For a test particle of mass $m$ under the gravitational influence of a large mass $M$, the acceleration of the test particle is $\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$. We have shown in the previous section that $\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$ is constant for an object moving under the influence of a central force like gravitation. Since $\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$, $$ \frac{\mathrm{d}\theta}{\mathrm{d}t} = \lvert\boldsymbol{\omega}\rvert = \frac{L}{mr^2} $$ A simple rearrangement directly leads to Kepler’s second law, which we can now write as $$ \begin{equation} \frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{2m} \end{equation} $$ Kepler’s third law Kepler’s third law states that the square of the period of an orbit is proportional to the cube of the semi-major axis of the orbit. Equivalently, this can be written as $$ \begin{equation} \frac{4\pi^2}{G M} a^3 = T^2 \Rightarrow T^2 \propto a^{3} \end{equation} $$ Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined. This law directly follows from the previous two. The area of an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$ is $$ \pi a b = \pi a^2 \sqrt{1 - e^2} $$ Since the rate at which the area of this ellipse is swept out is constant, the period is given by $$ \begin{align*} T &amp;= \frac{\pi a^2 \sqrt{1 - e^2}}{\frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t}}\\ &amp;= \frac{2 \pi m a^2 \sqrt{1 - e^2}}{L} \end{align*} $$ where we have used the result from the derivation of the second law. Squaring both sides yields $$ \begin{align*} T^2 &amp;= \frac{4 \pi^2 m^2 a^4 (1 - e^2)}{L^2}\\ &amp;= \frac{4 \pi^2 m^2 a^4 (1-e^2)}{G M m^2 p}\\ &amp;= \frac{4 \pi^2}{GM} a^3 \end{align*} $$ where we have used the properties of the semi-latus rectum $p = \frac{L^2}{GMm^2}$ and $p = a (1 - e^2)$ introduced earlier in the derivation of the first law. Important results in gravitation Shell theorem Consider a point $P$ located a distance $r$ away from (and outside) a spherical shell of radius $R$ and mass $M$ as shown in Figure \ref{fig:shell-theorem}. The mass per unit surface area of the shell is $\sigma = \frac{M}{4 \pi R^2}$. We intend to find the gravitational field from the shell at $P$. At an angle $\theta$ on the shell away from the line $\overline{OP}$, where $O$ is the centre of the shell, there is an infinitesimal circular strip of radius $R \sin{\theta}$ and width $R \mathrm{d}\theta$. Each point on this strip is at a distance $s$ away from $P$. The gravitational force acts at some angle $\phi$ away from the line $\overline{OP}$, but due to symmetry, the net contribution from the circular strip acts along the line of $\overline{OP}$. The differential gravitational field from a circular strip is given by $$ \begin{align*} \mathrm{d}g &amp;= \frac{G}{s^2} (2 \pi R \sin{\theta})(R \mathrm{d}\theta) \sigma \cos{\phi}\\ &amp;= (2 \pi R^2 G \sigma) \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta \end{align*} $$ Therefore, integrating over the whole sphere: $$ \begin{align*} g &amp;= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta \\ &amp;= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}}{s^2} \frac{r^2 + s^2 - R^2}{2rs} \mathrm{d}\theta\\ &amp;= (2 \pi R^2 G \sigma) \int_{s = r - R}^{s = r + R} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\ &amp;= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = r - R}^{s = r + R} 1 + \frac{r^2 - R^2}{s^2} {d}s\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = r-R}^{s = r+R}\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ 4R \right]\\ &amp;= \frac{G M}{r^2} \end{align*} $$ Hence, the field outside the spherical shell is equivalent to that of a point mass with the same total mass $M$ located at the centre of the shell. If $P$ is located inside the spherical shell, our limits of integration change, with $s = R - r$ when $\theta = 0$ and $s = R + r$ when $\theta = \pi$ instead. Then $$ \begin{align*} g &amp;= (2 \pi R^2 G \sigma) \int_{s = R - r}^{s = R + r} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\ &amp;= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = R - r}^{s = R + r} 1 + \frac{r^2 - R^2}{s^2} {d}s\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = R-r}^{s = R+r}\\ &amp;= \frac{\pi R G \sigma}{r^2} \left[ 0 \right] = 0 \end{align*} $$ Hence, the gravitational field is zero inside the shell. Gravitational binding energy of a sphere The gravitational binding energy of a uniform spherical object is the amount of energy needed to completely separate the components to reduce the gravitational potential to zero. Equivalently, it is the gravitational potential energy change when masses from infinity are assembled to form the spherical object. Due to the shell theorem, different parts of the spherical object experience different gravitational fields. This complicates the process of calculating the gravitational binding energy of the sphere. Consider a shell of radius $r &lt; R$ and thickness $\mathrm{d}r$. The mass of this shell is $4 \pi r^2 \rho \mathrm{d}r$. By the shell theorem, the portion of the sphere outside radius $r$ does not contribute to the gravitational field at $r$. Hence, the gravitational potential energy of this shell only comes from the portion of the sphere within radius $r$, and is $$ \begin{align*} \mathrm{d}U &amp;= - \frac{G (4 \pi r^2 \rho \mathrm{d}r) \left(\frac{4}{3} \pi r^3 \rho \right)}{r}\\ &amp;= - \frac{16 \pi^2 \rho^2 G}{3} r^4 \mathrm{d} r\\ \therefore U &amp;= - \frac{16 \pi^2 \rho^2 G}{3} \int_{0}^{R} r^4 \mathrm{d} r\\ &amp;= - \frac{16 \pi^2 \rho^2 G}{15} R^5\\ &amp;= - \frac{16 \pi^2 R^5 G}{15} \left( \frac{M}{\frac{4}{3} \pi R^3} \right)^2\\ &amp;= - \frac{3 G M^2}{5 R} \end{align*} $$ Tidal forces Roche limit Orbital mechanics Orbital elements To completely specify a planet’s orbit and its position, 6 orbital parameters are required, corresponding to the 6 degrees of freedom of the planet (3 degrees each in position and velocity). The typical set of orbital elements for a planet in the solar system are: $a$ the semi-major axis of the orbit; $e$ the eccentricity of the orbit; $i$ the inclination of the orbit, relative to the plane of the ecliptic; $\Omega$ the longitude of the ascending node, relative to the vernal equinox and measured in the plane of the ecliptic; $\pi$ the longitude of the perihelion; $L$ the mean longitude of the planet. The first five items describe the orbit itself, while the last provides information on where the planet is located in the orbit. Note that the quantities $\pi$ and $L$ are compound angles that are sums of angles measured in two planes: $\pi = \Omega + \omega$ where $\omega$ is the argument of perihelion, the angle between the ascending node and the perihelion measured in the plane of the orbit; $L = \pi + M = \Omega + \omega + M$ where $M$ is the mean anomaly of the planet measured in the plane of the orbit. Kepler’s equation Consider the orbit of a planet $P$ about the star $S$ as shown in Figure \ref{fig:eccentric-anomaly}. This orbit has a semi-major axis $a$ and eccentricity $e$. The true anomaly $\nu$ is the angle $QSP$, measured from the periapsis $Q$. The outer dashed circle (with centre $O$) is the auxiliary circle of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $P$, this line meets the auxiliary circle at a point $P&#39;$. The angle $QOP&#39;$ is defined as the eccentric anomaly. The eccentric anomaly is related to the true anomaly by the relation $$ \begin{equation} \tan{\frac{\nu}{2}} = \sqrt{\frac{1+e}{1-e}} \tan{\frac{E}{2}} \end{equation} $$ The distance $r$ between $P$ and $S$ can be calculated using the eccentric anomaly by $$ \begin{equation} r = a \left(1 - e \cos{E}\right) \end{equation} $$ Now consider a fictitious planet $R$ that has a circular orbit about $S$ with the same semi-major axis as $P$. Their orbits are shown in Figure \ref{fig:mean-anomaly}. Both $P$ and $R$ will complete their orbits in the same amount of time. Suppose also that when $P$ is at the periapsis $Q$, $R$ is at the point $Q&#39;$. Then, as $P$ and $R$ move about their orbits, the angle $Q&#39;SR$ describes the mean anomaly $M$ of the planet $P$. $M$ increases linearly with time, but $\nu$ does not (as a consequence of Kepler’s second law). The eccentric anomaly is related to the true anomaly by Kepler’s equation, which is $$ \begin{equation} E = M + e \sin{E} \end{equation} $$ where the angles are given in radians. Solving for $M$ when $E$ is known is straightforward. However, solving for $E$ given $M$ cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for $E$. Vis-viva equation The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by $$ \begin{equation} v^2 = GM \left(\frac{2}{r} - \frac{1}{a}\right) \end{equation} $$ The velocity of the object can be split into radial and tangential components. The radial component is $\frac{\mathrm{d}r}{\mathrm{d}t}$ and the tangential component is $r\frac{\mathrm{d}\theta}{\mathrm{d}t}$. The radial component is $$ \begin{align*} \frac{\mathrm{d}r}{\mathrm{d}t} &amp;= -\frac{p}{(1 + e \cos{\theta})^2} (- e \sin{\theta}) \frac{\mathrm{d}\theta}{\mathrm{d}t}\\ &amp;= \frac{r^2}{p} (e \sin{\theta})\frac{\mathrm{d}\theta}{\mathrm{d}t} \end{align*} $$ Since we know $r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{m} = h$, $$ \begin{align*} \frac{\mathrm{d}r}{\mathrm{d}t} &amp;= \frac{h}{p} (e \sin{\theta}) \end{align*} $$ The tangential component is $$ \begin{align*} r\frac{\mathrm{d}\theta}{\mathrm{d}t} &amp;= \frac{h}{r}\\ &amp;= \frac{h}{p} (1 + e \cos{\theta}) \end{align*} $$ Therefore, the overall velocity is $$ \begin{align*} v^2 &amp;= \left( \frac{\mathrm{d}r}{\mathrm{d}t} \right)^2 + \left( r\frac{\mathrm{d}\theta}{\mathrm{d}t} \right)\\ &amp;= \frac{h^2}{p^2} (e^2 \sin^2{\theta}) + \frac{h^2}{p^2} (1 + e \cos{\theta})^2\\ &amp;= \frac{h^2}{p^2} \left(1 + 2 e \cos{\theta} + e^2 \right)\\ &amp;= \frac{h^2}{p^2} \left(2(1 + e \cos{\theta}) - (1 - e^2) \right) \end{align*} $$ Using the fact that $p = \frac{h^2}{GM}$, and $p = a(1 - e^2)$, $$ \begin{align*} v^2 &amp;= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\ &amp;= GM \left(\frac{2}{r} - \frac{1}{a}\right) \end{align*} $$ Lagrangian points" />
+<link rel="canonical" href="http://localhost:4000/astro/guide/gravitation" />
+<meta property="og:url" content="http://localhost:4000/astro/guide/gravitation" />
+<meta property="og:site_name" content="Astronomy" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-12T12:35:32+00:00" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"http://localhost:4000/astro/guide/gravitation","headline":"Gravitation","dateModified":"2020-01-12T12:35:32+00:00","datePublished":"2020-01-12T12:35:32+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/astro/guide/gravitation"},"description":"Gravitation Newton’s law of universal gravitation Barycentric coordinates In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or barycentre Kepler’s laws of planetary motion Kepler’s first law Kepler’s first law states that every planet orbits the Sun in an ellipse, with the Sun at one focus. More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola. To prove Kepler’s first law, it is useful to introduce the concept of the Laplace-Runge-Lenz vector. For a central force $\\mathbf{F} = - \\frac{k}{r^3} \\mathbf{r}$, the Laplace-Runge-Lenz vector is defined as $$ \\begin{equation} \\mathbf{A} = \\mathbf{p} \\times \\mathbf{L} - \\frac{m k}{r}\\mathbf{r} \\end{equation} $$ The vector is conserved in orbital motion of a particle under the influence of such a central force. Derivation of the Laplace-Runge-Lenz vector First, we note that $$ \\begin{align*} \\mathbf{F} \\times \\mathbf{L} &amp;= - \\frac{k}{r^3} \\mathbf{r} \\times (\\mathbf{r} \\times \\mathbf{p})\\\\ &amp;= - \\frac{mk}{r^3} \\mathbf{r} \\times (\\mathbf{r} \\times \\dot{\\mathbf{r}}) \\end{align*} $$ Using the vector triple product identity $$ \\mathbf{A} \\times (\\mathbf{B} \\times \\mathbf{C}) = (\\mathbf{A} \\cdot \\mathbf{C})\\mathbf{B} - (\\mathbf{A} \\cdot \\mathbf{B})\\mathbf{C} $$ we get $$ \\begin{align*} \\mathbf{r} \\times (\\mathbf{r} \\times \\dot{\\mathbf{r}}) &amp;= (\\mathbf{r} \\cdot \\dot{\\mathbf{r}})\\mathbf{r} - (\\mathbf{r} \\cdot \\mathbf{r})\\dot{\\mathbf{r}}\\\\ &amp;= (\\mathbf{r} \\cdot \\dot{\\mathbf{r}})\\mathbf{r} - r^2 \\dot{\\mathbf{r}} \\end{align*} $$ Since $$ \\begin{align*} \\frac{\\mathrm{d}}{\\mathrm{d}t} (\\mathbf{r} \\cdot \\mathbf{r}) &amp;= \\frac{\\mathrm{d}}{\\mathrm{d}t}(r^2)\\\\ 2 \\mathbf{r} \\cdot \\dot{\\mathbf{r}} &amp;= 2 r \\dot{r} \\end{align*} $$ then $$ \\begin{align*} \\mathbf{r} \\times (\\mathbf{r} \\times \\dot{\\mathbf{r}}) &amp;=r \\dot{r} \\mathbf{r} - r^2 \\dot{\\mathbf{r}}\\\\ \\mathbf{F} \\times \\mathbf{L} &amp;= - \\frac{mk}{r^3} \\left( r \\dot{r} \\mathbf{r} - r^2 \\dot{\\mathbf{r}} \\right)\\\\ &amp;= mk \\left( \\frac{1}{r}\\dot{\\mathbf{r}} - \\frac{\\dot{r}}{r^2}\\mathbf{r} \\right)\\\\ &amp;= mk \\frac{\\mathrm{d}}{\\mathrm{d}t}( \\frac{\\mathbf{r}}{r}) \\end{align*} $$ However, since $\\mathbf{L} = \\mathbf{r} \\times \\mathbf{p} = \\mathbf{r} \\times (m \\dot{\\mathbf{r}})$, $$ \\begin{align*} \\frac{\\mathrm{d}}{\\mathrm{d}t} \\mathbf{L} &amp;= \\dot{\\mathbf{r}} \\times \\mathbf{p} + \\mathbf{r} \\times \\frac{\\mathrm{d}}{\\mathrm{d}t} \\mathbf{p}\\\\ &amp;= \\mathbf{0} + \\mathbf{r} \\times \\mathbf{F}\\\\ &amp;= \\mathbf{r} \\times - \\frac{k}{r^3} \\mathbf{r}\\\\ &amp;= \\mathbf{0}\\\\ \\therefore \\frac{\\mathrm{d}}{\\mathrm{d}t}(\\mathbf{p} \\times \\mathbf{L}) &amp;= \\frac{\\mathrm{d}}{\\mathrm{d}t}\\mathbf{p} \\times \\mathbf{L} + \\mathbf{p} \\times \\frac{\\mathrm{d}}{\\mathrm{d}t}\\mathbf{L}\\\\ &amp;= \\mathbf{F} \\times \\mathbf{L}\\\\ \\Rightarrow \\mathbf{p} \\times \\mathbf{L} &amp;= \\frac{mk}{r}\\mathbf{r} + \\mathbf{A} \\end{align*} $$ where $\\mathbf{A}$ is a constant vector of integration. Therefore, $\\mathbf{A}$ represents the Laplace-Runge-Lenz vector. It is useful to note that $\\mathbf{A}$ lies in the same plane as the orbit. This can be seen by rewriting $$ \\mathbf{p} \\times \\mathbf{L} = m^2 \\dot{\\mathbf{r}} \\times (\\mathbf{r} \\times \\dot{\\mathbf{r}}) = m^2 (\\dot{r}^2 \\mathbf{r} - (\\dot{\\mathbf{r}} \\cdot \\mathbf{r})\\dot{\\mathbf{r}}) $$ This produces a linear combination of $\\mathbf{r}$ and $\\dot{\\mathbf{r}}$, both of which lie in the plane of the orbit. Application to Kepler’s first law For gravitation, the Laplace-Runge-Lenz vector is $$ \\mathbf{A} = \\mathbf{p} \\times \\mathbf{L} - \\frac{G M m^2}{r}\\mathbf{r} $$ Take the dot product with $\\mathbf{r}$ on both sides to get $$ \\begin{align*} \\mathbf{r} \\cdot \\mathbf{A} &amp;= \\mathbf{r} \\cdot (\\mathbf{p} \\times \\mathbf{L}) - \\mathbf{r} \\cdot (\\frac{G M m^2}{r}\\mathbf{r})\\\\ &amp;= \\mathbf{r} \\cdot (\\mathbf{p} \\times \\mathbf{L}) - G M m^2 r \\end{align*} $$ Using the property $\\mathbf{A} \\cdot (\\mathbf{B} \\times \\mathbf{C}) = (\\mathbf{A} \\times \\mathbf{B}) \\cdot \\mathbf{C}$, $$ \\begin{align*} \\mathbf{r} \\cdot \\mathbf{A} &amp;= (\\mathbf{r} \\times \\mathbf{p}) \\cdot \\mathbf{L} - G M m^2 r\\\\ &amp;= \\mathbf{L} \\cdot \\mathbf{L} - G M m^2 r\\\\ &amp;= L^2 - GMm^2 r \\end{align*} $$ Let $\\theta$ be the angle between $\\mathbf{A}$ and $\\mathbf{r}$. Because $\\mathbf{L}$ and $\\mathbf{A}$ are constants, define $p = \\frac{L^2}{GMm^2}$ and $e = \\frac{A}{GMm^2}$. Then $$ \\begin{align} re \\cos{\\theta} &amp;= p - r \\nonumber\\\\ r (1 + e \\cos{\\theta}) &amp;= p \\nonumber\\\\ r &amp;= \\frac{p}{1 + e \\cos{\\theta}} \\end{align} $$ This is the equation of a conic section in polar coordinates, with the origin $(0,0)$ as a focus, $e$ the eccentricity of the conic section, and $p$ is the semi-latus rectum. The semi-latus rectum is related to the semi-major axis $a$ by $p = a (1 - e^2)$ for $e &lt; 1$ and $a (e^2 - 1)$ for $e &gt; 1$. Now, if we consider the dot product of $\\mathbf{A}$ with itself, and use the fact that $\\mathbf{p}$ and $\\mathbf{L} = \\mathbf{r} \\times \\mathbf{p}$ are perpendicular, we can derive an expression for $e$: $$ \\begin{align} A^2 &amp;= (\\mathbf{p} \\times \\mathbf{L}) \\cdot (\\mathbf{p} \\times \\mathbf{L}) + \\frac{G^2 M^2 m^4}{r^2}\\mathbf{r} \\cdot \\mathbf{r} - 2 \\frac{G M m^2}{r} (\\mathbf{p} \\times \\mathbf{L}) \\cdot \\mathbf{r} \\nonumber\\\\ G^2 M^2 m^4 e^2 &amp;= p^2 L^2 + G^2 M^2 m^4 - \\frac{2 G M m^2 L^2}{r} \\nonumber\\\\ G^2 M^2 m^4 (e^2 - 1)&amp;= 2 m L^2 (\\frac{p^2}{2m} - \\frac{GMm}{r}) \\nonumber\\\\ e^2 - 1&amp;= \\frac{2 E L^2}{G^2 M^2 m^3} \\end{align} $$ where $E = \\frac{p^2}{2m} - \\frac{GMm}{r}$ is the total energy of the object in orbit, i.e. the sum of its kinetic and gravitational potential energies. Kepler’s second law Kepler’s second law states that a line joining a planet and the Sun sweeps out area at a constant rate. If the distance between the planet and the Sun is $r$, and the position angle of the planet (measured about the Sun from some point in the orbit) is $\\theta$, then the rate at which area is swept out is $$ \\begin{equation} \\frac{1}{2} r^2 \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} = \\mathrm{constant} \\end{equation} $$ For a test particle of mass $m$ under the gravitational influence of a large mass $M$, the acceleration of the test particle is $\\ddot{\\mathbf{r}} = - \\frac{GM}{r^3}\\mathbf{r}$. We have shown in the previous section that $\\mathbf{L} = \\mathbf{r} \\times \\mathbf{p} = m(\\mathbf{r} \\times \\dot{\\mathbf{r}})$ is constant for an object moving under the influence of a central force like gravitation. Since $\\boldsymbol{\\omega} = \\frac{\\mathbf{r} \\times \\dot{\\mathbf{r}}}{r^2}$, $$ \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} = \\lvert\\boldsymbol{\\omega}\\rvert = \\frac{L}{mr^2} $$ A simple rearrangement directly leads to Kepler’s second law, which we can now write as $$ \\begin{equation} \\frac{1}{2} r^2 \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} = \\frac{L}{2m} \\end{equation} $$ Kepler’s third law Kepler’s third law states that the square of the period of an orbit is proportional to the cube of the semi-major axis of the orbit. Equivalently, this can be written as $$ \\begin{equation} \\frac{4\\pi^2}{G M} a^3 = T^2 \\Rightarrow T^2 \\propto a^{3} \\end{equation} $$ Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined. This law directly follows from the previous two. The area of an ellipse with semi-major axis $a$, semi-minor axis $b$, and eccentricity $e$ is $$ \\pi a b = \\pi a^2 \\sqrt{1 - e^2} $$ Since the rate at which the area of this ellipse is swept out is constant, the period is given by $$ \\begin{align*} T &amp;= \\frac{\\pi a^2 \\sqrt{1 - e^2}}{\\frac{1}{2} r^2 \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t}}\\\\ &amp;= \\frac{2 \\pi m a^2 \\sqrt{1 - e^2}}{L} \\end{align*} $$ where we have used the result from the derivation of the second law. Squaring both sides yields $$ \\begin{align*} T^2 &amp;= \\frac{4 \\pi^2 m^2 a^4 (1 - e^2)}{L^2}\\\\ &amp;= \\frac{4 \\pi^2 m^2 a^4 (1-e^2)}{G M m^2 p}\\\\ &amp;= \\frac{4 \\pi^2}{GM} a^3 \\end{align*} $$ where we have used the properties of the semi-latus rectum $p = \\frac{L^2}{GMm^2}$ and $p = a (1 - e^2)$ introduced earlier in the derivation of the first law. Important results in gravitation Shell theorem Consider a point $P$ located a distance $r$ away from (and outside) a spherical shell of radius $R$ and mass $M$ as shown in Figure \\ref{fig:shell-theorem}. The mass per unit surface area of the shell is $\\sigma = \\frac{M}{4 \\pi R^2}$. We intend to find the gravitational field from the shell at $P$. At an angle $\\theta$ on the shell away from the line $\\overline{OP}$, where $O$ is the centre of the shell, there is an infinitesimal circular strip of radius $R \\sin{\\theta}$ and width $R \\mathrm{d}\\theta$. Each point on this strip is at a distance $s$ away from $P$. The gravitational force acts at some angle $\\phi$ away from the line $\\overline{OP}$, but due to symmetry, the net contribution from the circular strip acts along the line of $\\overline{OP}$. The differential gravitational field from a circular strip is given by $$ \\begin{align*} \\mathrm{d}g &amp;= \\frac{G}{s^2} (2 \\pi R \\sin{\\theta})(R \\mathrm{d}\\theta) \\sigma \\cos{\\phi}\\\\ &amp;= (2 \\pi R^2 G \\sigma) \\frac{\\sin{\\theta}\\cos{\\phi}}{s^2} \\mathrm{d}\\theta \\end{align*} $$ Therefore, integrating over the whole sphere: $$ \\begin{align*} g &amp;= (2 \\pi R^2 G \\sigma) \\int_{\\theta = 0}^{\\theta = \\pi} \\frac{\\sin{\\theta}\\cos{\\phi}}{s^2} \\mathrm{d}\\theta \\\\ &amp;= (2 \\pi R^2 G \\sigma) \\int_{\\theta = 0}^{\\theta = \\pi} \\frac{\\sin{\\theta}}{s^2} \\frac{r^2 + s^2 - R^2}{2rs} \\mathrm{d}\\theta\\\\ &amp;= (2 \\pi R^2 G \\sigma) \\int_{s = r - R}^{s = r + R} \\frac{r^2 + s^2 - R^2}{2r s^3} \\left( \\frac{s}{R r} \\right) {d}s\\\\ &amp;= \\frac{2 \\pi R^2 G \\sigma}{2 r^2 R} \\int_{s = r - R}^{s = r + R} 1 + \\frac{r^2 - R^2}{s^2} {d}s\\\\ &amp;= \\frac{\\pi R G \\sigma}{r^2} \\left[ s - \\frac{r^2 - R^2}{s} \\right]_{s = r-R}^{s = r+R}\\\\ &amp;= \\frac{\\pi R G \\sigma}{r^2} \\left[ 4R \\right]\\\\ &amp;= \\frac{G M}{r^2} \\end{align*} $$ Hence, the field outside the spherical shell is equivalent to that of a point mass with the same total mass $M$ located at the centre of the shell. If $P$ is located inside the spherical shell, our limits of integration change, with $s = R - r$ when $\\theta = 0$ and $s = R + r$ when $\\theta = \\pi$ instead. Then $$ \\begin{align*} g &amp;= (2 \\pi R^2 G \\sigma) \\int_{s = R - r}^{s = R + r} \\frac{r^2 + s^2 - R^2}{2r s^3} \\left( \\frac{s}{R r} \\right) {d}s\\\\ &amp;= \\frac{2 \\pi R^2 G \\sigma}{2 r^2 R} \\int_{s = R - r}^{s = R + r} 1 + \\frac{r^2 - R^2}{s^2} {d}s\\\\ &amp;= \\frac{\\pi R G \\sigma}{r^2} \\left[ s - \\frac{r^2 - R^2}{s} \\right]_{s = R-r}^{s = R+r}\\\\ &amp;= \\frac{\\pi R G \\sigma}{r^2} \\left[ 0 \\right] = 0 \\end{align*} $$ Hence, the gravitational field is zero inside the shell. Gravitational binding energy of a sphere The gravitational binding energy of a uniform spherical object is the amount of energy needed to completely separate the components to reduce the gravitational potential to zero. Equivalently, it is the gravitational potential energy change when masses from infinity are assembled to form the spherical object. Due to the shell theorem, different parts of the spherical object experience different gravitational fields. This complicates the process of calculating the gravitational binding energy of the sphere. Consider a shell of radius $r &lt; R$ and thickness $\\mathrm{d}r$. The mass of this shell is $4 \\pi r^2 \\rho \\mathrm{d}r$. By the shell theorem, the portion of the sphere outside radius $r$ does not contribute to the gravitational field at $r$. Hence, the gravitational potential energy of this shell only comes from the portion of the sphere within radius $r$, and is $$ \\begin{align*} \\mathrm{d}U &amp;= - \\frac{G (4 \\pi r^2 \\rho \\mathrm{d}r) \\left(\\frac{4}{3} \\pi r^3 \\rho \\right)}{r}\\\\ &amp;= - \\frac{16 \\pi^2 \\rho^2 G}{3} r^4 \\mathrm{d} r\\\\ \\therefore U &amp;= - \\frac{16 \\pi^2 \\rho^2 G}{3} \\int_{0}^{R} r^4 \\mathrm{d} r\\\\ &amp;= - \\frac{16 \\pi^2 \\rho^2 G}{15} R^5\\\\ &amp;= - \\frac{16 \\pi^2 R^5 G}{15} \\left( \\frac{M}{\\frac{4}{3} \\pi R^3} \\right)^2\\\\ &amp;= - \\frac{3 G M^2}{5 R} \\end{align*} $$ Tidal forces Roche limit Orbital mechanics Orbital elements To completely specify a planet’s orbit and its position, 6 orbital parameters are required, corresponding to the 6 degrees of freedom of the planet (3 degrees each in position and velocity). The typical set of orbital elements for a planet in the solar system are: $a$ the semi-major axis of the orbit; $e$ the eccentricity of the orbit; $i$ the inclination of the orbit, relative to the plane of the ecliptic; $\\Omega$ the longitude of the ascending node, relative to the vernal equinox and measured in the plane of the ecliptic; $\\pi$ the longitude of the perihelion; $L$ the mean longitude of the planet. The first five items describe the orbit itself, while the last provides information on where the planet is located in the orbit. Note that the quantities $\\pi$ and $L$ are compound angles that are sums of angles measured in two planes: $\\pi = \\Omega + \\omega$ where $\\omega$ is the argument of perihelion, the angle between the ascending node and the perihelion measured in the plane of the orbit; $L = \\pi + M = \\Omega + \\omega + M$ where $M$ is the mean anomaly of the planet measured in the plane of the orbit. Kepler’s equation Consider the orbit of a planet $P$ about the star $S$ as shown in Figure \\ref{fig:eccentric-anomaly}. This orbit has a semi-major axis $a$ and eccentricity $e$. The true anomaly $\\nu$ is the angle $QSP$, measured from the periapsis $Q$. The outer dashed circle (with centre $O$) is the auxiliary circle of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $P$, this line meets the auxiliary circle at a point $P&#39;$. The angle $QOP&#39;$ is defined as the eccentric anomaly. The eccentric anomaly is related to the true anomaly by the relation $$ \\begin{equation} \\tan{\\frac{\\nu}{2}} = \\sqrt{\\frac{1+e}{1-e}} \\tan{\\frac{E}{2}} \\end{equation} $$ The distance $r$ between $P$ and $S$ can be calculated using the eccentric anomaly by $$ \\begin{equation} r = a \\left(1 - e \\cos{E}\\right) \\end{equation} $$ Now consider a fictitious planet $R$ that has a circular orbit about $S$ with the same semi-major axis as $P$. Their orbits are shown in Figure \\ref{fig:mean-anomaly}. Both $P$ and $R$ will complete their orbits in the same amount of time. Suppose also that when $P$ is at the periapsis $Q$, $R$ is at the point $Q&#39;$. Then, as $P$ and $R$ move about their orbits, the angle $Q&#39;SR$ describes the mean anomaly $M$ of the planet $P$. $M$ increases linearly with time, but $\\nu$ does not (as a consequence of Kepler’s second law). The eccentric anomaly is related to the true anomaly by Kepler’s equation, which is $$ \\begin{equation} E = M + e \\sin{E} \\end{equation} $$ where the angles are given in radians. Solving for $M$ when $E$ is known is straightforward. However, solving for $E$ given $M$ cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for $E$. Vis-viva equation The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by $$ \\begin{equation} v^2 = GM \\left(\\frac{2}{r} - \\frac{1}{a}\\right) \\end{equation} $$ The velocity of the object can be split into radial and tangential components. The radial component is $\\frac{\\mathrm{d}r}{\\mathrm{d}t}$ and the tangential component is $r\\frac{\\mathrm{d}\\theta}{\\mathrm{d}t}$. The radial component is $$ \\begin{align*} \\frac{\\mathrm{d}r}{\\mathrm{d}t} &amp;= -\\frac{p}{(1 + e \\cos{\\theta})^2} (- e \\sin{\\theta}) \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t}\\\\ &amp;= \\frac{r^2}{p} (e \\sin{\\theta})\\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} \\end{align*} $$ Since we know $r^2 \\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} = \\frac{L}{m} = h$, $$ \\begin{align*} \\frac{\\mathrm{d}r}{\\mathrm{d}t} &amp;= \\frac{h}{p} (e \\sin{\\theta}) \\end{align*} $$ The tangential component is $$ \\begin{align*} r\\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} &amp;= \\frac{h}{r}\\\\ &amp;= \\frac{h}{p} (1 + e \\cos{\\theta}) \\end{align*} $$ Therefore, the overall velocity is $$ \\begin{align*} v^2 &amp;= \\left( \\frac{\\mathrm{d}r}{\\mathrm{d}t} \\right)^2 + \\left( r\\frac{\\mathrm{d}\\theta}{\\mathrm{d}t} \\right)\\\\ &amp;= \\frac{h^2}{p^2} (e^2 \\sin^2{\\theta}) + \\frac{h^2}{p^2} (1 + e \\cos{\\theta})^2\\\\ &amp;= \\frac{h^2}{p^2} \\left(1 + 2 e \\cos{\\theta} + e^2 \\right)\\\\ &amp;= \\frac{h^2}{p^2} \\left(2(1 + e \\cos{\\theta}) - (1 - e^2) \\right) \\end{align*} $$ Using the fact that $p = \\frac{h^2}{GM}$, and $p = a(1 - e^2)$, $$ \\begin{align*} v^2 &amp;= GM \\left(2 \\frac{(1 + e \\cos{\\theta})}{p} - \\frac{1 - e^2}{p} \\right)\\\\ &amp;= GM \\left(\\frac{2}{r} - \\frac{1}{a}\\right) \\end{align*} $$ Lagrangian points","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/astro/feed.xml" title="Astronomy" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/astro/">Astronomy</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/astro/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div>
+    
+        
+        <div class="prev">
+        
+        </div>
+        <div class="next">
+        
+            
+            
+            <a href="/astro/guide/optics">
+            <div>Optics&nbsp;&gt;</div>
+            </a>
+        
+        </div>
+        
+</div>
+<h1 id="gravitation">Gravitation</h1>
+<!-- https://archive.org/details/vectoranalysiste00gibbiala/page/134 -->
+<h2 id="newtons-law-of-universal-gravitation">Newton’s law of universal gravitation</h2>
+
+<h2 id="barycentric-coordinates">Barycentric coordinates</h2>
+
+<p>In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or <em>barycentre</em></p>
+<h2 id="keplers-laws-of-planetary-motion">Kepler’s laws of planetary motion</h2>
+
+<h3 id="keplers-first-law">Kepler’s first law</h3>
+
+<p>Kepler’s first law states that every planet orbits the Sun in an ellipse, with the Sun at one focus.</p>
+
+<p>More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola.</p>
+
+<p>To prove Kepler’s first law, it is useful to introduce the concept of the <em>Laplace-Runge-Lenz vector</em>. For a central force <span class="kdmath">$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$</span>, the Laplace-Runge-Lenz vector is defined as</p>
+
+<div class="kdmath">$$
+\begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation}
+$$</div>
+
+<p>The vector is conserved in orbital motion of a particle under the influence of such a central force.</p>
+
+<h4 id="derivation-of-the-laplace-runge-lenz-vector">Derivation of the Laplace-Runge-Lenz vector</h4>
+
+<p>First, we note that</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{F} \times \mathbf{L} &= - \frac{k}{r^3} \mathbf{r} \times (\mathbf{r} \times \mathbf{p})\\
+&= - \frac{mk}{r^3} \mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}})
+\end{align*}
+$$</div>
+
+<p>Using the vector triple product identity</p>
+
+<div class="kdmath">$$
+\mathbf{A} \times (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \cdot \mathbf{C})\mathbf{B} - (\mathbf{A} \cdot \mathbf{B})\mathbf{C}
+$$</div>
+
+<p>we get</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - (\mathbf{r} \cdot \mathbf{r})\dot{\mathbf{r}}\\
+&= (\mathbf{r} \cdot \dot{\mathbf{r}})\mathbf{r} - r^2 \dot{\mathbf{r}}
+\end{align*}
+$$</div>
+
+<p>Since</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}t} (\mathbf{r} \cdot \mathbf{r}) &= \frac{\mathrm{d}}{\mathrm{d}t}(r^2)\\
+2 \mathbf{r} \cdot \dot{\mathbf{r}} &= 2 r \dot{r}
+\end{align*}
+$$</div>
+
+<p>then</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{r} \times (\mathbf{r} \times \dot{\mathbf{r}}) &=r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}}\\
+\mathbf{F} \times \mathbf{L} &= - \frac{mk}{r^3} \left( r \dot{r} \mathbf{r} - r^2 \dot{\mathbf{r}} \right)\\
+&= mk \left( \frac{1}{r}\dot{\mathbf{r}} - \frac{\dot{r}}{r^2}\mathbf{r} \right)\\
+&= mk \frac{\mathrm{d}}{\mathrm{d}t}( \frac{\mathbf{r}}{r})
+\end{align*}
+$$</div>
+
+<p>However, since <span class="kdmath">$\mathbf{L} = \mathbf{r} \times \mathbf{p} = \mathbf{r} \times (m \dot{\mathbf{r}})$</span>,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\frac{\mathrm{d}}{\mathrm{d}t} \mathbf{L} &= \dot{\mathbf{r}} \times \mathbf{p} + \mathbf{r} \times \frac{\mathrm{d}}{\mathrm{d}t} \mathbf{p}\\
+&= \mathbf{0} + \mathbf{r} \times \mathbf{F}\\
+&= \mathbf{r} \times - \frac{k}{r^3} \mathbf{r}\\
+&= \mathbf{0}\\
+\therefore \frac{\mathrm{d}}{\mathrm{d}t}(\mathbf{p} \times \mathbf{L}) &= \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{p} \times \mathbf{L} + \mathbf{p} \times \frac{\mathrm{d}}{\mathrm{d}t}\mathbf{L}\\
+&= \mathbf{F} \times \mathbf{L}\\
+\Rightarrow \mathbf{p} \times \mathbf{L} &= \frac{mk}{r}\mathbf{r} + \mathbf{A}
+\end{align*}
+$$</div>
+
+<p>where <span class="kdmath">$\mathbf{A}$</span> is a constant vector of integration. Therefore, <span class="kdmath">$\mathbf{A}$</span> represents the Laplace-Runge-Lenz vector. It is useful to note that <span class="kdmath">$\mathbf{A}$</span> lies in the same plane as the orbit. This can be seen by rewriting</p>
+
+<div class="kdmath">$$
+\mathbf{p} \times \mathbf{L} = m^2 \dot{\mathbf{r}} \times (\mathbf{r} \times \dot{\mathbf{r}}) = m^2 (\dot{r}^2 \mathbf{r} - (\dot{\mathbf{r}} \cdot \mathbf{r})\dot{\mathbf{r}})
+$$</div>
+
+<p>This produces a linear combination of <span class="kdmath">$\mathbf{r}$</span> and <span class="kdmath">$\dot{\mathbf{r}}$</span>, both of which lie in the plane of the orbit.</p>
+
+<h4 id="application-to-keplers-first-law">Application to Kepler’s first law</h4>
+
+<p>For gravitation, the Laplace-Runge-Lenz vector is</p>
+
+<div class="kdmath">$$
+\mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{G M m^2}{r}\mathbf{r}
+$$</div>
+
+<p>Take the dot product with <span class="kdmath">$\mathbf{r}$</span> on both sides to get</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{r} \cdot \mathbf{A} &= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - \mathbf{r} \cdot (\frac{G M m^2}{r}\mathbf{r})\\
+&= \mathbf{r} \cdot (\mathbf{p} \times \mathbf{L}) - G M m^2 r
+\end{align*}
+$$</div>
+
+<p>Using the property <span class="kdmath">$\mathbf{A} \cdot (\mathbf{B} \times \mathbf{C}) = (\mathbf{A} \times \mathbf{B}) \cdot \mathbf{C}$</span>,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{r} \cdot \mathbf{A} &= (\mathbf{r} \times \mathbf{p}) \cdot \mathbf{L} - G M m^2 r\\
+&= \mathbf{L} \cdot \mathbf{L} - G M m^2 r\\
+&= L^2 - GMm^2 r
+\end{align*}
+$$</div>
+
+<p>Let <span class="kdmath">$\theta$</span> be the angle between <span class="kdmath">$\mathbf{A}$</span> and <span class="kdmath">$\mathbf{r}$</span>. Because <span class="kdmath">$\mathbf{L}$</span> and <span class="kdmath">$\mathbf{A}$</span> are constants, define <span class="kdmath">$p = \frac{L^2}{GMm^2}$</span> and <span class="kdmath">$e = \frac{A}{GMm^2}$</span>. Then</p>
+
+<div class="kdmath">$$
+\begin{align}
+re \cos{\theta} &= p - r \nonumber\\
+r (1 + e \cos{\theta}) &= p \nonumber\\
+r &= \frac{p}{1 + e \cos{\theta}}
+\end{align}
+$$</div>
+
+<p>This is the equation of a conic section in polar coordinates, with the origin <span class="kdmath">$(0,0)$</span> as a focus, <span class="kdmath">$e$</span> the eccentricity of the conic section, and <span class="kdmath">$p$</span> is the semi-latus rectum. The semi-latus rectum is related to the semi-major axis <span class="kdmath">$a$</span> by <span class="kdmath">$p = a (1 - e^2)$</span> for <span class="kdmath">$e < 1$</span> and <span class="kdmath">$a (e^2 - 1)$</span> for <span class="kdmath">$e > 1$</span>.</p>
+
+<p>Now, if we consider the dot product of <span class="kdmath">$\mathbf{A}$</span> with itself, and use the fact that <span class="kdmath">$\mathbf{p}$</span> and <span class="kdmath">$\mathbf{L} = \mathbf{r} \times \mathbf{p}$</span> are perpendicular, we can derive an expression for <span class="kdmath">$e$</span>:</p>
+
+<div class="kdmath">$$
+\begin{align}
+A^2 &= (\mathbf{p} \times \mathbf{L}) \cdot (\mathbf{p} \times \mathbf{L}) + \frac{G^2 M^2 m^4}{r^2}\mathbf{r} \cdot \mathbf{r} - 2 \frac{G M m^2}{r} (\mathbf{p} \times \mathbf{L}) \cdot \mathbf{r} \nonumber\\
+G^2 M^2 m^4 e^2 &= p^2 L^2 + G^2 M^2 m^4 - \frac{2 G M m^2 L^2}{r} \nonumber\\
+G^2 M^2 m^4 (e^2 - 1)&= 2 m L^2 (\frac{p^2}{2m} - \frac{GMm}{r}) \nonumber\\
+e^2 - 1&= \frac{2 E L^2}{G^2 M^2 m^3}
+\end{align}
+$$</div>
+
+<p>where <span class="kdmath">$E = \frac{p^2}{2m} - \frac{GMm}{r}$</span> is the total energy of the object in orbit, i.e. the sum of its kinetic and gravitational potential energies.</p>
+
+<h3 id="keplers-second-law">Kepler’s second law</h3>
+
+<p>Kepler’s second law states that a line joining a planet and the Sun sweeps out area at a constant rate.</p>
+
+<p>If the distance between the planet and the Sun is <span class="kdmath">$r$</span>, and the position angle of the planet (measured about the Sun from some point in the orbit) is <span class="kdmath">$\theta$</span>, then the rate at which area is swept out is</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \mathrm{constant}
+\end{equation}
+$$</div>
+
+<p>For a test particle of mass <span class="kdmath">$m$</span> under the gravitational influence of a large mass <span class="kdmath">$M$</span>, the acceleration of the test particle is <span class="kdmath">$\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$</span>.</p>
+
+<p>We have shown in the previous section that <span class="kdmath">$\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$</span> is constant for an object moving under the influence of a central force like gravitation. Since <span class="kdmath">$\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$</span>,</p>
+
+<div class="kdmath">$$
+\frac{\mathrm{d}\theta}{\mathrm{d}t} = \lvert\boldsymbol{\omega}\rvert = \frac{L}{mr^2}
+$$</div>
+
+<p>A simple rearrangement directly leads to Kepler’s second law, which we can now write as</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{2m}
+\end{equation}
+$$</div>
+
+<h3 id="keplers-third-law">Kepler’s third law</h3>
+
+<p>Kepler’s third law states that the square of the period of an orbit is proportional to the cube of the semi-major axis of the orbit.</p>
+
+<p>Equivalently, this can be written as</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\frac{4\pi^2}{G M} a^3 = T^2 \Rightarrow T^2 \propto a^{3}
+\end{equation}
+$$</div>
+
+<p>Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined.</p>
+
+<p>This law directly follows from the previous two. The area of an ellipse with semi-major axis <span class="kdmath">$a$</span>, semi-minor axis <span class="kdmath">$b$</span>, and eccentricity <span class="kdmath">$e$</span> is</p>
+
+<div class="kdmath">$$
+\pi a b = \pi a^2 \sqrt{1 - e^2}
+$$</div>
+
+<p>Since the rate at which the area of this ellipse is swept out is constant, the period is given by</p>
+
+<div class="kdmath">$$
+\begin{align*}
+T &= \frac{\pi a^2 \sqrt{1 - e^2}}{\frac{1}{2} r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t}}\\
+&= \frac{2 \pi m a^2 \sqrt{1 - e^2}}{L}
+\end{align*}
+$$</div>
+
+<p>where we have used the result from the derivation of the second law. Squaring both sides yields</p>
+
+<div class="kdmath">$$
+\begin{align*}
+T^2 &= \frac{4 \pi^2 m^2 a^4 (1 - e^2)}{L^2}\\
+&= \frac{4 \pi^2 m^2 a^4 (1-e^2)}{G M m^2 p}\\
+&= \frac{4 \pi^2}{GM} a^3
+\end{align*}
+$$</div>
+
+<p>where we have used the properties of the semi-latus rectum <span class="kdmath">$p = \frac{L^2}{GMm^2}$</span> and <span class="kdmath">$p = a (1 - e^2)$</span> introduced earlier in the derivation of the first law.</p>
+<h2 id="important-results-in-gravitation">Important results in gravitation</h2>
+
+<h3 id="shell-theorem">Shell theorem</h3>
+
+<p>Consider a point <span class="kdmath">$P$</span> located a distance <span class="kdmath">$r$</span> away from (and outside) a spherical shell of radius <span class="kdmath">$R$</span> and mass <span class="kdmath">$M$</span> as shown in Figure \ref{fig:shell-theorem}. The mass per unit surface area of the shell is <span class="kdmath">$\sigma = \frac{M}{4 \pi R^2}$</span>. We intend to find the gravitational field from the shell at <span class="kdmath">$P$</span>.</p>
+
+<p>At an angle <span class="kdmath">$\theta$</span> on the shell away from the line <span class="kdmath">$\overline{OP}$</span>, where <span class="kdmath">$O$</span> is the centre of the shell, there is an infinitesimal circular strip of radius <span class="kdmath">$R \sin{\theta}$</span> and width <span class="kdmath">$R \mathrm{d}\theta$</span>. Each point on this strip is at a distance <span class="kdmath">$s$</span> away from <span class="kdmath">$P$</span>. The gravitational force acts at some angle <span class="kdmath">$\phi$</span> away from the line <span class="kdmath">$\overline{OP}$</span>, but due to symmetry, the net contribution from the circular strip acts along the line of <span class="kdmath">$\overline{OP}$</span>.</p>
+
+<p>The differential gravitational field from a circular strip is given by</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathrm{d}g &= \frac{G}{s^2} (2 \pi R \sin{\theta})(R \mathrm{d}\theta) \sigma \cos{\phi}\\
+&= (2 \pi R^2 G \sigma) \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta
+\end{align*}
+$$</div>
+
+<p>Therefore, integrating over the whole sphere:</p>
+
+<div class="kdmath">$$
+\begin{align*}
+g &= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}\cos{\phi}}{s^2} \mathrm{d}\theta \\
+&= (2 \pi R^2 G \sigma) \int_{\theta = 0}^{\theta = \pi} \frac{\sin{\theta}}{s^2} \frac{r^2 + s^2 - R^2}{2rs} \mathrm{d}\theta\\
+&= (2 \pi R^2 G \sigma) \int_{s = r - R}^{s = r + R} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\
+&= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = r - R}^{s = r + R} 1 + \frac{r^2 - R^2}{s^2} {d}s\\
+&= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = r-R}^{s = r+R}\\
+&= \frac{\pi R G \sigma}{r^2} \left[ 4R \right]\\
+&= \frac{G M}{r^2}
+\end{align*}
+$$</div>
+
+<p>Hence, the field outside the spherical shell is equivalent to that of a point mass with the same total mass <span class="kdmath">$M$</span> located at the centre of the shell.</p>
+
+<p>If <span class="kdmath">$P$</span> is located inside the spherical shell, our limits of integration change, with <span class="kdmath">$s = R - r$</span> when <span class="kdmath">$\theta = 0$</span> and <span class="kdmath">$s = R + r$</span> when <span class="kdmath">$\theta = \pi$</span> instead. Then</p>
+
+<div class="kdmath">$$
+\begin{align*}
+g &= (2 \pi R^2 G \sigma) \int_{s = R - r}^{s = R + r} \frac{r^2 + s^2 - R^2}{2r s^3} \left( \frac{s}{R r} \right) {d}s\\
+&= \frac{2 \pi R^2 G \sigma}{2 r^2 R} \int_{s = R - r}^{s = R + r} 1 + \frac{r^2 - R^2}{s^2} {d}s\\
+&= \frac{\pi R G \sigma}{r^2} \left[ s - \frac{r^2 - R^2}{s} \right]_{s = R-r}^{s = R+r}\\
+&= \frac{\pi R G \sigma}{r^2} \left[ 0 \right] = 0
+\end{align*}
+$$</div>
+
+<p>Hence, the gravitational field is zero inside the shell.</p>
+
+<h3 id="gravitational-binding-energy-of-a-sphere">Gravitational binding energy of a sphere</h3>
+
+<p>The gravitational binding energy of a uniform spherical object is the amount of energy needed to completely separate the components to reduce the gravitational potential to zero. Equivalently, it is the gravitational potential energy change when masses from infinity are assembled to form the spherical object.</p>
+
+<p>Due to the shell theorem, different parts of the spherical object experience different gravitational fields. This complicates the process of calculating the gravitational binding energy of the sphere.</p>
+
+<p>Consider a shell of radius <span class="kdmath">$r < R$</span> and thickness <span class="kdmath">$\mathrm{d}r$</span>. The mass of this shell is <span class="kdmath">$4 \pi r^2 \rho \mathrm{d}r$</span>. By the shell theorem, the portion of the sphere outside radius <span class="kdmath">$r$</span> does not contribute to the gravitational field at <span class="kdmath">$r$</span>. Hence, the gravitational potential energy of this shell only comes from the portion of the sphere within radius <span class="kdmath">$r$</span>, and is</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathrm{d}U &= - \frac{G (4 \pi r^2 \rho \mathrm{d}r) \left(\frac{4}{3} \pi r^3 \rho \right)}{r}\\
+&= - \frac{16 \pi^2 \rho^2 G}{3} r^4 \mathrm{d} r\\
+\therefore U &= - \frac{16 \pi^2 \rho^2 G}{3} \int_{0}^{R} r^4 \mathrm{d} r\\
+&= - \frac{16 \pi^2 \rho^2 G}{15} R^5\\
+&= - \frac{16 \pi^2 R^5 G}{15} \left( \frac{M}{\frac{4}{3} \pi R^3} \right)^2\\
+&= - \frac{3 G M^2}{5 R}
+\end{align*}
+$$</div>
+
+<h2 id="tidal-forces">Tidal forces</h2>
+
+<h2 id="roche-limit">Roche limit</h2>
+
+<h2 id="orbital-mechanics">Orbital mechanics</h2>
+
+<h3 id="orbital-elements">Orbital elements</h3>
+
+<p>To completely specify a planet’s orbit and its position, 6 orbital parameters are required, corresponding to the 6 degrees of freedom of the planet (3 degrees each in position and velocity). The typical set of orbital elements for a planet in the solar system are:</p>
+
+<dl>
+  <dt><span class="kdmath">$a$</span></dt>
+  <dd>the semi-major axis of the orbit;</dd>
+  <dt><span class="kdmath">$e$</span></dt>
+  <dd>the eccentricity of the orbit;</dd>
+  <dt><span class="kdmath">$i$</span></dt>
+  <dd>the inclination of the orbit, relative to the plane of the ecliptic;</dd>
+  <dt><span class="kdmath">$\Omega$</span></dt>
+  <dd>the longitude of the ascending node, relative to the vernal equinox and measured in the plane of the ecliptic;</dd>
+  <dt><span class="kdmath">$\pi$</span></dt>
+  <dd>the longitude of the perihelion;</dd>
+  <dt><span class="kdmath">$L$</span></dt>
+  <dd>the mean longitude of the planet.</dd>
+</dl>
+
+<p>The first five items describe the orbit itself, while the last provides information on where the planet is located in the orbit. Note that the quantities <span class="kdmath">$\pi$</span> and <span class="kdmath">$L$</span> are compound angles that are sums of angles measured in two planes:</p>
+
+<ul>
+  <li><span class="kdmath">$\pi = \Omega + \omega$</span> where <span class="kdmath">$\omega$</span> is the argument of perihelion, the angle between the ascending node and the perihelion measured in the plane of the orbit;</li>
+  <li><span class="kdmath">$L = \pi + M = \Omega + \omega + M$</span> where <span class="kdmath">$M$</span> is the mean anomaly of the planet measured in the plane of the orbit.</li>
+</ul>
+
+<h3 id="keplers-equation">Kepler’s equation</h3>
+
+<p>Consider the orbit of a planet <span class="kdmath">$P$</span> about the star <span class="kdmath">$S$</span> as shown in Figure \ref{fig:eccentric-anomaly}. This orbit has a semi-major axis <span class="kdmath">$a$</span> and eccentricity <span class="kdmath">$e$</span>. The <em>true anomaly</em> <span class="kdmath">$\nu$</span> is the angle <span class="kdmath">$QSP$</span>, measured from the periapsis <span class="kdmath">$Q$</span>. The outer dashed circle (with centre <span class="kdmath">$O$</span>) is the <em>auxiliary circle</em> of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through <span class="kdmath">$P$</span>, this line meets the auxiliary circle at a point <span class="kdmath">$P'$</span>. The angle <span class="kdmath">$QOP'$</span> is defined as the <em>eccentric anomaly</em>.</p>
+
+<p>The eccentric anomaly is related to the true anomaly by the relation</p>
+
+<div class="kdmath">$$
+\begin{equation}
+\tan{\frac{\nu}{2}} = \sqrt{\frac{1+e}{1-e}} \tan{\frac{E}{2}}
+\end{equation}
+$$</div>
+
+<p>The distance <span class="kdmath">$r$</span> between <span class="kdmath">$P$</span> and <span class="kdmath">$S$</span> can be calculated using the eccentric anomaly by</p>
+
+<div class="kdmath">$$
+\begin{equation}
+r = a \left(1 - e \cos{E}\right)
+\end{equation}
+$$</div>
+
+<p>Now consider a fictitious planet <span class="kdmath">$R$</span> that has a circular orbit about <span class="kdmath">$S$</span> with the same semi-major axis as <span class="kdmath">$P$</span>. Their orbits are shown in Figure \ref{fig:mean-anomaly}. Both <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> will complete their orbits in the same amount of time. Suppose also that when <span class="kdmath">$P$</span> is at the periapsis <span class="kdmath">$Q$</span>, <span class="kdmath">$R$</span> is at the point <span class="kdmath">$Q'$</span>. Then, as <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> move about their orbits, the angle <span class="kdmath">$Q'SR$</span> describes the <em>mean anomaly</em> <span class="kdmath">$M$</span> of the planet <span class="kdmath">$P$</span>. <span class="kdmath">$M$</span> increases linearly with time, but <span class="kdmath">$\nu$</span> does not (as a consequence of Kepler’s second law).</p>
+
+<p>The eccentric anomaly is related to the true anomaly by <em>Kepler’s equation</em>, which is</p>
+
+<div class="kdmath">$$
+\begin{equation}
+E = M + e \sin{E}
+\end{equation}
+$$</div>
+
+<p>where the angles are given in radians.</p>
+
+<p>Solving for <span class="kdmath">$M$</span> when <span class="kdmath">$E$</span> is known is straightforward. However, solving for <span class="kdmath">$E$</span> given <span class="kdmath">$M$</span> cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for <span class="kdmath">$E$</span>.</p>
+<h3 id="vis-viva-equation">Vis-viva equation</h3>
+
+<p>The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by</p>
+
+<div class="kdmath">$$
+\begin{equation}
+v^2 = GM \left(\frac{2}{r} - \frac{1}{a}\right)
+\end{equation}
+$$</div>
+
+<p>The velocity of the object can be split into radial and tangential components. The radial component is <span class="kdmath">$\frac{\mathrm{d}r}{\mathrm{d}t}$</span> and the tangential component is <span class="kdmath">$r\frac{\mathrm{d}\theta}{\mathrm{d}t}$</span>.</p>
+
+<p>The radial component is</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\frac{\mathrm{d}r}{\mathrm{d}t} &= -\frac{p}{(1 + e \cos{\theta})^2} (- e \sin{\theta}) \frac{\mathrm{d}\theta}{\mathrm{d}t}\\
+&= \frac{r^2}{p} (e \sin{\theta})\frac{\mathrm{d}\theta}{\mathrm{d}t}
+\end{align*}
+$$</div>
+
+<p>Since we know <span class="kdmath">$r^2 \frac{\mathrm{d}\theta}{\mathrm{d}t} = \frac{L}{m} = h$</span>,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\frac{\mathrm{d}r}{\mathrm{d}t} &= \frac{h}{p} (e \sin{\theta})
+\end{align*}
+$$</div>
+
+<p>The tangential component is</p>
+
+<div class="kdmath">$$
+\begin{align*}
+r\frac{\mathrm{d}\theta}{\mathrm{d}t} &= \frac{h}{r}\\
+&= \frac{h}{p} (1 + e \cos{\theta})
+\end{align*}
+$$</div>
+
+<p>Therefore, the overall velocity is</p>
+
+<div class="kdmath">$$
+\begin{align*}
+v^2 &= \left( \frac{\mathrm{d}r}{\mathrm{d}t} \right)^2 + \left( r\frac{\mathrm{d}\theta}{\mathrm{d}t} \right)\\
+&= \frac{h^2}{p^2} (e^2 \sin^2{\theta}) + \frac{h^2}{p^2} (1 + e \cos{\theta})^2\\
+&= \frac{h^2}{p^2} \left(1 + 2 e \cos{\theta} + e^2 \right)\\
+&= \frac{h^2}{p^2} \left(2(1 + e \cos{\theta}) - (1 - e^2) \right)
+\end{align*}
+$$</div>
+
+<p>Using the fact that <span class="kdmath">$p = \frac{h^2}{GM}$</span>, and <span class="kdmath">$p = a(1 - e^2)$</span>,</p>
+
+<div class="kdmath">$$
+\begin{align*}
+v^2 &= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\
+&= GM \left(\frac{2}{r} - \frac{1}{a}\right)
+\end{align*}
+$$</div>
+
+<h2 id="lagrangian-points">Lagrangian points</h2>
+
+<div>
+    
+        
+        <div class="prev">
+        
+        </div>
+        <div class="next">
+        
+            
+            
+            <a href="/astro/guide/optics">
+            <div>Optics&nbsp;&gt;</div>
+            </a>
+        
+        </div>
+        
+</div>
+<div style="clear: both;text-align: center;"><a href="./">return to index</a></div>
+<script>
+    MathJax = {
+        options: {
+            ignoreHtmlClass: 'tex2jax_ignore',
+            processHtmlClass: 'tex2jax_process',
+            renderActions: {
+                findScript: [10, function (doc) {
+                    for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                        const display = !!node.type.match(/; *mode=display/);
+                        const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                        const text = document.createTextNode('');
+                        node.parentNode.replaceChild(text, node);
+                        math.start = {node: text, delim: '', n: 0};
+                        math.end = {node: text, delim: '', n: 0};
+                        doc.math.push(math);
+                    }
+                }, '']
+            }
+        },
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            packages: {
+                '[+]': ['boldsymbol']
+            },
+            tags: 'ams'
+        },
+        loader: {
+            load: ['[tex]/noerrors','[tex]/boldsymbol']
+        }
+    };
+</script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/astro/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Astronomy</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Astronomy</li><li><a class="u-email" href="mailto:"></a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/astro/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/astro/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A guide to astronomy</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
