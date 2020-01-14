@@ -1,25 +1,25 @@
-<div>
+<nav>
     {% for chapter in site.guide %}
         {% if page.url == chapter.url %}
-        <div class="prev">
+        <p class="prev">
         {% unless forloop.first %}
             {% assign previous = forloop.index0 | minus: 1 %}
             {% assign previouschapter = site.guide[previous] %}
             <a href="{{ previouschapter.url | relative_url }}">
-            <div>&lt;&nbsp;{{ previouschapter.title }}</div>
+            &lt;&nbsp;{{ previouschapter.title }}
             </a>
         {% endunless %}
-        </div>
-        <div class="next">
+        </p>
+        <p class="next">
         {% unless forloop.last %}
             {% assign next = forloop.index0 | plus: 1 %}
             {% assign nextchapter = site.guide[next] %}
             <a href="{{ nextchapter.url | relative_url }}">
-            <div>{{ nextchapter.title }}&nbsp;&gt;</div>
+            {{ nextchapter.title }}&nbsp;&gt;
             </a>
         {% endunless %}
-        </div>
+        </p>
         {% break %}
         {% endif %}
     {% endfor %}
-</div>
+</nav>
