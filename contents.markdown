@@ -51,7 +51,6 @@
     - Solar and sidereal time
         - Solar time
         - Sidereal time
-        - Stellar time
     - Time zones
     - Year
     - Julian Day
