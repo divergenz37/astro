@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Gravitation" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Gravitation Newton’s law of universal gravitation" />
-<meta property="og:description" content="Gravitation Newton’s law of universal gravitation" />
+<meta name="description" content="Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by" />
+<meta property="og:description" content="Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by" />
 <link rel="canonical" href="https://divergenz37.github.io/astro/guide/gravitation" />
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/gravitation" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-14T16:47:30+08:00" />
+<meta property="article:published_time" content="2020-01-21T22:28:03+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/gravitation","headline":"Gravitation","dateModified":"2020-01-14T16:47:30+08:00","datePublished":"2020-01-14T16:47:30+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"description":"Gravitation Newton’s law of universal gravitation","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"url":"https://divergenz37.github.io/astro/guide/gravitation","dateModified":"2020-01-21T22:28:03+08:00","datePublished":"2020-01-21T22:28:03+08:00","headline":"Gravitation","description":"Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -55,10 +55,24 @@
 <h1 id="gravitation">Gravitation</h1>
 <!-- https://archive.org/details/vectoranalysiste00gibbiala/page/134 -->
 <h2 id="newtons-law-of-universal-gravitation">Newton’s law of universal gravitation</h2>
+<p>Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses <span class="kdmath">$m_1$</span> and <span class="kdmath">$m_2$</span> are separated by a distance <span class="kdmath">$r$</span>, the gravitational force is given by</p>
+
+<div class="kdmath">$$
+F = \frac{G m_1 m_2}{r^2}
+$$</div>
+
+<p>where <span class="kdmath">$G = 6.67430 × 10^{-11} \mathrm{ m^3 kg^{-1} s^{-2}}$</span> is the gravitational constant.</p>
+
+<p>The gravitational force between two masses is attractive, i.e. the force exerted on <span class="kdmath">$m_2$</span> by <span class="kdmath">$m_1$</span> points in the direction of <span class="kdmath">$m_1$</span> and vice versa. The magnitude of the force is directly proportional to the each of the masses of the two objects, and inversely proportional to the square of the distance between them. In addition, by Newton’s third law, the gravitational force exerted by <span class="kdmath">$m_1$</span> on <span class="kdmath">$m_2$</span> is equal in magnitude and opposite in direction to that exerted by <span class="kdmath">$m_2$</span> on <span class="kdmath">$m_1$</span>. Using vector notation, we may also write</p>
+
+<div class="kdmath">$$
+\mathbf{F} = -\frac{G m_1 m_2}{r^2}\hat{\mathbf{r}}
+$$</div>
 
 <h2 id="barycentric-coordinates">Barycentric coordinates</h2>
 
 <p>In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or <em>barycentre</em></p>
+
 <h2 id="keplers-laws-of-planetary-motion">Kepler’s laws of planetary motion</h2>
 
 <h3 id="keplers-first-law">Kepler’s first law</h3>
@@ -67,17 +81,15 @@
 
 <p>More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola.</p>
 
+<h4 id="derivation-of-keplers-first-law">Derivation of Kepler’s first law</h4>
+
 <p>To prove Kepler’s first law, it is useful to introduce the concept of the <em>Laplace-Runge-Lenz vector</em>. For a central force <span class="kdmath">$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$</span>, the Laplace-Runge-Lenz vector is defined as</p>
 
 <div class="kdmath">$$
 \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation}
 $$</div>
 
-<p>The vector is conserved in orbital motion of a particle under the influence of such a central force.</p>
-
-<h4 id="derivation-of-the-laplace-runge-lenz-vector">Derivation of the Laplace-Runge-Lenz vector</h4>
-
-<p>First, we note that</p>
+<p>The vector is conserved in orbital motion of a particle under the influence of such a central force. To derive this vector, we note that</p>
 
 <div class="kdmath">$$
 \begin{align*}
@@ -143,8 +155,6 @@ $$</div>
 
 <p>This produces a linear combination of <span class="kdmath">$\mathbf{r}$</span> and <span class="kdmath">$\dot{\mathbf{r}}$</span>, both of which lie in the plane of the orbit.</p>
 
-<h4 id="application-to-keplers-first-law">Application to Kepler’s first law</h4>
-
 <p>For gravitation, the Laplace-Runge-Lenz vector is</p>
 
 <div class="kdmath">$$
@@ -209,6 +219,8 @@ $$</div>
 
 <p>For a test particle of mass <span class="kdmath">$m$</span> under the gravitational influence of a large mass <span class="kdmath">$M$</span>, the acceleration of the test particle is <span class="kdmath">$\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$</span>.</p>
 
+<h4 id="derivation-of-keplers-second-law">Derivation of Kepler’s second law</h4>
+
 <p>We have shown in the previous section that <span class="kdmath">$\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$</span> is constant for an object moving under the influence of a central force like gravitation. Since <span class="kdmath">$\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$</span>,</p>
 
 <div class="kdmath">$$
@@ -236,6 +248,8 @@ $$</div>
 $$</div>
 
 <p>Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined.</p>
+
+<h4 id="derivation-of-keplers-third-law">Derivation of Kepler’s third law</h4>
 
 <p>This law directly follows from the previous two. The area of an ellipse with semi-major axis <span class="kdmath">$a$</span>, semi-minor axis <span class="kdmath">$b$</span>, and eccentricity <span class="kdmath">$e$</span> is</p>
 
@@ -267,7 +281,25 @@ $$</div>
 
 <h3 id="shell-theorem">Shell theorem</h3>
 
-<p>Consider a point <span class="kdmath">$P$</span> located a distance <span class="kdmath">$r$</span> away from (and outside) a spherical shell of radius <span class="kdmath">$R$</span> and mass <span class="kdmath">$M$</span> as shown in Figure \ref{fig:shell-theorem}. The mass per unit surface area of the shell is <span class="kdmath">$\sigma = \frac{M}{4 \pi R^2}$</span>. We intend to find the gravitational field from the shell at <span class="kdmath">$P$</span>.</p>
+<p>The shell theorem applies to spherical shells with a uniform mass distribution, and provides us with two important results:</p>
+
+<ul>
+  <li>the gravitational field outside the spherical shell is equivalent to that of a point mass with the same total mass <span class="kdmath">$M$</span> located at the centre of the shell;</li>
+  <li>the gravitational field inside the spherical shell is zero.</li>
+</ul>
+
+<p>Since uniform spheres are made of many layers of spherical shells, we can also arrive at the following results for a uniform sphere of radius $R$:</p>
+
+<ul>
+  <li>the gravitational field outside the sphere is equivalent to that of a point mass with the same total mass <span class="kdmath">$M$</span> located at the centre of the sphere;</li>
+  <li>the gravitational field at a distance $r &lt; R$ from the centre of the sphere is equivalent to that of the part of the sphere located within a radius $r$ from its centre (the spherical shells outside do not contribute).</li>
+</ul>
+
+<h4 id="derivation-of-the-shell-theorem">Derivation of the shell theorem</h4>
+
+<p>Consider a point <span class="kdmath">$P$</span> located a distance <span class="kdmath">$r$</span> away from (and outside) a spherical shell of radius <span class="kdmath">$R$</span> and mass <span class="kdmath">$M$</span> as shown in the figure below. The mass per unit surface area of the shell is <span class="kdmath">$\sigma = \frac{M}{4 \pi R^2}$</span>. We intend to find the gravitational field from the shell at <span class="kdmath">$P$</span>.</p>
+
+<p><img src="./figures/shell_theorem.png" alt="Figure: Shell theorem" /></p>
 
 <p>At an angle <span class="kdmath">$\theta$</span> on the shell away from the line <span class="kdmath">$\overline{OP}$</span>, where <span class="kdmath">$O$</span> is the centre of the shell, there is an infinitesimal circular strip of radius <span class="kdmath">$R \sin{\theta}$</span> and width <span class="kdmath">$R \mathrm{d}\theta$</span>. Each point on this strip is at a distance <span class="kdmath">$s$</span> away from <span class="kdmath">$P$</span>. The gravitational force acts at some angle <span class="kdmath">$\phi$</span> away from the line <span class="kdmath">$\overline{OP}$</span>, but due to symmetry, the net contribution from the circular strip acts along the line of <span class="kdmath">$\overline{OP}$</span>.</p>
 
@@ -362,7 +394,9 @@ $$</div>
 
 <h3 id="keplers-equation">Kepler’s equation</h3>
 
-<p>Consider the orbit of a planet <span class="kdmath">$P$</span> about the star <span class="kdmath">$S$</span> as shown in Figure \ref{fig:eccentric-anomaly}. This orbit has a semi-major axis <span class="kdmath">$a$</span> and eccentricity <span class="kdmath">$e$</span>. The <em>true anomaly</em> <span class="kdmath">$\nu$</span> is the angle <span class="kdmath">$QSP$</span>, measured from the periapsis <span class="kdmath">$Q$</span>. The outer dashed circle (with centre <span class="kdmath">$O$</span>) is the <em>auxiliary circle</em> of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through <span class="kdmath">$P$</span>, this line meets the auxiliary circle at a point <span class="kdmath">$P'$</span>. The angle <span class="kdmath">$QOP'$</span> is defined as the <em>eccentric anomaly</em>.</p>
+<p>Consider the orbit of a planet <span class="kdmath">$P$</span> about the star <span class="kdmath">$S$</span> as shown in the figure below. This orbit has a semi-major axis <span class="kdmath">$a$</span> and eccentricity <span class="kdmath">$e$</span>. The <em>true anomaly</em> <span class="kdmath">$\nu$</span> is the angle <span class="kdmath">$QSP$</span>, measured from the periapsis <span class="kdmath">$Q$</span>. The outer dashed circle (with centre <span class="kdmath">$O$</span>) is the <em>auxiliary circle</em> of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through <span class="kdmath">$P$</span>, this line meets the auxiliary circle at a point <span class="kdmath">$P'$</span>. The angle <span class="kdmath">$QOP'$</span> is defined as the <em>eccentric anomaly</em>.</p>
+
+<p><img src="./figures/eccentric_anomaly.png" alt="Figure: Eccentric and true anomaly" /></p>
 
 <p>The eccentric anomaly is related to the true anomaly by the relation</p>
 
@@ -380,9 +414,11 @@ r = a \left(1 - e \cos{E}\right)
 \end{equation}
 $$</div>
 
-<p>Now consider a fictitious planet <span class="kdmath">$R$</span> that has a circular orbit about <span class="kdmath">$S$</span> with the same semi-major axis as <span class="kdmath">$P$</span>. Their orbits are shown in Figure \ref{fig:mean-anomaly}. Both <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> will complete their orbits in the same amount of time. Suppose also that when <span class="kdmath">$P$</span> is at the periapsis <span class="kdmath">$Q$</span>, <span class="kdmath">$R$</span> is at the point <span class="kdmath">$Q'$</span>. Then, as <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> move about their orbits, the angle <span class="kdmath">$Q'SR$</span> describes the <em>mean anomaly</em> <span class="kdmath">$M$</span> of the planet <span class="kdmath">$P$</span>. <span class="kdmath">$M$</span> increases linearly with time, but <span class="kdmath">$\nu$</span> does not (as a consequence of Kepler’s second law).</p>
+<p>Now consider a fictitious planet <span class="kdmath">$R$</span> that has a circular orbit about <span class="kdmath">$S$</span> with the same semi-major axis as <span class="kdmath">$P$</span>. Their orbits are shown in the figure below. Both <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> will complete their orbits in the same amount of time. Suppose also that when <span class="kdmath">$P$</span> is at the periapsis <span class="kdmath">$Q$</span>, <span class="kdmath">$R$</span> is at the point <span class="kdmath">$Q'$</span>. Then, as <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> move about their orbits, the angle <span class="kdmath">$Q'SR$</span> describes the <em>mean anomaly</em> <span class="kdmath">$M$</span> of the planet <span class="kdmath">$P$</span>. <span class="kdmath">$M$</span> increases linearly with time, but <span class="kdmath">$\nu$</span> does not (as a consequence of Kepler’s second law).</p>
 
-<p>The eccentric anomaly is related to the true anomaly by <em>Kepler’s equation</em>, which is</p>
+<p><img src="./figures/mean_anomaly.png" alt="Figure: Mean and true anomaly" /></p>
+
+<p>The eccentric anomaly is related to the mean anomaly by <em>Kepler’s equation</em>, which is</p>
 
 <div class="kdmath">$$
 \begin{equation}
@@ -393,6 +429,7 @@ $$</div>
 <p>where the angles are given in radians.</p>
 
 <p>Solving for <span class="kdmath">$M$</span> when <span class="kdmath">$E$</span> is known is straightforward. However, solving for <span class="kdmath">$E$</span> given <span class="kdmath">$M$</span> cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for <span class="kdmath">$E$</span>.</p>
+
 <h3 id="vis-viva-equation">Vis-viva equation</h3>
 
 <p>The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by</p>
@@ -403,6 +440,7 @@ v^2 = GM \left(\frac{2}{r} - \frac{1}{a}\right)
 \end{equation}
 $$</div>
 
+<h4 id="derivation-of-the-vis-viva-equation">Derivation of the vis-viva equation</h4>
 <p>The velocity of the object can be split into radial and tangential components. The radial component is <span class="kdmath">$\frac{\mathrm{d}r}{\mathrm{d}t}$</span> and the tangential component is <span class="kdmath">$r\frac{\mathrm{d}\theta}{\mathrm{d}t}$</span>.</p>
 
 <p>The radial component is</p>

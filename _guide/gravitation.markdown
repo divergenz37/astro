@@ -5,10 +5,25 @@ chapter: 1
 # Gravitation
 <!-- https://archive.org/details/vectoranalysiste00gibbiala/page/134 -->
 ## Newton's law of universal gravitation
+Newton's law of universal gravitation gives the gravitational force between two point masses. If the masses $$m_1$$ and $$m_2$$ are separated by a distance $$r$$, the gravitational force is given by
+
+$$
+F = \frac{G m_1 m_2}{r^2}
+$$
+
+where $$G = 6.67430 × 10^{-11} \mathrm{ m^3 kg^{-1} s^{-2}}$$ is the gravitational constant.
+
+The gravitational force between two masses is attractive, i.e. the force exerted on $$m_2$$ by $$m_1$$ points in the direction of $$m_1$$ and vice versa. The magnitude of the force is directly proportional to the each of the masses of the two objects, and inversely proportional to the square of the distance between them. In addition, by Newton's third law, the gravitational force exerted by $$m_1$$ on $$m_2$$ is equal in magnitude and opposite in direction to that exerted by $$m_2$$ on $$m_1$$. Using vector notation, we may also write
+
+$$
+\mathbf{F} = -\frac{G m_1 m_2}{r^2}\hat{\mathbf{r}}
+$$
+
 
 ## Barycentric coordinates
 
 In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or *barycentre*
+
 ## Kepler's laws of planetary motion
 
 ### Kepler's first law
@@ -17,17 +32,15 @@ Kepler's first law states that every planet orbits the Sun in an ellipse, with t
 
 More generally, the orbit of an object about another due to gravity adopts a shape known as a conic section, which may be a circle, ellipse, parabola, or hyperbola.
 
+#### Derivation of Kepler's first law
+
 To prove Kepler's first law, it is useful to introduce the concept of the *Laplace-Runge-Lenz vector*. For a central force $$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$$, the Laplace-Runge-Lenz vector is defined as 
 
 $$
 \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation}
 $$
 
-The vector is conserved in orbital motion of a particle under the influence of such a central force.
-
-#### Derivation of the Laplace-Runge-Lenz vector
-
-First, we note that
+The vector is conserved in orbital motion of a particle under the influence of such a central force. To derive this vector, we note that
 
 $$
 \begin{align*}
@@ -93,8 +106,6 @@ $$
 
 This produces a linear combination of $$\mathbf{r}$$ and $$\dot{\mathbf{r}}$$, both of which lie in the plane of the orbit.
 
-#### Application to Kepler's first law
-
 For gravitation, the Laplace-Runge-Lenz vector is 
 
 $$
@@ -159,6 +170,8 @@ $$
 
 For a test particle of mass $$m$$ under the gravitational influence of a large mass $$M$$, the acceleration of the test particle is $$\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$$. 
 
+#### Derivation of Kepler's second law
+
 We have shown in the previous section that $$\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$$ is constant for an object moving under the influence of a central force like gravitation. Since $$\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$$, 
 
 $$
@@ -186,6 +199,8 @@ $$
 $$
 
 Evidently, this law is meant to apply to circular and elliptical orbits, where the period is well-defined. 
+
+#### Derivation of Kepler's third law
 
 This law directly follows from the previous two. The area of an ellipse with semi-major axis $$a$$, semi-minor axis $$b$$, and eccentricity $$e$$ is 
 
@@ -217,8 +232,21 @@ where we have used the properties of the semi-latus rectum $$p = \frac{L^2}{GMm^
 
 ### Shell theorem
 
-Consider a point $$P$$ located a distance $$r$$ away from (and outside) a spherical shell of radius $$R$$ and mass $$M$$ as shown in Figure \ref{fig:shell-theorem}. The mass per unit surface area of the shell is $$\sigma = \frac{M}{4 \pi R^2}$$. We intend to find the gravitational field from the shell at $$P$$.
+The shell theorem applies to spherical shells with a uniform mass distribution, and provides us with two important results:
 
+- the gravitational field outside the spherical shell is equivalent to that of a point mass with the same total mass $$M$$ located at the centre of the shell;
+- the gravitational field inside the spherical shell is zero.
+
+Since uniform spheres are made of many layers of spherical shells, we can also arrive at the following results for a uniform sphere of radius $R$:
+
+- the gravitational field outside the sphere is equivalent to that of a point mass with the same total mass $$M$$ located at the centre of the sphere;
+- the gravitational field at a distance $r < R$ from the centre of the sphere is equivalent to that of the part of the sphere located within a radius $r$ from its centre (the spherical shells outside do not contribute).
+
+#### Derivation of the shell theorem
+
+Consider a point $$P$$ located a distance $$r$$ away from (and outside) a spherical shell of radius $$R$$ and mass $$M$$ as shown in the figure below. The mass per unit surface area of the shell is $$\sigma = \frac{M}{4 \pi R^2}$$. We intend to find the gravitational field from the shell at $$P$$.
+
+![Figure: Shell theorem](./figures/shell_theorem.png)
 
 At an angle $$\theta$$ on the shell away from the line $$\overline{OP}$$, where $$O$$ is the centre of the shell, there is an infinitesimal circular strip of radius $$R \sin{\theta}$$ and width $$R \mathrm{d}\theta$$. Each point on this strip is at a distance $$s$$ away from $$P$$. The gravitational force acts at some angle $$\phi$$ away from the line $$\overline{OP}$$, but due to symmetry, the net contribution from the circular strip acts along the line of $$\overline{OP}$$.
 
@@ -314,7 +342,9 @@ The first five items describe the orbit itself, while the last provides informat
 
 ### Kepler's equation
 
-Consider the orbit of a planet $$P$$ about the star $$S$$ as shown in Figure \ref{fig:eccentric-anomaly}. This orbit has a semi-major axis $$a$$ and eccentricity $$e$$. The *true anomaly* $$\nu$$ is the angle $$QSP$$, measured from the periapsis $$Q$$. The outer dashed circle (with centre $$O$$) is the *auxiliary circle* of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $$P$$, this line meets the auxiliary circle at a point $$P'$$. The angle $$QOP'$$ is defined as the *eccentric anomaly*.
+Consider the orbit of a planet $$P$$ about the star $$S$$ as shown in the figure below. This orbit has a semi-major axis $$a$$ and eccentricity $$e$$. The *true anomaly* $$\nu$$ is the angle $$QSP$$, measured from the periapsis $$Q$$. The outer dashed circle (with centre $$O$$) is the *auxiliary circle* of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $$P$$, this line meets the auxiliary circle at a point $$P'$$. The angle $$QOP'$$ is defined as the *eccentric anomaly*.
+
+![Figure: Eccentric and true anomaly](./figures/eccentric_anomaly.png)
 
 The eccentric anomaly is related to the true anomaly by the relation 
 
@@ -332,9 +362,11 @@ r = a \left(1 - e \cos{E}\right)
 \end{equation}
 $$
 
-Now consider a fictitious planet $$R$$ that has a circular orbit about $$S$$ with the same semi-major axis as $$P$$. Their orbits are shown in Figure \ref{fig:mean-anomaly}. Both $$P$$ and $$R$$ will complete their orbits in the same amount of time. Suppose also that when $$P$$ is at the periapsis $$Q$$, $$R$$ is at the point $$Q'$$. Then, as $$P$$ and $$R$$ move about their orbits, the angle $$Q'SR$$ describes the *mean anomaly* $$M$$ of the planet $$P$$. $$M$$ increases linearly with time, but $$\nu$$ does not (as a consequence of Kepler's second law).
+Now consider a fictitious planet $$R$$ that has a circular orbit about $$S$$ with the same semi-major axis as $$P$$. Their orbits are shown in the figure below. Both $$P$$ and $$R$$ will complete their orbits in the same amount of time. Suppose also that when $$P$$ is at the periapsis $$Q$$, $$R$$ is at the point $$Q'$$. Then, as $$P$$ and $$R$$ move about their orbits, the angle $$Q'SR$$ describes the *mean anomaly* $$M$$ of the planet $$P$$. $$M$$ increases linearly with time, but $$\nu$$ does not (as a consequence of Kepler's second law).
 
-The eccentric anomaly is related to the true anomaly by *Kepler's equation*, which is 
+![Figure: Mean and true anomaly](./figures/mean_anomaly.png)
+
+The eccentric anomaly is related to the mean anomaly by *Kepler's equation*, which is 
 
 $$
 \begin{equation}
@@ -345,6 +377,7 @@ $$
 where the angles are given in radians.
 
 Solving for $$M$$ when $$E$$ is known is straightforward. However, solving for $$E$$ given $$M$$ cannot be done directly. Frequently, iterative methods are used to arrive at an approximate value for $$E$$.
+
 ### Vis-viva equation
 
 The vis-viva equation relates the orbital speed of an object to the distance from the central body. It is given by
@@ -355,6 +388,7 @@ v^2 = GM \left(\frac{2}{r} - \frac{1}{a}\right)
 \end{equation}
 $$
 
+#### Derivation of the vis-viva equation
 The velocity of the object can be split into radial and tangential components. The radial component is $$\frac{\mathrm{d}r}{\mathrm{d}t}$$ and the tangential component is $$r\frac{\mathrm{d}\theta}{\mathrm{d}t}$$.
 
 The radial component is

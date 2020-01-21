@@ -1,0 +1,14 @@
+unitsize(2.5cm);
+fill(arc((0,0), 1, 43, 47) -- arc((0,0), 1, -47, -43) -- cycle, mediumgray);
+draw(circle((0,0),1));
+draw((0,0) -- (sqrt(2)/2, sqrt(2)/2) -- (2.5,0) -- (0,0));
+label("$O$",(0,0), align=W);
+label("$R$",(sqrt(2)/4, sqrt(2)/4), align=N);
+label("$s$",((sqrt(2) + 5)/4,sqrt(2)/4), align=N);
+label("$P$",(2.5,0), align=E);
+label("$r$",(1.25,0), align=S);
+draw(arc((0,0), 0.25, 0, 45), L=Label("$\theta$", position=MidPoint, align=E));
+draw(arc((2.5,0),0.25,180,(180 - aTan( Sin(45)/(2.5 - Cos(45)) ))), L = Label("$\phi$", position=MidPoint, align=W));
+draw((0,0) -- (Cos(43), Sin(-43)));
+draw((0,0) -- (Cos(47), Sin(-47)));
+draw(arc((0,0), 0.5, -47, -43), L=Label("$\mathrm{d}\theta$", position=MidPoint, align=NE));
