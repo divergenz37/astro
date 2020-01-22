@@ -3,7 +3,9 @@ title: Gravitation
 chapter: 1
 ---
 # Gravitation
-<!-- https://archive.org/details/vectoranalysiste00gibbiala/page/134 -->
+<!--
+https://archive.org/details/vectoranalysiste00gibbiala/page/134
+-->
 ## Newton's law of universal gravitation
 Newton's law of universal gravitation gives the gravitational force between two point masses. If the masses $$m_1$$ and $$m_2$$ are separated by a distance $$r$$, the gravitational force is given by
 
@@ -168,9 +170,9 @@ $$
 \end{equation}
 $$
 
-For a test particle of mass $$m$$ under the gravitational influence of a large mass $$M$$, the acceleration of the test particle is $$\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$$. 
-
 #### Derivation of Kepler's second law
+
+For a test particle of mass $$m$$ under the gravitational influence of a large mass $$M$$, the acceleration of the test particle is $$\ddot{\mathbf{r}} = - \frac{GM}{r^3}\mathbf{r}$$. 
 
 We have shown in the previous section that $$\mathbf{L} = \mathbf{r} \times \mathbf{p} = m(\mathbf{r} \times \dot{\mathbf{r}})$$ is constant for an object moving under the influence of a central force like gravitation. Since $$\boldsymbol{\omega} = \frac{\mathbf{r} \times \dot{\mathbf{r}}}{r^2}$$, 
 
@@ -228,6 +230,7 @@ T^2 &= \frac{4 \pi^2 m^2 a^4 (1 - e^2)}{L^2}\\
 $$
 
 where we have used the properties of the semi-latus rectum $$p = \frac{L^2}{GMm^2}$$ and $$p = a (1 - e^2)$$ introduced earlier in the derivation of the first law.
+
 ## Important results in gravitation
 
 ### Shell theorem

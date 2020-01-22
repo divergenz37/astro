@@ -3,11 +3,13 @@ title: Time
 chapter: 11
 ---
 # Time
-<!-- https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html
+<!--
+https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html
 https://www.aanda.org/articles/aa/pdf/2003/30/aa3487.pdf
 http://articles.adsabs.harvard.edu/pdf/1982A%26A...105..359A
 https://www.iers.org/SharedDocs/Publikationen/EN/IERS/Publications/tn/TechnNote36/tn36_043.pdf?__blob=publicationFile&v=1
-https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so -->
+https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so
+-->
 ## Solar and sidereal time
 
 ### Solar time
