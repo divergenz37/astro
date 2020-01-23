@@ -36,7 +36,7 @@ More generally, the orbit of an object about another due to gravity adopts a sha
 
 #### Derivation of Kepler's first law
 
-To prove Kepler's first law, it is useful to introduce the concept of the *Laplace-Runge-Lenz vector*. For a central force $$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$$, the Laplace-Runge-Lenz vector is defined as 
+To prove Kepler's first law, it is useful to introduce the concept of the *Laplace-Runge-Lenz vector*[^gibbs-1901]. For a central force $$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$$, the Laplace-Runge-Lenz vector is defined as 
 
 $$
 \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation}
@@ -345,7 +345,7 @@ The first five items describe the orbit itself, while the last provides informat
 
 ### Kepler's equation
 
-Consider the orbit of a planet $$P$$ about the star $$S$$ as shown in the figure below. This orbit has a semi-major axis $$a$$ and eccentricity $$e$$. The *true anomaly* $$\nu$$ is the angle $$QSP$$, measured from the periapsis $$Q$$. The outer dashed circle (with centre $$O$$) is the *auxiliary circle* of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $$P$$, this line meets the auxiliary circle at a point $$P'$$. The angle $$QOP'$$ is defined as the *eccentric anomaly*.
+Consider the orbit of a planet $$P$$ about the star $$S$$ as shown in the figure below. This orbit has a semi-major axis $$a$$ and eccentricity $$e$$. The *true anomaly* $$\nu$$ is the angle $$QSP$$, measured from the periapsis $$Q$$. The outer dashed circle (with centre $$O$$) is the *auxiliary circle* of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through $$P$$, this line meets the auxiliary circle at a point $$P'$$. The angle $$QOP'$$ is defined as the *eccentric anomaly*[^meeus-1998].
 
 ![Figure: Eccentric and true anomaly](./figures/eccentric_anomaly.png)
 
@@ -365,7 +365,7 @@ r = a \left(1 - e \cos{E}\right)
 \end{equation}
 $$
 
-Now consider a fictitious planet $$R$$ that has a circular orbit about $$S$$ with the same semi-major axis as $$P$$. Their orbits are shown in the figure below. Both $$P$$ and $$R$$ will complete their orbits in the same amount of time. Suppose also that when $$P$$ is at the periapsis $$Q$$, $$R$$ is at the point $$Q'$$. Then, as $$P$$ and $$R$$ move about their orbits, the angle $$Q'SR$$ describes the *mean anomaly* $$M$$ of the planet $$P$$. $$M$$ increases linearly with time, but $$\nu$$ does not (as a consequence of Kepler's second law).
+Now consider a fictitious planet $$R$$ that has a circular orbit about $$S$$ with the same semi-major axis as $$P$$. Their orbits are shown in the figure below. Both $$P$$ and $$R$$ will complete their orbits in the same amount of time. Suppose also that when $$P$$ is at the periapsis $$Q$$, $$R$$ is at the point $$Q'$$. Then, as $$P$$ and $$R$$ move about their orbits, the angle $$Q'SR$$ describes the *mean anomaly* $$M$$ of the planet $$P$$[^meeus-1998]. $$M$$ increases linearly with time, but $$\nu$$ does not (as a consequence of [Kepler's second law](#keplers-second-law)).
 
 ![Figure: Mean and true anomaly](./figures/mean_anomaly.png)
 
@@ -441,3 +441,8 @@ v^2 &= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\
 $$
 
 ## Lagrangian points
+
+## References
+
+[^gibbs-1901]: Gibbs JW (Josiah W, Wilson EB. Vector analysis; a text-book for the use of students of mathematics and physics [Internet]. New York, C. Scribner’s Sons; 1901 [cited 2020 Jan 23]. 470 p. Available from: <http://archive.org/details/vectoranalysiste00gibbiala>
+[^meeus-1998]: Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. 

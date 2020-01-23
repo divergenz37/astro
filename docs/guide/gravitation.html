@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/gravitation" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-22T21:42:10+08:00" />
+<meta property="article:published_time" content="2020-01-23T21:28:14+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"url":"https://divergenz37.github.io/astro/guide/gravitation","dateModified":"2020-01-22T21:42:10+08:00","datePublished":"2020-01-22T21:42:10+08:00","headline":"Gravitation","description":"Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"url":"https://divergenz37.github.io/astro/guide/gravitation","dateModified":"2020-01-23T21:28:14+08:00","datePublished":"2020-01-23T21:28:14+08:00","headline":"Gravitation","description":"Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -85,7 +85,7 @@ $$</div>
 
 <h4 id="derivation-of-keplers-first-law">Derivation of Kepler’s first law</h4>
 
-<p>To prove Kepler’s first law, it is useful to introduce the concept of the <em>Laplace-Runge-Lenz vector</em>. For a central force <span class="kdmath">$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$</span>, the Laplace-Runge-Lenz vector is defined as</p>
+<p>To prove Kepler’s first law, it is useful to introduce the concept of the <em>Laplace-Runge-Lenz vector</em><sup id="fnref:gibbs-1901"><a href="#fn:gibbs-1901" class="footnote">1</a></sup>. For a central force <span class="kdmath">$\mathbf{F} = - \frac{k}{r^3} \mathbf{r}$</span>, the Laplace-Runge-Lenz vector is defined as</p>
 
 <div class="kdmath">$$
 \begin{equation} \mathbf{A} = \mathbf{p} \times \mathbf{L} - \frac{m k}{r}\mathbf{r} \end{equation}
@@ -397,7 +397,7 @@ $$</div>
 
 <h3 id="keplers-equation">Kepler’s equation</h3>
 
-<p>Consider the orbit of a planet <span class="kdmath">$P$</span> about the star <span class="kdmath">$S$</span> as shown in the figure below. This orbit has a semi-major axis <span class="kdmath">$a$</span> and eccentricity <span class="kdmath">$e$</span>. The <em>true anomaly</em> <span class="kdmath">$\nu$</span> is the angle <span class="kdmath">$QSP$</span>, measured from the periapsis <span class="kdmath">$Q$</span>. The outer dashed circle (with centre <span class="kdmath">$O$</span>) is the <em>auxiliary circle</em> of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through <span class="kdmath">$P$</span>, this line meets the auxiliary circle at a point <span class="kdmath">$P'$</span>. The angle <span class="kdmath">$QOP'$</span> is defined as the <em>eccentric anomaly</em>.</p>
+<p>Consider the orbit of a planet <span class="kdmath">$P$</span> about the star <span class="kdmath">$S$</span> as shown in the figure below. This orbit has a semi-major axis <span class="kdmath">$a$</span> and eccentricity <span class="kdmath">$e$</span>. The <em>true anomaly</em> <span class="kdmath">$\nu$</span> is the angle <span class="kdmath">$QSP$</span>, measured from the periapsis <span class="kdmath">$Q$</span>. The outer dashed circle (with centre <span class="kdmath">$O$</span>) is the <em>auxiliary circle</em> of the orbit, which is a circle with radius equal to the semi-major axis of the orbit. If a line perpendicular to the major axis of the orbit is drawn passing through <span class="kdmath">$P$</span>, this line meets the auxiliary circle at a point <span class="kdmath">$P'$</span>. The angle <span class="kdmath">$QOP'$</span> is defined as the <em>eccentric anomaly</em><sup id="fnref:meeus-1998"><a href="#fn:meeus-1998" class="footnote">2</a></sup>.</p>
 
 <p><img src="./figures/eccentric_anomaly.png" alt="Figure: Eccentric and true anomaly" /></p>
 
@@ -417,7 +417,7 @@ r = a \left(1 - e \cos{E}\right)
 \end{equation}
 $$</div>
 
-<p>Now consider a fictitious planet <span class="kdmath">$R$</span> that has a circular orbit about <span class="kdmath">$S$</span> with the same semi-major axis as <span class="kdmath">$P$</span>. Their orbits are shown in the figure below. Both <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> will complete their orbits in the same amount of time. Suppose also that when <span class="kdmath">$P$</span> is at the periapsis <span class="kdmath">$Q$</span>, <span class="kdmath">$R$</span> is at the point <span class="kdmath">$Q'$</span>. Then, as <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> move about their orbits, the angle <span class="kdmath">$Q'SR$</span> describes the <em>mean anomaly</em> <span class="kdmath">$M$</span> of the planet <span class="kdmath">$P$</span>. <span class="kdmath">$M$</span> increases linearly with time, but <span class="kdmath">$\nu$</span> does not (as a consequence of Kepler’s second law).</p>
+<p>Now consider a fictitious planet <span class="kdmath">$R$</span> that has a circular orbit about <span class="kdmath">$S$</span> with the same semi-major axis as <span class="kdmath">$P$</span>. Their orbits are shown in the figure below. Both <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> will complete their orbits in the same amount of time. Suppose also that when <span class="kdmath">$P$</span> is at the periapsis <span class="kdmath">$Q$</span>, <span class="kdmath">$R$</span> is at the point <span class="kdmath">$Q'$</span>. Then, as <span class="kdmath">$P$</span> and <span class="kdmath">$R$</span> move about their orbits, the angle <span class="kdmath">$Q'SR$</span> describes the <em>mean anomaly</em> <span class="kdmath">$M$</span> of the planet <span class="kdmath">$P$</span><sup id="fnref:meeus-1998:1"><a href="#fn:meeus-1998" class="footnote">2</a></sup>. <span class="kdmath">$M$</span> increases linearly with time, but <span class="kdmath">$\nu$</span> does not (as a consequence of <a href="#keplers-second-law">Kepler’s second law</a>).</p>
 
 <p><img src="./figures/mean_anomaly.png" alt="Figure: Mean and true anomaly" /></p>
 
@@ -493,6 +493,19 @@ v^2 &= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\
 $$</div>
 
 <h2 id="lagrangian-points">Lagrangian points</h2>
+
+<h2 id="references">References</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:gibbs-1901">
+      <p>Gibbs JW (Josiah W, Wilson EB. Vector analysis; a text-book for the use of students of mathematics and physics [Internet]. New York, C. Scribner’s Sons; 1901 [cited 2020 Jan 23]. 470 p. Available from: <a href="http://archive.org/details/vectoranalysiste00gibbiala">http://archive.org/details/vectoranalysiste00gibbiala</a> <a href="#fnref:gibbs-1901" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:meeus-1998">
+      <p>Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. <a href="#fnref:meeus-1998" class="reversefootnote">&#8617;</a> <a href="#fnref:meeus-1998:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    </li>
+  </ol>
+</div>
 
 <nav>
     

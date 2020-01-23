@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/coordinate" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-22T21:42:10+08:00" />
+<meta property="article:published_time" content="2020-01-23T21:28:14+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"url":"https://divergenz37.github.io/astro/guide/coordinate","dateModified":"2020-01-22T21:42:10+08:00","datePublished":"2020-01-22T21:42:10+08:00","headline":"Coordinate Systems","description":"Coordinate Systems Spherical trigonometry Basics","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"url":"https://divergenz37.github.io/astro/guide/coordinate","dateModified":"2020-01-23T21:28:14+08:00","datePublished":"2020-01-23T21:28:14+08:00","headline":"Coordinate Systems","description":"Coordinate Systems Spherical trigonometry Basics","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -252,17 +252,15 @@ $$</div>
 
 <p>The galactic coordinate system is defined such that the reference plane passes through the Sun and is parallel to the mean plane of the Milky Way (based on observations of neutral hydrogen), and the origin of longitude lies approximately in the direction of the galactic centre. Galactic latitude is positive north of the reference plane (towards the north galactic pole) and negative south the reference plane, and the galactic longitude increases eastwards from the meridian.</p>
 
-<p>The International Astronomical Union defined the north galactic pole at <span class="kdmath">$\alpha = 12 ^\mathrm{h} 49 ^\mathrm{m}$</span> and <span class="kdmath">$\delta = +27.4°$</span> in the epoch B1950.0, and the meridian of zero longitude was defined as the great semicircle originating at the north galactic pole at the position angle <span class="kdmath">$\theta = 123°$</span>, chosen such that it coincides with the direction of Sagittarius A. In J2000.0 coordinates, the north galactic pole is now at <span class="kdmath">$\alpha = 12 ^\mathrm{h} 51 ^\mathrm{m} 26.282 ^\mathrm{s}$</span> and <span class="kdmath">$\delta = +27° 07' 42.01''$</span>, and the origin is now at <span class="kdmath">$\alpha = 17 ^\mathrm{h} 45 ^\mathrm{m} 37.224 ^\mathrm{s}$</span> and <span class="kdmath">$\delta = -28° 56' 10.23''$</span>. Presently, the north galactic pole lies in Coma Berenices, and the galactic origin lies in Sagittarius.</p>
+<p>The International Astronomical Union defined the north galactic pole at <span class="kdmath">$\alpha = 12 ^\mathrm{h} 49 ^\mathrm{m}$</span> and <span class="kdmath">$\delta = +27.4°$</span> in the epoch B1950.0, and the meridian of zero longitude was defined as the great semicircle originating at the north galactic pole at the position angle <span class="kdmath">$\theta = 123°$</span>, chosen such that it coincides with the direction of Sagittarius A<sup id="fnref:iau-1958"><a href="#fn:iau-1958" class="footnote">1</a></sup>. In J2000.0 coordinates, the north galactic pole is now at <span class="kdmath">$\alpha = 12 ^\mathrm{h} 51 ^\mathrm{m} 26.282 ^\mathrm{s}$</span> and <span class="kdmath">$\delta = +27° 07' 42.01''$</span>, and the origin is now at <span class="kdmath">$\alpha = 17 ^\mathrm{h} 45 ^\mathrm{m} 37.224 ^\mathrm{s}$</span> and <span class="kdmath">$\delta = -28° 56' 10.23''$</span><sup id="fnref:reid-2004"><a href="#fn:reid-2004" class="footnote">2</a></sup><sup id="fnref:liu-2011"><a href="#fn:liu-2011" class="footnote">3</a></sup>. Presently, the north galactic pole lies in Coma Berenices, and the galactic origin lies in Sagittarius.</p>
 
 <h3 id="coordinate-conversions">Coordinate conversions</h3>
 
 <p>The following coordinate conversions may be derived using the principles of spherical trigonometry.</p>
 
-<p>Assume an observer at the</p>
-
 <h3 id="equatorial-and-horizontal">Equatorial and horizontal</h3>
 
-<p>The expressions involve the use of the local hour angle <span class="kdmath">$H$</span>, which may be found from the local sidereal time and the right ascension by <span class="kdmath">$H = LST - \alpha$</span>.</p>
+<p>The expressions involve the use of the local hour angle <span class="kdmath">$H$</span>, which may be found from the local sidereal time and the right ascension by <span class="kdmath">$H = LST - \alpha$</span>. The latitude of the observer is taken to be $\phi$.</p>
 
 <p>Equatorial to horizontal:</p>
 
@@ -331,6 +329,22 @@ $$</div>
 \sin{\delta} = \sin{b}\sin{\delta_{NGP}} + \cos{b}\cos{\delta_{NGP}}\cos{(\theta - l)}
 \end{gather}
 $$</div>
+
+<h2 id="references">References</h2>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:iau-1958">
+      <p>Blaauw A, Gum CS, Pawsey JL, Westerhout G. The new I. A. U. system of galactic coordinates (1958 revision). Monthly Notices of the Royal Astronomical Society. 1960;121:123. <a href="#fnref:iau-1958" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:reid-2004">
+      <p>Reid MJ, Brunthaler A. The Proper Motion of Sgr A<em>: II. The Mass of Sgr A</em>. ApJ. 2004 Dec;616(2):872–84. <a href="#fnref:reid-2004" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:liu-2011">
+      <p>Liu J-C, Zhu Z, Zhang H. Reconsidering the Galactic coordinate system. A&amp;A. 2011 Feb 1;526:A16. <a href="#fnref:liu-2011" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 <nav>
     

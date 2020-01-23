@@ -194,17 +194,15 @@ The ecliptic coordinate system may be centred around the Earth (geocentric) or t
 
 The galactic coordinate system is defined such that the reference plane passes through the Sun and is parallel to the mean plane of the Milky Way (based on observations of neutral hydrogen), and the origin of longitude lies approximately in the direction of the galactic centre. Galactic latitude is positive north of the reference plane (towards the north galactic pole) and negative south the reference plane, and the galactic longitude increases eastwards from the meridian.
 
-The International Astronomical Union defined the north galactic pole at $$\alpha = 12 ^\mathrm{h} 49 ^\mathrm{m}$$ and $$\delta = +27.4°$$ in the epoch B1950.0, and the meridian of zero longitude was defined as the great semicircle originating at the north galactic pole at the position angle $$\theta = 123°$$, chosen such that it coincides with the direction of Sagittarius A. In J2000.0 coordinates, the north galactic pole is now at $$\alpha = 12 ^\mathrm{h} 51 ^\mathrm{m} 26.282 ^\mathrm{s}$$ and $$\delta = +27° 07' 42.01''$$, and the origin is now at $$\alpha = 17 ^\mathrm{h} 45 ^\mathrm{m} 37.224 ^\mathrm{s}$$ and $$\delta = -28° 56' 10.23''$$. Presently, the north galactic pole lies in Coma Berenices, and the galactic origin lies in Sagittarius.
+The International Astronomical Union defined the north galactic pole at $$\alpha = 12 ^\mathrm{h} 49 ^\mathrm{m}$$ and $$\delta = +27.4°$$ in the epoch B1950.0, and the meridian of zero longitude was defined as the great semicircle originating at the north galactic pole at the position angle $$\theta = 123°$$, chosen such that it coincides with the direction of Sagittarius A[^iau-1958]. In J2000.0 coordinates, the north galactic pole is now at $$\alpha = 12 ^\mathrm{h} 51 ^\mathrm{m} 26.282 ^\mathrm{s}$$ and $$\delta = +27° 07' 42.01''$$, and the origin is now at $$\alpha = 17 ^\mathrm{h} 45 ^\mathrm{m} 37.224 ^\mathrm{s}$$ and $$\delta = -28° 56' 10.23''$$[^reid-2004][^liu-2011]. Presently, the north galactic pole lies in Coma Berenices, and the galactic origin lies in Sagittarius.
 
 ### Coordinate conversions
 
 The following coordinate conversions may be derived using the principles of spherical trigonometry.
 
-Assume an observer at the 
-
 ### Equatorial and horizontal
 
-The expressions involve the use of the local hour angle $$H$$, which may be found from the local sidereal time and the right ascension by $$H = LST - \alpha$$.
+The expressions involve the use of the local hour angle $$H$$, which may be found from the local sidereal time and the right ascension by $$H = LST - \alpha$$. The latitude of the observer is taken to be $\phi$.
 
 Equatorial to horizontal:
 
@@ -273,3 +271,9 @@ $$
 \sin{\delta} = \sin{b}\sin{\delta_{NGP}} + \cos{b}\cos{\delta_{NGP}}\cos{(\theta - l)}
 \end{gather}
 $$
+
+## References
+
+[^iau-1958]: Blaauw A, Gum CS, Pawsey JL, Westerhout G. The new I. A. U. system of galactic coordinates (1958 revision). Monthly Notices of the Royal Astronomical Society. 1960;121:123. 
+[^reid-2004]: Reid MJ, Brunthaler A. The Proper Motion of Sgr A*: II. The Mass of Sgr A*. ApJ. 2004 Dec;616(2):872–84. 
+[^liu-2011]: Liu J-C, Zhu Z, Zhang H. Reconsidering the Galactic coordinate system. A&A. 2011 Feb 1;526:A16. 
