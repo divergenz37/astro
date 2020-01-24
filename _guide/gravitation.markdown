@@ -24,7 +24,64 @@ $$
 
 ## Barycentric coordinates
 
-In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or *barycentre*
+In the two-body problem, each object exerts a gravitational force on the other, and assuming no external forces are acting on the system, both objects orbit about their *centre of mass* or *barycentre*. 
+
+The position of the centre of mass can be seen as a weighted average of the positions of the individual objects. For two objects with masses $m_1$ and $m_2$, located at positions $x_1$ and $x_2$ respectively, the position of the centre of mass is given by
+
+$$
+x_{CM} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
+$$
+
+Extending this concept to multiple masses and using vectors to represent the positions of the objects, we can write the position vector of the centre of mass as
+
+$$
+\mathbf{r}_{CM} = \frac{ \sum m_i \mathbf{r}_i }{ \sum m_i }
+$$
+
+where $m_i$ and $\mathbf{r}_i$ represent the mass and position of an individual object, and the sums are taken over all objects in the system.
+
+Suppose that our particles are also moving with different velocities $$\dot{\mathbf{r}}_i$$. Consider the frame, moving with some velocity $$\mathbf{u}$$, in which the total momentum of these particles is zero:
+
+$$
+\begin{align*}
+\sum \mathbf{p}_i &= \sum m_i \left(\dot{\mathbf{r}}_i - \mathbf{u}\right)\\
+0 &= \sum m_i \dot{\mathbf{r}}_i - \sum m_i\mathbf{u}\\
+\mathbf{u} &= \frac{\displaystyle \sum m_i \dot{\mathbf{r}}_i}{\displaystyle \sum m_i}\\
+&= \dot{\mathbf{r}}_{CM}
+\end{align*}
+$$
+
+Therefore, in the frame that moves with the same velocity as the centre of mass, the total momentum of all the particles is zero. In addition, by differentiating again with respect to time, it is seen that
+
+$$
+\mathbf{F}_\text{total} = \sum \mathbf{F}_i = \sum m_i \ddot{\mathbf{r}}_i = \ddot{\mathbf{r}}_{CM} \sum m_i
+$$
+
+Thus, external forces acting on the entire system will accelerate the centre of mass as though they act on a point mass with mass $$\sum m_i$$ (total mass of the system) located at the centre of mass.
+
+## Reduced mass
+
+Consider two bodies, $$m_1$ and $m_2$$. We know that
+
+$$
+\begin{align*}
+\mathbf{F}_{1\rightarrow 2} &= m_2 \mathbf{a}_2\\
+\mathbf{F}_{2\rightarrow 1} &= m_1 \mathbf{a}_1\\
+\end{align*}
+$$
+
+and by Newton's third law, $$\mathbf{F}_{1\rightarrow 2} = - \mathbf{F}_{2\rightarrow 1}$$. Therefore, the relative acceleration $$\mathbf{a}$$ of the two bodies is
+
+$$
+\begin{align*}
+\mathbf{a} &= \mathbf{a}_2 - \mathbf{a}_1\\
+&= \left( 1 + \frac{m_1}{m_2} \right) \mathbf{a}_2\\
+&= \frac{m_1 + m_2}{m_1 m_2} \mathbf{F}_{1\rightarrow 2}\\
+\therefore \mathbf{F}_{1\rightarrow 2} &= \frac{m_1 m_2}{m_1 + m_2} \mathbf{a}
+\end{align*}
+$$
+
+Thus, if we hold $$m_1$$ fixed, then $$m_2$$ appears to move relative to it as though it has a mass $$\mu = \frac{m_1 m_2}{m_1 + m_2}$$. The quantity $$\mu$$ is known as the *reduced mass*. However, in order for the magnitude of the force between the two bodies to remain the same, $m_1$ also appears to have a different apparent mass $$M$$. We note that $$F_{1\rightarrow 2} = \frac{G m_1 m_2}{r^2} = \frac{G M \mu}{r^2}$$. Therefore $$M = m_1 + m_2$$.
 
 ## Kepler's laws of planetary motion
 

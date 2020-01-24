@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/gravitation" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-23T21:28:14+08:00" />
+<meta property="article:published_time" content="2020-01-24T17:21:49+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"url":"https://divergenz37.github.io/astro/guide/gravitation","dateModified":"2020-01-23T21:28:14+08:00","datePublished":"2020-01-23T21:28:14+08:00","headline":"Gravitation","description":"Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/gravitation"},"url":"https://divergenz37.github.io/astro/guide/gravitation","dateModified":"2020-01-24T17:21:49+08:00","datePublished":"2020-01-24T17:21:49+08:00","headline":"Gravitation","description":"Gravitation Newton’s law of universal gravitation Newton’s law of universal gravitation gives the gravitational force between two point masses. If the masses $m_1$ and $m_2$ are separated by a distance $r$, the gravitational force is given by","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -73,7 +73,64 @@ $$</div>
 
 <h2 id="barycentric-coordinates">Barycentric coordinates</h2>
 
-<p>In the two-body problem, each object exerts a gravitational force on the other. Both objects orbit about their centre of mass or <em>barycentre</em></p>
+<p>In the two-body problem, each object exerts a gravitational force on the other, and assuming no external forces are acting on the system, both objects orbit about their <em>centre of mass</em> or <em>barycentre</em>.</p>
+
+<p>The position of the centre of mass can be seen as a weighted average of the positions of the individual objects. For two objects with masses $m_1$ and $m_2$, located at positions $x_1$ and $x_2$ respectively, the position of the centre of mass is given by</p>
+
+<div class="kdmath">$$
+x_{CM} = \frac{m_1 x_1 + m_2 x_2}{m_1 + m_2}
+$$</div>
+
+<p>Extending this concept to multiple masses and using vectors to represent the positions of the objects, we can write the position vector of the centre of mass as</p>
+
+<div class="kdmath">$$
+\mathbf{r}_{CM} = \frac{ \sum m_i \mathbf{r}_i }{ \sum m_i }
+$$</div>
+
+<p>where $m_i$ and $\mathbf{r}_i$ represent the mass and position of an individual object, and the sums are taken over all objects in the system.</p>
+
+<p>Suppose that our particles are also moving with different velocities <span class="kdmath">$\dot{\mathbf{r}}_i$</span>. Consider the frame, moving with some velocity <span class="kdmath">$\mathbf{u}$</span>, in which the total momentum of these particles is zero:</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\sum \mathbf{p}_i &= \sum m_i \left(\dot{\mathbf{r}}_i - \mathbf{u}\right)\\
+0 &= \sum m_i \dot{\mathbf{r}}_i - \sum m_i\mathbf{u}\\
+\mathbf{u} &= \frac{\displaystyle \sum m_i \dot{\mathbf{r}}_i}{\displaystyle \sum m_i}\\
+&= \dot{\mathbf{r}}_{CM}
+\end{align*}
+$$</div>
+
+<p>Therefore, in the frame that moves with the same velocity as the centre of mass, the total momentum of all the particles is zero. In addition, by differentiating again with respect to time, it is seen that</p>
+
+<div class="kdmath">$$
+\mathbf{F}_\text{total} = \sum \mathbf{F}_i = \sum m_i \ddot{\mathbf{r}}_i = \ddot{\mathbf{r}}_{CM} \sum m_i
+$$</div>
+
+<p>Thus, external forces acting on the entire system will accelerate the centre of mass as though they act on a point mass with mass <span class="kdmath">$\sum m_i$</span> (total mass of the system) located at the centre of mass.</p>
+
+<h2 id="reduced-mass">Reduced mass</h2>
+
+<p>Consider two bodies, <span class="kdmath">$m_1$ and $m_2$</span>. We know that</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{F}_{1\rightarrow 2} &= m_2 \mathbf{a}_2\\
+\mathbf{F}_{2\rightarrow 1} &= m_1 \mathbf{a}_1\\
+\end{align*}
+$$</div>
+
+<p>and by Newton’s third law, <span class="kdmath">$\mathbf{F}_{1\rightarrow 2} = - \mathbf{F}_{2\rightarrow 1}$</span>. Therefore, the relative acceleration <span class="kdmath">$\mathbf{a}$</span> of the two bodies is</p>
+
+<div class="kdmath">$$
+\begin{align*}
+\mathbf{a} &= \mathbf{a}_2 - \mathbf{a}_1\\
+&= \left( 1 + \frac{m_1}{m_2} \right) \mathbf{a}_2\\
+&= \frac{m_1 + m_2}{m_1 m_2} \mathbf{F}_{1\rightarrow 2}\\
+\therefore \mathbf{F}_{1\rightarrow 2} &= \frac{m_1 m_2}{m_1 + m_2} \mathbf{a}
+\end{align*}
+$$</div>
+
+<p>Thus, if we hold <span class="kdmath">$m_1$</span> fixed, then <span class="kdmath">$m_2$</span> appears to move relative to it as though it has a mass <span class="kdmath">$\mu = \frac{m_1 m_2}{m_1 + m_2}$</span>. The quantity <span class="kdmath">$\mu$</span> is known as the <em>reduced mass</em>. However, in order for the magnitude of the force between the two bodies to remain the same, $m_1$ also appears to have a different apparent mass <span class="kdmath">$M$</span>. We note that <span class="kdmath">$F_{1\rightarrow 2} = \frac{G m_1 m_2}{r^2} = \frac{G M \mu}{r^2}$</span>. Therefore <span class="kdmath">$M = m_1 + m_2$</span>.</p>
 
 <h2 id="keplers-laws-of-planetary-motion">Kepler’s laws of planetary motion</h2>
 
