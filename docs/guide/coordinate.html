@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Coordinate Systems" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Coordinate Systems Spherical trigonometry Basics" />
-<meta property="og:description" content="Coordinate Systems Spherical trigonometry Basics" />
+<meta name="description" content="Coordinate Systems" />
+<meta property="og:description" content="Coordinate Systems" />
 <link rel="canonical" href="https://divergenz37.github.io/astro/guide/coordinate" />
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/coordinate" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-01-24T17:21:49+08:00" />
+<meta property="article:published_time" content="2020-02-05T22:22:48+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"url":"https://divergenz37.github.io/astro/guide/coordinate","dateModified":"2020-01-24T17:21:49+08:00","datePublished":"2020-01-24T17:21:49+08:00","headline":"Coordinate Systems","description":"Coordinate Systems Spherical trigonometry Basics","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/coordinate","headline":"Coordinate Systems","dateModified":"2020-02-05T22:22:48+08:00","datePublished":"2020-02-05T22:22:48+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"description":"Coordinate Systems","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -36,43 +36,66 @@
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <nav>
-    
-        
-    
-        
-    
-        
         <p class="prev">
-        
-            
-            
-            <a href="/astro/guide/optics">
+        <a href="/astro/guide/optics">
             &lt;&nbsp;Optics
             </a>
         
         </p>
-        <p class="next">
-        
-            
-            
-            <a href="/astro/guide/time">
+        <p class="next"><a href="/astro/guide/time">
             Time&nbsp;&gt;
-            </a>
-        
-        </p>
-        
-</nav>
+            </a></p></nav>
 <h1 id="coordinate-systems">Coordinate Systems</h1>
-<!--
-https://archive.org/details/SphericalAstronomy
-https://arxiv.org/abs/astro-ph/0408107
-http://adsabs.harvard.edu/full/1960MNRAS.121..123B
-https://www.aanda.org/articles/aa/pdf/2011/02/aa14961-10.pdf
--->
+
 <h2 id="spherical-trigonometry">Spherical trigonometry</h2>
+
 <h3 id="basics">Basics</h3>
 
+<p><img src="./figures/sphericaltriangle.png" alt="Spherical triangle" /></p>
+
+<p>A spherical triangle is defined by three points on the unit sphere, and the arcs of the great circles that connect these three points.</p>
+
+<p>A great circle is a circle on the surface of the unit sphere with the same radius as the unit sphere, and whose centre is the centre of the unit sphere. It is formed by the intersection of the surface of the unit sphere with a plane passing through its centre. Examples of great circles include the equator and circles of longitude.</p>
+
+<p>In contrast, a minor circle is a circle on the surface of the unit sphere whose radius is less than that of the unit sphere, and whose centre is not located at the centre of the unit sphere. It is formed by the intersection of the surface of the unit sphere with a plane that does not pass through its centre. Examples of minor circles include circles of latitude (excluding the equator).</p>
+
+<p>Refer to the figure above for an example of a spherical triangle <span class="kdmath">$ABC$</span> on a unit sphere centred at <span class="kdmath">$O$</span>. By convention, the vertices of the triangle are labelled with capital letters, and the sides of the triangle are labelled with small letters. In addition, sides and angles are labelled such that side <span class="kdmath">$a$</span> is the arc opposite angle <span class="kdmath">$A$</span>, side <span class="kdmath">$b$</span> is the arc opposite angle <span class="kdmath">$B$</span>, and side <span class="kdmath">$c$</span> is the arc opposite angle <span class="kdmath">$C$</span>. The sphere is usually assumed to be of unit radius, and the arc lengths of the sides are measured as angles. For a unit sphere, the angle subtended by each arc is the same as the arc length; for spheres of other radii, one can convert the angles to arc lengths by multiplying by the radius. All sides and angles of a proper spherical triangle are less than 180° or <span class="kdmath">$\pi$</span> radians.</p>
+
+<h3 id="polar-triangles">Polar triangles</h3>
+
+<p>Consider the great circle passing through points <span class="kdmath">$B$</span> and <span class="kdmath">$C$</span> of the spherical triangle. If a line passing through <span class="kdmath">$O$</span> is drawn perpendicular to the plane of the great circle, it meets the surface of the sphere at two poles. The pole on the same side of the great circle as <span class="kdmath">$A$</span> is the pole of <span class="kdmath">$A$</span> and is denoted as <span class="kdmath">$A'$</span>. The same procedure can be repeated by analogy to obtain <span class="kdmath">$B'$</span> and <span class="kdmath">$C'$</span>. The spherical triangle formed by <span class="kdmath">$A'$</span>, <span class="kdmath">$B'$</span> and <span class="kdmath">$C'$</span> is the polar triangle of spherical triangle <span class="kdmath">$ABC$</span>.</p>
+
+<p>The spherical triangles <span class="kdmath">$ABC$</span> and <span class="kdmath">$A'B'C'$</span> are related by the following:</p>
+
+<div class="kdmath">$$
+\begin{gather*}
+\begin{gathered}
+A' = \pi - a\\
+a' = \pi - A
+\end{gathered}\\
+\begin{gathered}
+B' = \pi - b\\
+b' = \pi - B
+\end{gathered}\\
+\begin{gathered}
+C' = \pi - c\\
+c' = \pi - C
+\end{gathered}
+\end{gather*}
+$$</div>
+
+<h3 id="spherical-excess">Spherical excess</h3>
+
+<p>Unlike planar triangles, the angles of spherical triangles may sum to more than 180° or <span class="kdmath">$\pi$</span> radians. In fact, for the angles <span class="kdmath">$A$</span>, <span class="kdmath">$B$</span>, and <span class="kdmath">$C$</span> of a proper spherical triangle,</p>
+
+<div class="kdmath">$$
+\pi < A + B + C < 3\pi
+$$</div>
+
+<p>The difference <span class="kdmath">$(A + B + C) - \pi = E$</span> is termed the <em>spherical excess</em>, and is equal to the area of the spherical triangle.</p>
+
 <h3 id="spherical-cosine-rule">Spherical cosine rule</h3>
+
 <p>The spherical cosine rule is given by</p>
 
 <div class="kdmath">$$
@@ -118,7 +141,9 @@ $$</div>
 $$</div>
 
 <p>Equating these two results gives the spherical cosine rule.</p>
+
 <h3 id="spherical-sine-rule">Spherical sine rule</h3>
+
 <p>The spherical sine rule is given by</p>
 
 <div class="kdmath">$$
@@ -332,6 +357,12 @@ $$</div>
 
 <h2 id="references">References</h2>
 
+<!--
+https://archive.org/details/SphericalAstronomy
+https://arxiv.org/abs/astro-ph/0408107
+http://adsabs.harvard.edu/full/1960MNRAS.121..123B
+https://www.aanda.org/articles/aa/pdf/2011/02/aa14961-10.pdf
+-->
 <div class="footnotes">
   <ol>
     <li id="fn:iau-1958">
@@ -347,32 +378,15 @@ $$</div>
 </div>
 
 <nav>
-    
-        
-    
-        
-    
-        
         <p class="prev">
-        
-            
-            
-            <a href="/astro/guide/optics">
+        <a href="/astro/guide/optics">
             &lt;&nbsp;Optics
             </a>
         
         </p>
-        <p class="next">
-        
-            
-            
-            <a href="/astro/guide/time">
+        <p class="next"><a href="/astro/guide/time">
             Time&nbsp;&gt;
-            </a>
-        
-        </p>
-        
-</nav>
+            </a></p></nav>
 <nav style="clear: both;text-align: center;"><a href="./">return to index</a></nav>
 <script>
     MathJax = {

@@ -3,9 +3,7 @@ title: Gravitation
 chapter: 1
 ---
 # Gravitation
-<!--
-https://archive.org/details/vectoranalysiste00gibbiala/page/134
--->
+
 ## Newton's law of universal gravitation
 Newton's law of universal gravitation gives the gravitational force between two point masses. If the masses $$m_1$$ and $$m_2$$ are separated by a distance $$r$$, the gravitational force is given by
 
@@ -503,3 +501,7 @@ $$
 
 [^gibbs-1901]: Gibbs JW (Josiah W, Wilson EB. Vector analysis; a text-book for the use of students of mathematics and physics [Internet]. New York, C. Scribner’s Sons; 1901 [cited 2020 Jan 23]. 470 p. Available from: <http://archive.org/details/vectoranalysiste00gibbiala>
 [^meeus-1998]: Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. 
+
+<!--
+https://archive.org/details/vectoranalysiste00gibbiala/page/134
+-->

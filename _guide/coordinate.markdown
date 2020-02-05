@@ -3,16 +3,56 @@ title: Coordinate Systems
 chapter: 10
 ---
 # Coordinate Systems
-<!--
-https://archive.org/details/SphericalAstronomy
-https://arxiv.org/abs/astro-ph/0408107
-http://adsabs.harvard.edu/full/1960MNRAS.121..123B
-https://www.aanda.org/articles/aa/pdf/2011/02/aa14961-10.pdf
--->
+
 ## Spherical trigonometry
+
 ### Basics
 
+![Spherical triangle](./figures/sphericaltriangle.png)
+
+A spherical triangle is defined by three points on the unit sphere, and the arcs of the great circles that connect these three points. 
+
+A great circle is a circle on the surface of the unit sphere with the same radius as the unit sphere, and whose centre is the centre of the unit sphere. It is formed by the intersection of the surface of the unit sphere with a plane passing through its centre. Examples of great circles include the equator and circles of longitude.
+
+In contrast, a minor circle is a circle on the surface of the unit sphere whose radius is less than that of the unit sphere, and whose centre is not located at the centre of the unit sphere. It is formed by the intersection of the surface of the unit sphere with a plane that does not pass through its centre. Examples of minor circles include circles of latitude (excluding the equator).
+
+Refer to the figure above for an example of a spherical triangle $$ABC$$ on a unit sphere centred at $$O$$. By convention, the vertices of the triangle are labelled with capital letters, and the sides of the triangle are labelled with small letters. In addition, sides and angles are labelled such that side $$a$$ is the arc opposite angle $$A$$, side $$b$$ is the arc opposite angle $$B$$, and side $$c$$ is the arc opposite angle $$C$$. The sphere is usually assumed to be of unit radius, and the arc lengths of the sides are measured as angles. For a unit sphere, the angle subtended by each arc is the same as the arc length; for spheres of other radii, one can convert the angles to arc lengths by multiplying by the radius. All sides and angles of a proper spherical triangle are less than 180° or $$\pi$$ radians.
+
+### Polar triangles
+
+Consider the great circle passing through points $$B$$ and $$C$$ of the spherical triangle. If a line passing through $$O$$ is drawn perpendicular to the plane of the great circle, it meets the surface of the sphere at two poles. The pole on the same side of the great circle as $$A$$ is the pole of $$A$$ and is denoted as $$A'$$. The same procedure can be repeated by analogy to obtain $$B'$$ and $$C'$$. The spherical triangle formed by $$A'$$, $$B'$$ and $$C'$$ is the polar triangle of spherical triangle $$ABC$$.
+
+The spherical triangles $$ABC$$ and $$A'B'C'$$ are related by the following:
+
+$$
+\begin{gather*}
+\begin{gathered}
+A' = \pi - a\\
+a' = \pi - A
+\end{gathered}\\
+\begin{gathered}
+B' = \pi - b\\
+b' = \pi - B
+\end{gathered}\\
+\begin{gathered}
+C' = \pi - c\\
+c' = \pi - C
+\end{gathered}
+\end{gather*}
+$$
+
+### Spherical excess
+
+Unlike planar triangles, the angles of spherical triangles may sum to more than 180° or $$\pi$$ radians. In fact, for the angles $$A$$, $$B$$, and $$C$$ of a proper spherical triangle,
+
+$$
+\pi < A + B + C < 3\pi
+$$
+
+The difference $$ (A + B + C) - \pi = E$$ is termed the *spherical excess*, and is equal to the area of the spherical triangle.
+
 ### Spherical cosine rule
+
 The spherical cosine rule is given by
 
 $$
@@ -58,7 +98,9 @@ $$
 $$
 
 Equating these two results gives the spherical cosine rule.
+
 ### Spherical sine rule
+
 The spherical sine rule is given by
 
 $$
@@ -277,3 +319,10 @@ $$
 [^iau-1958]: Blaauw A, Gum CS, Pawsey JL, Westerhout G. The new I. A. U. system of galactic coordinates (1958 revision). Monthly Notices of the Royal Astronomical Society. 1960;121:123. 
 [^reid-2004]: Reid MJ, Brunthaler A. The Proper Motion of Sgr A*: II. The Mass of Sgr A*. ApJ. 2004 Dec;616(2):872–84. 
 [^liu-2011]: Liu J-C, Zhu Z, Zhang H. Reconsidering the Galactic coordinate system. A&A. 2011 Feb 1;526:A16. 
+
+<!--
+https://archive.org/details/SphericalAstronomy
+https://arxiv.org/abs/astro-ph/0408107
+http://adsabs.harvard.edu/full/1960MNRAS.121..123B
+https://www.aanda.org/articles/aa/pdf/2011/02/aa14961-10.pdf
+-->
