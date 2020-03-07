@@ -4,6 +4,9 @@ chapter: 1
 ---
 # Gravitation
 
+- TOC
+{:toc}
+
 ## Newton's law of universal gravitation
 Newton's law of universal gravitation gives the gravitational force between two point masses. If the masses $$m_1$$ and $$m_2$$ are separated by a distance $$r$$, the gravitational force is given by
 
@@ -369,6 +372,15 @@ $$
 
 ## Roche limit
 
+The Roche limit describes the minimum orbital radius of an object of mass $$m$$ about a larger primary object of mass $M$ before it breaks up due to tidal forces. The object assumed to be held together solely by its own gravity.
+
+For a rigid satellite, i.e. one that is assumed to remain a sphere until it breaks up, the Roche limit is 
+
+$$
+d = R_M \left(\frac{2\rho_M}{\rho_m}\right)^\frac{1}{3} = R_m \left(\frac{2M}{m}\right)^\frac{1}{3}
+$$
+
+
 ## Orbital mechanics
 
 ### Orbital elements
@@ -495,12 +507,415 @@ v^2 &= GM \left(2 \frac{(1 + e \cos{\theta})}{p} - \frac{1 - e^2}{p} \right)\\
 \end{align*}
 $$
 
+## Three-body problem
+
 ## Lagrangian points
+
+One particular subset of the three-body problem is the circular restricted three-body problem, where by we consider two relatively large masses $$m_1$$ and $$m_2$$ (with $$m_2 < m_1$$) in circular orbits around their barycentre, and determine the motion of an infinitestimal mass $$\mu$$ that is deemed to be so small it exerts no significant gravitational force on $$m_1$$ or $$m_2$$.
+
+The Lagrangian points are a set of five solutions, named after Joseph-Louis Lagrange who described them in a 1772 essay on the three-body problem[^lagrange], in which $$\mu$$ maintains a circular orbit about the barycentre with the same angular velocity as $$m_1$$ and $$m_2$$. This allows $$\mu$$ to stay in the same relative position as seen from either $$m_1$$ or $$m_2$$, and these five relative positions are termed the Lagrangian points. They are numbered L1 through L5, and all of these points lie in the same plane as $$m_1$$ and $$m_2$$. L1, L2 and L3 are collinear (along the same line) with $$m_1$$ and $$m_2$$, and L4 and L5 form equilateral triangles with $$m_1$$ and $$m_2$$.
+
+### L1, L2 and L3
+
+The three collinear Lagrangian points are unstable equilibria.
+
+### L4 and L5
+
+L4 and L5 form equilateral triangles with $$m_1$$ and $$m_2$$, such that L4 is 60° ahead of $$m_2$$, and L5 is 60° behind $$m_2$$. These two Lagrangian points are relatively stable, provided
+
+$$ \frac{m_2}{m_1} < \frac{1 - \sqrt{\frac{23}{27}}}{1 + \sqrt{\frac{23}{27}}} $$
+
+In the Solar System, the L4 and L5 points of the orbits celestial bodies may be occupied by smaller bodies. Asteroids at the L4 and L5 points of larger planets are often referred to as trojans. Jupiter has many asteroids around its L4 and L5 points; the asteroids at L4 are traditionally named after Greek characters, while those at L5 are named after Trojan characters. 
+
+Saturn has trojan moons, whereby the L4 and L5 points of larger moons are occupied by much smaller moons. The known examples are Tethys with its trojans Telesto and Calypso, and Dione with Helene and Polydeuces.
+
+### Rotating frames of reference
+
+Consider a vector $$\mathbf{r}$$ in a stationary coordinate system, with the unit vectors $$\mathbf{i}$$, $$\mathbf{j}$$, $$\mathbf{k}$$ corresponding to the axes $$x$$, $$y$$, and $$z$$ respectively. Then consider a rotating coordinate system centred about the same origin, but rotating with angular velocity $$\boldsymbol{\Omega}$$. Let the unit vectors in this rotating frame be $$\mathbf{i}'$$, $$\mathbf{j}'$$, $$\mathbf{k}'$$, corresponding to axes $$x'$$, $$y'$$ and $$z'$$.
+
+If we write $$\mathbf{r} = r_x \mathbf{i}' + r_y \mathbf{j}' + r_z \mathbf{k}'$$, we can take the derivative with respect to time and apply the product rule:
+
+$$
+\frac{\mathrm{d}}{\mathrm{d}t} \mathbf{r} = \left( \frac{\mathrm{d} r_x}{\mathrm{d}t} \mathbf{i}' + \frac{\mathrm{d} r_y}{\mathrm{d}t} \mathbf{j}' + \frac{\mathrm{d} r_z}{\mathrm{d}t} \mathbf{k}' \right) + \left( r_x \frac{\mathrm{d} \mathbf{i}'}{\mathrm{d}t} + r_y \frac{\mathrm{d} \mathbf{j}'}{\mathrm{d}t} + r_z \frac{\mathrm{d} \mathbf{k}'}{\mathrm{d}t} \right)
+$$
+
+For the unit vectors, $$\frac{\mathrm{d} \mathbf{i}'}{\mathrm{d}t} = \boldsymbol{\Omega} \times \mathbf{i}'$$, as they rotate about the axis but do not change in magnitude. Then we can write the previous result as
+
+$$
+\frac{\mathrm{d}}{\mathrm{d}t} \mathbf{r} = \left( \frac{\mathrm{d} \mathbf{r}}{\mathrm{d}t}  \right)_{rot} + \boldsymbol{\Omega} \times \mathbf{r}
+$$
+
+where the subscripted term $$\left( \frac{\mathrm{d} \mathbf{r}}{\mathrm{d}t} \right)_{rot}$$ represents the quantity as it would be measured in the rotating frame. We will write this as $$\mathbf{v}_{rot}$$, the velocity measured in the rotating frame. 
+
+Taking a second derivative with respect to time:
+
+$$
+\begin{align*}
+\frac{\mathrm{d}^2}{\mathrm{d}t^2} \mathbf{r} &= \left( \frac{\mathrm{d} \mathbf{v}_{rot}}{\mathrm{d}t} \right) + \frac{\mathrm{d}}{\mathrm{d}t} \left( \boldsymbol{\Omega} \times \mathbf{r} \right)\\
+&= \left( \frac{\mathrm{d} \mathbf{v}_{rot}}{\mathrm{d}t} \right)_{rot} + \boldsymbol{\Omega} \times \mathbf{v}_{rot} + \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} + \boldsymbol{\Omega} \times \left( \frac{\mathrm{d} \mathbf{r}}{\mathrm{d}t} \right)\\
+&= \mathbf{a}_{rot} + \boldsymbol{\Omega} \times \mathbf{v}_{rot} + \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} + \boldsymbol{\Omega} \times \left( \mathbf{v}_{rot} + \boldsymbol{\Omega} \times \mathbf{r} \right)\\
+\mathbf{a} &= \mathbf{a}_{rot} + 2 \boldsymbol{\Omega} \times \mathbf{v}_{rot} + \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} + \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)
+\end{align*}
+$$
+
+where we have rewritten $$\left( \frac{\mathrm{d} \mathbf{v}_{rot}}{\mathrm{d}t} \right)_{rot}$$, the time derivative of $$\mathbf{v}_{rot}$$ measured in the rotating frame, as $$\mathbf{a}_{rot}$$, the acceleration measured in the rotating frame.
+
+If we rearrange this from the perspective of the rotating frame,
+
+$$
+\mathbf{a}_{rot} = \mathbf{a} - 2 \boldsymbol{\Omega} \times \mathbf{v}_{rot} - \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} - \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)
+$$
+
+Multiplying through by the mass of an object $$m$$ gives us
+
+$$
+m\mathbf{a}_{rot} = \mathbf{F} - 2 m \boldsymbol{\Omega} \times \mathbf{v}_{rot} - m \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} - m \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)
+$$
+
+This suggests the presence of 3 fictitious forces in the rotating frame of reference:
+ - the Coriolis force $$\mathbf{F}_\text{Coriolis} = - 2 m \boldsymbol{\Omega} \times \mathbf{v}_{rot}$$
+ - the centrifugal force $$\mathbf{F}_\text{centrifugal} = - m \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)$$
+ - the Euler (or azimuthal) force $$\mathbf{F}_\text{azimuthal} = - m \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r}$$
+
+These additional forces are required to fully describe the apparent motion of objects in the rotating frame, in addition to the acceleration $$\mathbf{a}$$ that results when some force $$\mathbf{F}$$ is applied on them.
+
+### Derivation of the Lagrangian points
+
+The following derivation follows the outlines of those given by Fitzpatrick[^fitzpatrick] and Greenspan[^greenspan].
+
+Suppose we have two masses, $$m_1$$ and $$m_2$$, that are in circular orbits about their common barycentre. They each have an angular velocity $$\boldsymbol{\Omega}$$, which we will define to lie in the $$z$$ axis of a stationary frame centred on their barycentre. Their orbits therefore lie in the $$x-y$$ plane. Consider a rotating frame centred on the barycentre, rotating with the same angular velocity $$\Omega$$ about its $$z'$$ axis. Let this $$z'$$ axis lie in the same direction as the $$z$$ axis of the stationary frame. For convenience, we additionally define the $$x'$$ axis such that both $$m_1$$ and $$m_2$$ lie on the $$x'$$ axis. If the distance between the masses is $$R$$, then their coordinates in the rotating frame are
+
+$$
+\begin{gather*}
+\mathbf{r}_1 = -\frac{m_2}{m_1 + m_2} R \mathbf{i}'\\
+\mathbf{r}_2 = \frac{m_1}{m_1 + m_2} R \mathbf{i}'
+\end{gather*}
+$$
+
+By Kepler's third law, $$\Omega$$ is given by
+
+$$
+\Omega^2 = \frac{G(m_1 + m_2)}{R^3}
+$$
+
+Suppose we place an infinitesimal mass $$\mu$$ at some position $$\mathbf{r} = x' \mathbf{i}' + y' \mathbf{j}' + z' \mathbf{k}'$$ in the rotating frame, and make the assumption that $$\mu$$ is so small it exerts no gravitational force on $$m_1$$ or $$m_2$$. Accordingly, the gravitational force acting on it is
+
+$$
+\mathbf{F} = - \frac{G m_1\mu}{\left|(\mathbf{r} - \mathbf{r}_1)\right|^3}(\mathbf{r} - \mathbf{r}_1) - \frac{G m_2\mu}{\left|(\mathbf{r} - \mathbf{r}_2)\right|^3}(\mathbf{r} - \mathbf{r}_2)
+$$
+
+In the rotating frame, its apparent acceleration is then
+
+$$
+\begin{align*}
+\mathbf{a}_{rot} &= \mathbf{a} - 2 \boldsymbol{\Omega} \times \mathbf{v}_{rot} - \left( \frac{\mathrm{d} \boldsymbol{\Omega}}{\mathrm{d}t} \right) \times \mathbf{r} - \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)\\
+&= - \frac{Gm_1}{\left|(\mathbf{r} - \mathbf{r}_1)\right|^3}(\mathbf{r} - \mathbf{r}_1) - \frac{Gm_2}{\left|(\mathbf{r} - \mathbf{r}_2)\right|^3}(\mathbf{r} - \mathbf{r}_2) - 2 \boldsymbol{\Omega} \times \mathbf{v}_{rot} - \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)
+\end{align*}
+$$
+
+If we define $$\boldsymbol{\rho}_1 = \mathbf{r} - \mathbf{r}_1$$, $$\boldsymbol{\rho}_2 = \mathbf{r} - \mathbf{r}_2$$, then
+
+$$
+\begin{gather*}
+\mathbf{a}_{rot} = - \frac{G m_1}{\rho_1^3}(\boldsymbol{\rho}_1) - \frac{G m_2}{\rho_2^3}(\boldsymbol{\rho}_2) - 2 \boldsymbol{\Omega} \times \mathbf{v}_{rot} - \boldsymbol{\Omega} \times \left( \boldsymbol{\Omega} \times \mathbf{r} \right)\\
+\begin{aligned}
+\ddot{x}' &= - \frac{G m_1}{\rho_1^3}(x' - r_1) - \frac{Gm_2}{\rho_2^3}(x' - r_2) + 2 \Omega \dot{y}' + \Omega^2 x'\\
+\ddot{y}' &= - \frac{G m_1}{\rho_1^3}(y') - \frac{Gm_2}{\rho_2^3}(y') - 2 \Omega \dot{x}' + \Omega^2 y'\\
+\ddot{z}' &= - \frac{G m_1}{\rho_1^3}(z') - \frac{Gm_2}{\rho_2^3}(z')
+\end{aligned}
+\end{gather*}
+$$
+
+Notice that if we take the partial derivatives of $$\frac{1}{\rho_1}$$ and $$\frac{1}{\rho_2}$$ with respect to $$x'$$:
+
+$$
+\begin{gather*}
+\begin{aligned}
+\frac{\partial}{\partial x'} \frac{1}{\rho_1} &= \frac{\partial}{\partial x} \left( (x' - r_1)^2 + (y')^2 + (z')^2 \right)^{-\frac{1}{2}}\\
+&= -\frac{1}{2} \left( (x' - r_1)^2 + (y')^2 + (z')^2 \right)^{-\frac{3}{2}} (2) \left( x' - r_1 \right)\\
+&= -\frac{x' - r_1}{\rho_1^3}
+\end{aligned}\\
+\begin{aligned}
+\frac{\partial}{\partial x'} \frac{1}{\rho_2} &= \frac{\partial}{\partial x} \left( (x' - r_2)^2 + (y')^2 + (z')^2 \right)^{-\frac{1}{2}}\\
+&= -\frac{x' - r_2}{\rho_2^3}
+\end{aligned}
+\end{gather*}
+$$
+
+Similarly, we can show that
+
+$$
+\begin{gather*}
+\frac{\partial}{\partial y'} \frac{1}{\rho_1} = -\frac{y'}{\rho_1^3} \quad , \quad \frac{\partial}{\partial y'} \frac{1}{\rho_2} = -\frac{y'}{\rho_2^3}\\
+\frac{\partial}{\partial z'} \frac{1}{\rho_1} = -\frac{z'}{\rho_1^3} \quad , \quad \frac{\partial}{\partial z'} \frac{1}{\rho_2} = -\frac{z'}{\rho_2^3}
+\end{gather*}
+$$
+
+Therefore,
+
+$$
+\begin{align*}
+\ddot{x}' &= \frac{\partial}{\partial x'}\left(\frac{G m_1}{\rho_1} + \frac{G m_2}{\rho_2}\right) + 2 \Omega \dot{y}' + \Omega^2 x'\\
+\ddot{y}' &= \frac{\partial}{\partial y'}\left(\frac{G m_1}{\rho_1} + \frac{G m_2}{\rho_2}\right) - 2 \Omega \dot{x}' + \Omega^2 y'\\
+\ddot{z}' &= \frac{\partial}{\partial z'}\left(\frac{G m_1}{\rho_1} + \frac{G m_2}{\rho_2}\right)
+\end{align*}
+$$
+
+If we write a potential $$U'$$ such that
+
+$$U' = \left(-\frac{G m_1}{\rho_1} - \frac{G m_2}{\rho_2}\right) - \frac{1}{2} \Omega^2 \left( (x')^2 + (y')^2 \right)$$
+
+we can rewrite the above as
+
+$$
+\begin{gather*}
+\begin{aligned}
+\ddot{x}' &= -\frac{\partial U'}{\partial x'} + 2 \Omega \dot{y}'\\
+\ddot{y}' &= -\frac{\partial U'}{\partial y'} - 2 \Omega \dot{x}'\\
+\ddot{z}' &= -\frac{\partial U'}{\partial z'}
+\end{aligned}\\
+\Rightarrow \mathbf{a}_{rot} = -\nabla U' - 2 \boldsymbol{\Omega}\times\mathbf{v}_{rot}
+\end{gather*}
+$$
+
+This potential $$U'$$ acts as the apparent potential of $$\mu$$, and it is the sum of the gravitational potential and the potential due to the apparent centrifugal force. The acceleration of the object is due to the combined effect of the force (the gradient of the potential) and the Coriolis force.
+
+Since the velocity $$\mathbf{v}_{rot}$$ and acceleration $$\mathbf{a}_{rot}$$ of $$\mu$$ at the Lagrangian points should be zero in the rotating frame, then $$-\nabla U' = \mathbf{0}$$ at these points. 
+
+The easiest coordinate to examine is $$z'$$. We require that
+
+$$
+- \frac{\partial U'}{\partial z'} = - \left(\frac{G m_1}{\rho_1^3} + \frac{G m_2}{\rho_2^3}\right) z' = 0
+$$
+
+However, since $$\rho_1$$ and $$\rho_2$$ are always greater than zero, the solution requires $$z' = 0$$.
+
+Next, we turn our focus to $$x'$$ and $$y'$$:
+
+$$
+\begin{gather*}
+-\frac{\partial U'}{\partial x'} = - \frac{G m_1}{\rho_1^3}(x' - r_1) - \frac{G m_2}{\rho_2^3}(x' - r_2) + \Omega^2 x' = 0\\
+-\frac{\partial U'}{\partial y'} =  - \frac{G m_1}{\rho_1^3}(y') - \frac{Gm _2}{\rho_2^3}(y') + \Omega^2 y' = 0
+\end{gather*}
+$$
+
+The two immediately obvious sets of solutions for the second equation are
+
+$$
+\left\{
+\begin{aligned}
+0 &= y'\\
+0 &= - \frac{G m_1}{\rho_1^3} - \frac{Gm_2}{\rho_2^3} + \Omega^2
+\end{aligned}
+\right.
+$$
+
+Consider the first condition. $$y' = 0$$ implies that $$\rho_1^2 = (x' - r_1)^2$$ and $$\rho_2^2 = (x' - r_2)^2$$. We have to be wary of taking the square roots, as $$\rho_1$$ and $$\rho_2$$ are positive quantities by default (as the magnitudes of $$\boldsymbol{\rho}_1$$ and $$\boldsymbol{\rho}_2$$), but the same cannot be said for $$(x' - r_1)$$ and $$(x' - r_2)$$. Because $$r_1 < 0 < r_2$$ as defined earlier, there are three cases to consider:
+
+$$
+\begin{cases}
+-\infty < x' < r_1 &\Rightarrow (x' - r_1) < 0, (x' - r_2) < 0 &\Rightarrow \rho_1 = -(x' - r_1), \rho_2 = -(x' - r_2)\\
+r_1 < x' < r_2 &\Rightarrow (x' - r_1) > 0, (x' - r_2) < 0 &\Rightarrow \rho_1 = (x' - r_1), \rho_2 = -(x' - r_2)\\
+r_2 < x' < \infty &\Rightarrow (x' - r_1) > 0, (x' - r_2) > 0 &\Rightarrow \rho_1 = (x' - r_1), \rho_2 = (x' - r_2)
+\end{cases}
+$$
+
+Therefore:
+
+$$
+\begin{cases}
+-\infty < x' < r_1 &\Rightarrow + \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} + \Omega^2 x' = 0\\
+r_1 < x' < r_2 &\Rightarrow - \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} + \Omega^2 x' = 0\\
+r_2 < x' < \infty &\Rightarrow - \frac{G m_1}{\rho_1^2} - \frac{G m_2}{\rho_2^2} + \Omega^2 x' = 0
+\end{cases}
+$$
+
+These correspond to the cases for L3, L1 and L2 respectively.
+
+For L1, $$r_1 < x' < r_2$$, and thus
+
+$$
+\begin{cases}
+x' - r_1 = \rho_1\\
+r_2 - x' = \rho_2
+\end{cases}
+$$
+
+We can rearrange this to obtain
+
+$$
+x' = \frac{m_1 \rho_1 - m_2 \rho_2}{m_1 + m_2}
+$$
+
+which we can substitute into our original equation to eliminate $$x'$$,
+
+$$
+\begin{align*}
+- \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} + \Omega^2 \frac{m_1 \rho_1 - m_2 \rho_2}{m_1 + m_2} &= 0\\
+- \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} + \frac{G}{R^3} (m_1 \rho_1 - m_2 \rho_2) &= 0\\
+- m_1 \left(\frac{1}{\rho_1^2} - \frac{\rho_1}{R^3}\right) + m_2 \left(\frac{1}{\rho_2^2} - \frac{\rho_2}{R^3}\right) &= 0
+\end{align*}
+$$
+
+For our convenience, define $$\alpha = \frac{\rho_1}{R}, \beta = \frac{\rho_2}{R}$$:
+
+$$
+\begin{align*}
+-m_1 \left(\frac{1}{\alpha^2} - \alpha\right) + m_2 \left(\frac{1}{\beta^2} - \beta\right) &= 0\\
+-m_1 \left(\frac{1 - \alpha^3}{\alpha^2}\right) + m_2 \left(\frac{1 - \beta^3}{\beta^2}\right) &= 0\\
+\frac{m_2}{m_1} &= \frac{ \beta^2 (1 - \alpha^3) }{ \alpha^2 \left(1 - \beta^3\right) }
+\end{align*}
+$$
+
+Since $$\alpha + \beta = 1$$, this also means
+
+$$
+\begin{align*}
+\frac{m_2}{m_1} &= \frac{ (1 - \alpha)^2 (1 - \alpha^3) }{ \alpha^2 \left(1 - (1 - \alpha)^3\right) }\\
+&= \frac{ \beta^2 \left(1 - (1 - \beta)^3\right) }{ (1 - \beta)^2 (1 - \beta^3) }
+\end{align*}
+$$
+
+The expression on the right hand side for $$\beta$$ is 0 when $$\beta = 0$$. Hence, in the case that $$m_2 \ll m_1$$, we can re-express the right hand side as a Taylor series about $$\beta = 0$$.
+
+For L2, $$r_1 < r_2 < x'$$, and therefore
+
+$$
+\begin{cases}
+x' - r_1 = \rho_1\\
+x' - r_2 = \rho_2
+\end{cases}
+$$
+
+This implies
+
+$$
+x' = \frac{m_1 \rho_1 + m_2 \rho_2}{m_1 + m_2}
+$$
+
+As above, we can rewrite the force balance in terms of $$\alpha$$ and $$\beta$$:
+
+$$
+\begin{align*}
+- \frac{G m_1}{\rho_1^2} - \frac{G m_2}{\rho_2^2} + \Omega^2 \frac{m_1 \rho_1 + m_2 \rho_2}{m_1 + m_2} &= 0\\
+- \frac{G m_1}{\rho_1^2} - \frac{G m_2}{\rho_2^2} + \frac{G}{R^3} (m_1 \rho_1 + m_2 \rho_2) &= 0\\
+m_1 \left(-\frac{1}{\rho_1^2} + \frac{\rho_1}{R^3}\right) + m_2 \left(-\frac{1}{\rho_2^2} + \frac{\rho_2}{R^3}\right) &= 0\\
+m_1 \left(\frac{\alpha^3 - 1}{\alpha^2}\right) + m_2 \left(\frac{\beta^3 - 1}{\beta^2}\right) &= 0\\
+\frac{m_2}{m_1} &= - \frac{\beta^2 (\alpha^3 - 1)}{\alpha^2 (\beta^3 - 1)}
+\end{align*}
+$$
+
+Here, $$\alpha - \beta = 1$$, and thus
+
+$$
+\begin{align*}
+\frac{m_2}{m_1} &= \frac{(\alpha - 1)^2 (\alpha^3 - 1)}{\alpha^2 \left(1 - (\alpha - 1)^3\right)}\\
+&= \frac{ \beta^2 \left((1 + \beta)^3 - 1\right) }{ (1 + \beta)^2 (1 - \beta^3) }
+\end{align*}
+$$
+
+Once again, the expression on the right hand side for $$\beta$$ is 0 when $$\beta = 0$$.
+
+For L3, $$x' < r_1 < r_2$$, and therefore
+
+$$
+\begin{cases}
+r_1 - x' = \rho_1\\
+r_2 - x' = \rho_2
+\end{cases}
+$$
+
+This implies
+
+$$
+x' = -\frac{m_1 \rho_1 + m_2 \rho_2}{m_1 + m_2}
+$$
+
+As above, we can rewrite the force balance in terms of $$\alpha$$ and $$\beta$$:
+
+$$
+\begin{align*}
++ \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} - \Omega^2 \frac{m_1 \rho_1 + m_2 \rho_2}{m_1 + m_2} &= 0\\
++ \frac{G m_1}{\rho_1^2} + \frac{G m_2}{\rho_2^2} - \frac{G}{R^3} (m_1 \rho_1 + m_2 \rho_2) &= 0\\
+m_1 \left(\frac{1}{\rho_1^2} - \frac{\rho_1}{R^3}\right) + m_2 \left(\frac{1}{\rho_2^2} - \frac{\rho_2}{R^3}\right) &= 0\\
+m_1 \left(\frac{1 - \alpha^3}{\alpha^2}\right) + m_2 \left(\frac{1 - \beta^3}{\beta^2}\right) &= 0\\
+\frac{m_2}{m_1} &= - \frac{\beta^2 (1 - \alpha^3)}{\alpha^2 (1 - \beta^3)}
+\end{align*}
+$$
+
+Here, $$\beta - \alpha = 1$$, and thus
+
+$$
+\begin{align*}
+\frac{m_2}{m_1} &= \frac{ (\alpha + 1)^2 (1 - \alpha^3) }{ \alpha^2 \left((1 + \alpha)^3 - 1\right) }\\
+&= \frac{ \beta^2 \left((\beta - 1)^3 - 1\right) }{ (\beta - 1)^2 (1 - \beta^3) }
+\end{align*}
+$$
+
+The expression on the right hand side for $$\alpha$$ is 0 when $$\alpha = 1$$ (and $$\beta = 2$$; the case where $$\alpha < 0$$ would not be physical).
+
+
+Now consider the second condition, that $$0 = - \frac{G m_1}{\rho_1^3} - \frac{Gm_2}{\rho_2^3} + \Omega^2$$. We can rewrite the expression for $$-\frac{\partial U'}{\partial x'}$$ as:
+
+$$
+\begin{align*}
+-\frac{\partial U'}{\partial x'} &= - \frac{G m_1}{\rho_1^3}(x') + \frac{G m_1}{\rho_1^3}(r_1) - \frac{Gm_2}{\rho_2^3}(x') + \frac{Gm_2}{\rho_2^3}(r_2) + \Omega^2 x'\\
+0 &= \frac{G m_1}{\rho_1^3}(r_1) + \frac{Gm_2}{\rho_2^3}(r_2)\\
+-\frac{m_1 r_1}{\rho_1^3}  &= \frac{m_2 r_2}{\rho_2^3}
+\end{align*}
+$$
+
+Because $$m_1 r_1 + m_2 r_2 = 0 \Rightarrow -m_1 r_1 = m_2 r_2$$,
+
+$$
+\begin{align*}
+\frac{1}{\rho_1^3} &= \frac{1}{\rho_2^3}\\
+\Rightarrow \rho_1 &= \rho_2\
+\end{align*}
+$$
+
+Having established that $$\rho_1$$ and $$\rho_2$$ are equal, we can find their value:
+
+$$
+\begin{align*}
+\Omega^2 &= \frac{G m_1}{\rho_1^3} + \frac{Gm_2}{\rho_2^3}\\
+\frac{G (m_1 + m_2)}{R^3} &= \frac{G (m_1 + m_2)}{\rho_1^3} = \frac{G (m_1 + m_2)}{\rho_2^3}\\
+\Rightarrow \rho_1 = \rho_2 &= R
+\end{align*}
+$$
+
+This tells us that $$m_1$$, $$m_2$$ and $$\mu$$ form an equilateral triangle of side length $$R$$. We can immediately determine the values of $$x'$$ and $$y'$$ with this information, but we can also solve explicitly for $x'$ and $y'$, given that
+
+$$
+\begin{align*}
+(x' - r_1)^2 + (y')^2 &= R^2\\
+(x' - r_2)^2 + (y')^2 &= R^2
+\end{align*}
+$$
+
+Taking the difference of the two equations to eliminate $$y'$$,
+
+$$
+\begin{align*}
+(2 x' - r_1 - r_2)(r_2 - r_1) &= 0\\
+\Rightarrow x' &= \frac{r_1 + r_2}{2}\\
+&= \frac{R}{2} + r_1\\
+\therefore \frac{R^2}{4} + (y')^2 &= R^2\\
+y' &= \pm \frac{\sqrt{3}}{2} R
+\end{align*}
+$$
+
+Thus, L4 is the point corresponding to $$(x', y', z') = (\frac{R}{2} + r_1, +\frac{\sqrt{3}}{2} R, 0)$$, and L5 is the point corresponding to $$(x', y', z') = (\frac{R}{2} + r_1, -\frac{\sqrt{3}}{2} R, 0)$$.
+
+In Lagrange's original essay, he demonstrates the existence of what we now know as the L4 and L5 points without the requirement that $$\mu$$ be of a negligible mass[^lagrange].
 
 ## References
 
 [^gibbs-1901]: Gibbs JW (Josiah W, Wilson EB. Vector analysis; a text-book for the use of students of mathematics and physics [Internet]. New York, C. Scribner’s Sons; 1901 [cited 2020 Jan 23]. 470 p. Available from: <http://archive.org/details/vectoranalysiste00gibbiala>
 [^meeus-1998]: Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. 
+[^fitzpatrick]: Fitzpatrick R. Lagrange points [Internet]. 2016 [cited 2020 Feb 6]. Available from: <https://farside.ph.utexas.edu/teaching/celestial/Celestial/node84.html>
+[^greenspan]: Greenspan T. Stability of the Lagrange Points, L4 and L5. Available from: <http://pi.math.cornell.edu/~templier/junior/final_paper/Thomas_Greenspan-Stability_of_Lagrange_points.pdf>
+[^lagrange]: Lagrange J-L. Œuvres de Lagrange [Internet]. Vol. 6. Paris: Gauthier-Villars; 1867 [cited 2020 Mar 7]. Available from: <https://gallica.bnf.fr/ark:/12148/bpt6k229225j>
 
 <!--
 https://archive.org/details/vectoranalysiste00gibbiala/page/134
