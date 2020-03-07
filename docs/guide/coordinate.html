@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/coordinate" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-02-05T22:22:48+08:00" />
+<meta property="article:published_time" content="2020-03-07T17:13:33+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/coordinate","headline":"Coordinate Systems","dateModified":"2020-02-05T22:22:48+08:00","datePublished":"2020-02-05T22:22:48+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"description":"Coordinate Systems","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"url":"https://divergenz37.github.io/astro/guide/coordinate","dateModified":"2020-03-07T17:13:33+08:00","datePublished":"2020-03-07T17:13:33+08:00","headline":"Coordinate Systems","description":"Coordinate Systems","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -30,7 +30,7 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/astro/about/">About</a><a class="page-link" href="/astro/guide/">Guide</a></div>
+        <div class="trigger"><a class="page-link" href="/astro/about/">About</a><a class="page-link" href="/astro/contents.html">Contents</a><a class="page-link" href="/astro/guide/">Guide</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -46,6 +46,34 @@
             Time&nbsp;&gt;
             </a></p></nav>
 <h1 id="coordinate-systems">Coordinate Systems</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#spherical-trigonometry" id="markdown-toc-spherical-trigonometry">Spherical trigonometry</a>    <ul>
+      <li><a href="#basics" id="markdown-toc-basics">Basics</a></li>
+      <li><a href="#polar-triangles" id="markdown-toc-polar-triangles">Polar triangles</a></li>
+      <li><a href="#spherical-excess" id="markdown-toc-spherical-excess">Spherical excess</a></li>
+      <li><a href="#spherical-cosine-rule" id="markdown-toc-spherical-cosine-rule">Spherical cosine rule</a></li>
+      <li><a href="#spherical-sine-rule" id="markdown-toc-spherical-sine-rule">Spherical sine rule</a></li>
+    </ul>
+  </li>
+  <li><a href="#celestial-coordinate-systems" id="markdown-toc-celestial-coordinate-systems">Celestial coordinate systems</a>    <ul>
+      <li><a href="#horizontal-coordinate-system" id="markdown-toc-horizontal-coordinate-system">Horizontal coordinate system</a></li>
+      <li><a href="#equatorial-coordinate-system" id="markdown-toc-equatorial-coordinate-system">Equatorial coordinate system</a></li>
+      <li><a href="#ecliptic-coordinate-system" id="markdown-toc-ecliptic-coordinate-system">Ecliptic coordinate system</a></li>
+      <li><a href="#galactic-coordinate-system" id="markdown-toc-galactic-coordinate-system">Galactic coordinate system</a></li>
+      <li><a href="#coordinate-conversions" id="markdown-toc-coordinate-conversions">Coordinate conversions</a></li>
+      <li><a href="#equatorial-and-horizontal" id="markdown-toc-equatorial-and-horizontal">Equatorial and horizontal</a></li>
+      <li><a href="#equatorial-and-ecliptic" id="markdown-toc-equatorial-and-ecliptic">Equatorial and ecliptic</a></li>
+      <li><a href="#equatorial-and-galactic" id="markdown-toc-equatorial-and-galactic">Equatorial and galactic</a></li>
+    </ul>
+  </li>
+  <li><a href="#circumpolar-stars" id="markdown-toc-circumpolar-stars">Circumpolar stars</a></li>
+  <li><a href="#atmospheric-refraction" id="markdown-toc-atmospheric-refraction">Atmospheric refraction</a></li>
+  <li><a href="#ecliptic" id="markdown-toc-ecliptic">Ecliptic</a></li>
+  <li><a href="#equinoxes-and-solstices" id="markdown-toc-equinoxes-and-solstices">Equinoxes and solstices</a></li>
+  <li><a href="#axial-precession" id="markdown-toc-axial-precession">Axial precession</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+</ul>
 
 <h2 id="spherical-trigonometry">Spherical trigonometry</h2>
 
@@ -130,7 +158,7 @@ $$</div>
 \end{align*}
 $$</div>
 
-<p>However, using the vector identity <span class="kdmath">$(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$</span>, we can also show that</p>
+<p>Using the vector identity <span class="kdmath">$(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$</span>, we can also show that</p>
 
 <div class="kdmath">$$
 \begin{align*}
@@ -161,7 +189,7 @@ $$</div>
 \end{align*}
 $$</div>
 
-<p>However, we can rewrite the right hand side as follows:</p>
+<p>We can rewrite the right hand side as follows:</p>
 
 <div class="kdmath">$$
 \begin{align*}
@@ -210,7 +238,7 @@ $$</div>
 \end{align*}
 $$</div>
 
-<p>However, <span class="kdmath">$\mathbf{b} \times \mathbf{c}$</span> produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The <em>scalar triple product</em> <span class="kdmath">$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$</span> therefore gives the <em>signed volume</em> of the parallelepiped with sides formed by <span class="kdmath">$\mathbf{a}$</span>, <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The value of this product is unchanged when the arguments undergo a circular shift:</p>
+<p>The product <span class="kdmath">$\mathbf{b} \times \mathbf{c}$</span> produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The <em>scalar triple product</em> <span class="kdmath">$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$</span> therefore gives the <em>signed volume</em> of the parallelepiped with sides formed by <span class="kdmath">$\mathbf{a}$</span>, <span class="kdmath">$\mathbf{b}$</span> and <span class="kdmath">$\mathbf{c}$</span>. The value of this product is unchanged when the arguments undergo a circular shift:</p>
 
 <div class="kdmath">$$
 \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{b} \cdot (\mathbf{c} \times \mathbf{a}) = \mathbf{c} \cdot (\mathbf{a} \times \mathbf{b})
@@ -354,6 +382,16 @@ $$</div>
 \sin{\delta} = \sin{b}\sin{\delta_{NGP}} + \cos{b}\cos{\delta_{NGP}}\cos{(\theta - l)}
 \end{gather}
 $$</div>
+
+<h2 id="circumpolar-stars">Circumpolar stars</h2>
+
+<h2 id="atmospheric-refraction">Atmospheric refraction</h2>
+
+<h2 id="ecliptic">Ecliptic</h2>
+
+<h2 id="equinoxes-and-solstices">Equinoxes and solstices</h2>
+
+<h2 id="axial-precession">Axial precession</h2>
 
 <h2 id="references">References</h2>
 

@@ -4,6 +4,9 @@ chapter: 10
 ---
 # Coordinate Systems
 
+- TOC
+{:toc}
+
 ## Spherical trigonometry
 
 ### Basics
@@ -87,7 +90,7 @@ $$
 \end{align*}
 $$
 
-However, using the vector identity $$(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$$, we can also show that
+Using the vector identity $$(\mathbf{a} \times \mathbf{b}) \cdot (\mathbf{c} \times \mathbf{d}) = (\mathbf{a} \cdot \mathbf{c})(\mathbf{b} \cdot \mathbf{d}) - (\mathbf{a} \cdot \mathbf{d})(\mathbf{b} \cdot \mathbf{c})$$, we can also show that
 
 $$
 \begin{align*}
@@ -118,7 +121,7 @@ $$
 \end{align*}
 $$
 
-However, we can rewrite the right hand side as follows:
+We can rewrite the right hand side as follows:
 
 $$
 \begin{align*}
@@ -167,7 +170,7 @@ $$
 \end{align*}
 $$
 
-However, $$\mathbf{b} \times \mathbf{c}$$ produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by $$\mathbf{b}$$ and $$\mathbf{c}$$. The *scalar triple product* $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$$ therefore gives the *signed volume* of the parallelepiped with sides formed by $$\mathbf{a}$$, $$\mathbf{b}$$ and $$\mathbf{c}$$. The value of this product is unchanged when the arguments undergo a circular shift: 
+The product $$\mathbf{b} \times \mathbf{c}$$ produces a perpendicular vector with magnitude equal to the area of the parallelogram with sides formed by $$\mathbf{b}$$ and $$\mathbf{c}$$. The *scalar triple product* $$\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})$$ therefore gives the *signed volume* of the parallelepiped with sides formed by $$\mathbf{a}$$, $$\mathbf{b}$$ and $$\mathbf{c}$$. The value of this product is unchanged when the arguments undergo a circular shift: 
 
 $$
 \mathbf{a} \cdot (\mathbf{b} \times \mathbf{c}) = \mathbf{b} \cdot (\mathbf{c} \times \mathbf{a}) = \mathbf{c} \cdot (\mathbf{a} \times \mathbf{b})
@@ -313,6 +316,16 @@ $$
 \sin{\delta} = \sin{b}\sin{\delta_{NGP}} + \cos{b}\cos{\delta_{NGP}}\cos{(\theta - l)}
 \end{gather}
 $$
+
+## Circumpolar stars
+
+## Atmospheric refraction
+
+## Ecliptic
+
+## Equinoxes and solstices
+
+## Axial precession
 
 ## References
 
