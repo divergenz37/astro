@@ -3,6 +3,10 @@ title: Optics
 chapter: 3
 ---
 # Optics
+
+- TOC
+{:toc}
+
 ## Geometric optics
 
 ## Physical optics
