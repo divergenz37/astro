@@ -286,4 +286,14 @@ a.footnote::before { content: "["; }
 
 a.footnote::after { content: "]"; }
 
+div.prev, div.next { max-width: 50%; overflow: hidden; }
+
+div.prev { text-align: left; float: left; }
+
+div.next { text-align: right; float: right; }
+
+div.content { clear: both; }
+
+nav.return { clear: both; text-align: center; }
+
 /*# sourceMappingURL=main.css.map */
