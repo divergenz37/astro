@@ -321,11 +321,13 @@ $$
 
 Circumpolar stars are stars that never set below the horizon as seen by an observer on Earth. The latitude of the observer affects the altitude of the celestial poles. In turn, because the night sky appears to rotate about the celestial poles, stars that are close enough to one of the poles may never rise or set.
 
-For an observer with latitude $$\phi$$, stars within an apparent angular distance $$|\phi|$$ of the celestial poles do not appear to cross the horizon.
+For an observer with latitude $$\phi$$, stars within an apparent angular distance $$\lvert\phi\rvert$$ of the celestial poles do not appear to cross the horizon.
 
 ## Atmospheric refraction
 
 The Earth's atmosphere refracts light, especially for celestial objects near the horizon. Due to refraction, objects appear to have a higher altitude than they actually would in the absence of an atmosphere.
+
+The degree of refraction is influenced by environmental conditions, including temperature and pressure.
 
 ## Ecliptic
 
