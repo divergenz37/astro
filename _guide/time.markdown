@@ -45,7 +45,7 @@ A day in UT1 is not exactly 86400 SI seconds, and at the present it is typically
 
 *Coordinated Universal Time* (UTC) is a time scale that closely approximates Universal Time, but the unit of time is SI seconds rather than seconds of mean solar time/UT1.
 
-As mentioned earlier, the length of a day in UT1 is not exactly 86400 SI seconds, but slightly longer on average. The difference UT1 − UTC is known as DUT1. In order to keep UTC within 0.9 seconds of UT1, leap seconds are used at irregular intervals. Leap seconds may be positive, in the form of an additional second at 23:59:60, or negative, in which case 23:59:59 is skipped[^nist-leap-seconds].
+As mentioned earlier, the length of a mean solar day in UT1 is not exactly 86400 SI seconds, but slightly longer on average. Thus, a clock ticking in SI seconds, e.g. a clock representing UTC, eventually drifts apart from a clock ticking in seconds of mean solar time, e.g. a clock representing UT1. The difference UT1 − UTC is known as DUT1. In order to keep UTC within 0.9 seconds of UT1, leap seconds are introduced at irregular intervals when magnitude of DUT1 becomes too large. Leap seconds may be positive, in the form of an additional second at 23:59:60, or negative, in which case 23:59:59 is skipped[^nist-leap-seconds].
 
 Currently, civil time is based on UTC and the concept of time zones. A time zone is a region on the Earth that keeps to the same time difference with respect to UTC. In practice, these offsets are usually multiples of 1 hour, but some time zones use multiples of 30 or 15 minutes. In some regions, daylight savings time is implemented to extend summer daylight into the evening hours. This generally involves setting the clock forwards by 1 hour, increasing the UTC offset by 1 hour.
 
@@ -58,6 +58,12 @@ Because TT has a constant time step, unlike the non-uniform rotation used in UT,
 *International Atomic Time* (TAI) is the practical realisation of TT based on atomic clocks. There is a fixed offset of 32.184 seconds due to historical reasons[^hmnao-delta-t].
 
 ### TCG and TCB
+
+Geocentric Coordinate Time (TCG) and Barycentric Coordinate Time (TCB) are space-time coordinate systems defined with their origins at the centre of mass of the Earth and the Solar System barycentre respectively. 
+
+TCG moves together with the centre of the Earth but is not influenced by the Earth's gravitational potential; likewise TCB moves together with the Solar System barycentre but is not influenced by the gravitational potential of the Solar System. The unit of proper time in these systems is the SI second, and these systems match TT exactly at 1977 January 1, 0 h 0 m 0 s at the geocentre.[^seidelmann-1992]
+
+By virtue of these definitions, TCG ticks at a slightly faster rate than TT, which is influenced by gravitational time dilation. TT is now defined as a scaled version of TCG.
 
 ## Equation of time
 
@@ -107,6 +113,7 @@ As a historical note, the *Besselian year* is defined to begin when the mean lon
 [^nist-leap-seconds]: Leap Seconds FAQs [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <https://www.nist.gov/pml/time-and-frequency-division/leap-seconds-faqs>
 [^nist-s-so]: Time and Frequency from A to Z, S to So [Internet]. NIST. 2010 [cited 2020 Jan 23]. Available from: <https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so>
 [^nist-u-w]: Time and Frequency from A to Z, U to W [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-u-w>
+[^seidelmann-1992]: Seidelmann PK, editor. Explanatory Supplement to the Astronomical Almanac. University Science Books; 1992. Available from: https://archive.org/details/131123ExplanatorySupplementAstronomicalAlmanac/
 
 
 <!--

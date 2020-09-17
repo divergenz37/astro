@@ -4,7 +4,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
 <title>Time | Astronomy</title>
-<meta name="generator" content="Jekyll v4.0.0" />
+<meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Time" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Time" />
@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://divergenz37.github.io/astro/guide/time" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-03-22T14:04:08+08:00" />
+<meta property="article:published_time" content="2020-09-17T23:32:44+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/time","headline":"Time","dateModified":"2020-03-22T14:04:08+08:00","datePublished":"2020-03-22T14:04:08+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/time"},"description":"Time","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/time","headline":"Time","dateModified":"2020-09-17T23:32:44+08:00","datePublished":"2020-09-17T23:32:44+08:00","description":"Time","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/time"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -70,7 +70,7 @@
 
 <p>The <em>solar day</em> is measured based on the apparent movement of the Sun in the sky. Equivalently, it is based on the Earth’s rotation with respect to the Sun. When discussing solar time, we distinguish <em>apparent</em> and <em>mean</em> solar time.</p>
 
-<p><em>Apparent solar time</em> is based on the position of the Sun in the sky, and corresponds to the hour angle of the Sun. <em>Apparent solar noon</em> occurs when the Sun is either directly north or south in the sky as seen by an observer, i.e. on the local meridian<sup id="fnref:nist-s-so"><a href="#fn:nist-s-so" class="footnote">1</a></sup>. When this occurs, the hour angle of the Sun is 0 h, and so is the apparent solar time. The time between two consecutive apparent solar noons is the <em>apparent solar day</em>. Sundials are an example of timekeeping based on apparent solar time, since they depend directly on the position of the Sun in the sky. However, the duration of the apparent solar day varies throughout the year. This poses issues for accurate timekeeping, since any divisions of time would also exhibit variations in duration.</p>
+<p><em>Apparent solar time</em> is based on the position of the Sun in the sky, and corresponds to the hour angle of the Sun. <em>Apparent solar noon</em> occurs when the Sun is either directly north or south in the sky as seen by an observer, i.e. on the local meridian<sup id="fnref:nist-s-so" role="doc-noteref"><a href="#fn:nist-s-so" class="footnote">1</a></sup>. When this occurs, the hour angle of the Sun is 0 h, and so is the apparent solar time. The time between two consecutive apparent solar noons is the <em>apparent solar day</em>. Sundials are an example of timekeeping based on apparent solar time, since they depend directly on the position of the Sun in the sky. However, the duration of the apparent solar day varies throughout the year. This poses issues for accurate timekeeping, since any divisions of time would also exhibit variations in duration.</p>
 
 <p><em>Mean solar time</em>, in contrast, is based on the average duration of the solar day over a year. The duration of the <em>mean solar day</em> is about 86400 SI seconds. Because this value is fairly constant, clocks that tick at a constant rate follow mean solar time much more closely than they do apparent solar time. Nevertheless, there are still minor variations in the duration of the mean solar day over many years, due to effects such as the slowing of Earth’s rotation.</p>
 
@@ -82,19 +82,19 @@
 
 <p><em>Sidereal time</em> is measured based on the rotation of the Earth with respect to the vernal equinox, which is the point where the ecliptic crosses the celestial equator. The vernal equinox serves as the reference point for the equatorial coordinate system. <em>Local sidereal time</em> corresponds to the hour angle of the vernal equinox as measured by an observer. <em>Greenwich sidereal time</em> corresponds to this quantity, but measured at 0° longitude (the International Earth Rotation and Reference Systems Service (IERS) Reference Meridian). The <em>apparent sidereal time</em> is the hour angle of the true equinox, which is derived from ecliptic of the date and the true equator of the date (which includes nutation). The <em>mean sidereal time</em> is the hour angle of the mean equinox, which is derived from the ecliptic of the date and the mean equator of the date (which does not include nutation).</p>
 
-<p>The <em>sidereal day</em> can be defined based on the time between two consecutive transits of the vernal equinox. Based on this definition, the duration of a sidereal day is 86164.09053 seconds of mean solar time (1.002737909350795 sidereal days in 86400 seconds of mean solar time)<sup id="fnref:aoki-1982"><a href="#fn:aoki-1982" class="footnote">2</a></sup>.</p>
+<p>The <em>sidereal day</em> can be defined based on the time between two consecutive transits of the vernal equinox. Based on this definition, the duration of a sidereal day is 86164.09053 seconds of mean solar time (1.002737909350795 sidereal days in 86400 seconds of mean solar time)<sup id="fnref:aoki-1982" role="doc-noteref"><a href="#fn:aoki-1982" class="footnote">2</a></sup>.</p>
 
 <p>On Earth, a sidereal day is shorter than a mean solar day.</p>
 
 <h3 id="earth-rotation-angle-and-universal-time">Earth Rotation Angle and Universal Time</h3>
 
-<p>While the vernal equinox serves as a convenient reference point, it is complicated by the fact that the Earth’s rotation axis slowly precesses with a period of about 26000 years. As a result of this, the vernal equinox is moving westward with respect to the fixed background stars. A true measurement of Earth’s rotation period should therefore eliminate this effect. Recently, accurate measurements of extremely distant quasars have allowed the implementation of the International Celestial Reference Frame, which measures the <em>Earth Rotation Angle</em> (ERA) with respect to these defined sources<sup id="fnref:iers"><a href="#fn:iers" class="footnote">3</a></sup>. Under this system, the Earth’s rotation period is 86164.09890 seconds of mean solar time (1.00273781191135448 periods in 86400 seconds of mean solar time)<sup id="fnref:capitaine-2003"><a href="#fn:capitaine-2003" class="footnote">4</a></sup><sup id="fnref:iers-tn"><a href="#fn:iers-tn" class="footnote">5</a></sup>. It is only about 8 ms longer than the sidereal day defined relative to the vernal equinox.</p>
+<p>While the vernal equinox serves as a convenient reference point, it is complicated by the fact that the Earth’s rotation axis slowly precesses with a period of about 26000 years. As a result of this, the vernal equinox is moving westward with respect to the fixed background stars. A true measurement of Earth’s rotation period should therefore eliminate this effect. Recently, accurate measurements of extremely distant quasars have allowed the implementation of the International Celestial Reference Frame, which measures the <em>Earth Rotation Angle</em> (ERA) with respect to these defined sources<sup id="fnref:iers" role="doc-noteref"><a href="#fn:iers" class="footnote">3</a></sup>. Under this system, the Earth’s rotation period is 86164.09890 seconds of mean solar time (1.00273781191135448 periods in 86400 seconds of mean solar time)<sup id="fnref:capitaine-2003" role="doc-noteref"><a href="#fn:capitaine-2003" class="footnote">4</a></sup><sup id="fnref:iers-tn" role="doc-noteref"><a href="#fn:iers-tn" class="footnote">5</a></sup>. It is only about 8 ms longer than the sidereal day defined relative to the vernal equinox.</p>
 
-<p><em>Universal Time</em> (UT) is a set of time scales that are meant to be a close approximation to the mean diurnal motion of the Sun. It is counted from 0 h at midnight, and the unit of duration of UT is the mean solar day<sup id="fnref:iau-nfa-glossary"><a href="#fn:iau-nfa-glossary" class="footnote">6</a></sup><sup id="fnref:iers-glossary-ut1"><a href="#fn:iers-glossary-ut1" class="footnote">7</a></sup>.</p>
+<p><em>Universal Time</em> (UT) is a set of time scales that are meant to be a close approximation to the mean diurnal motion of the Sun. It is counted from 0 h at midnight, and the unit of duration of UT is the mean solar day<sup id="fnref:iau-nfa-glossary" role="doc-noteref"><a href="#fn:iau-nfa-glossary" class="footnote">6</a></sup><sup id="fnref:iers-glossary-ut1" role="doc-noteref"><a href="#fn:iers-glossary-ut1" class="footnote">7</a></sup>.</p>
 
-<p>UT0 is the time determined by the rotation of the Earth as determined from an observation site<sup id="fnref:iers-glossary-ut1:1"><a href="#fn:iers-glossary-ut1" class="footnote">7</a></sup>.</p>
+<p>UT0 is the time determined by the rotation of the Earth as determined from an observation site<sup id="fnref:iers-glossary-ut1:1" role="doc-noteref"><a href="#fn:iers-glossary-ut1" class="footnote">7</a></sup>.</p>
 
-<p>UT1 is defined by a linear relationship with the Earth Rotation Angle<sup id="fnref:iers-tn:1"><a href="#fn:iers-tn" class="footnote">5</a></sup>, and is equivalent to UT0 corrected for the effect of Earth’s polar motion on the observer’s longitude <sup id="fnref:nist-u-w"><a href="#fn:nist-u-w" class="footnote">8</a></sup>. Being derived from the ERA and thererfore from Very Long Baseline Interferometry of distant quasars, the position of the Sun is not directly involved in determining UT1.</p>
+<p>UT1 is defined by a linear relationship with the Earth Rotation Angle<sup id="fnref:iers-tn:1" role="doc-noteref"><a href="#fn:iers-tn" class="footnote">5</a></sup>, and is equivalent to UT0 corrected for the effect of Earth’s polar motion on the observer’s longitude <sup id="fnref:nist-u-w" role="doc-noteref"><a href="#fn:nist-u-w" class="footnote">8</a></sup>. Being derived from the ERA and thererfore from Very Long Baseline Interferometry of distant quasars, the position of the Sun is not directly involved in determining UT1.</p>
 
 <p>A day in UT1 is not exactly 86400 SI seconds, and at the present it is typically slightly longer than 86400 SI seconds. The difference between a day in UT1 and 86400 SI seconds is the length of day. In addition, the Earth’s rotation rate appears to show a general trend of slowing, although this occurs at a variable rate and may show reversals in the short term. This causes some degree of uncertainty in UT1.</p>
 
@@ -102,7 +102,7 @@
 
 <p><em>Coordinated Universal Time</em> (UTC) is a time scale that closely approximates Universal Time, but the unit of time is SI seconds rather than seconds of mean solar time/UT1.</p>
 
-<p>As mentioned earlier, the length of a day in UT1 is not exactly 86400 SI seconds, but slightly longer on average. The difference UT1 − UTC is known as DUT1. In order to keep UTC within 0.9 seconds of UT1, leap seconds are used at irregular intervals. Leap seconds may be positive, in the form of an additional second at 23:59:60, or negative, in which case 23:59:59 is skipped<sup id="fnref:nist-leap-seconds"><a href="#fn:nist-leap-seconds" class="footnote">9</a></sup>.</p>
+<p>As mentioned earlier, the length of a mean solar day in UT1 is not exactly 86400 SI seconds, but slightly longer on average. Thus, a clock ticking in SI seconds, e.g. a clock representing UTC, eventually drifts apart from a clock ticking in seconds of mean solar time, e.g. a clock representing UT1. The difference UT1 − UTC is known as DUT1. In order to keep UTC within 0.9 seconds of UT1, leap seconds are introduced at irregular intervals when magnitude of DUT1 becomes too large. Leap seconds may be positive, in the form of an additional second at 23:59:60, or negative, in which case 23:59:59 is skipped<sup id="fnref:nist-leap-seconds" role="doc-noteref"><a href="#fn:nist-leap-seconds" class="footnote">9</a></sup>.</p>
 
 <p>Currently, civil time is based on UTC and the concept of time zones. A time zone is a region on the Earth that keeps to the same time difference with respect to UTC. In practice, these offsets are usually multiples of 1 hour, but some time zones use multiples of 30 or 15 minutes. In some regions, daylight savings time is implemented to extend summer daylight into the evening hours. This generally involves setting the clock forwards by 1 hour, increasing the UTC offset by 1 hour.</p>
 
@@ -110,11 +110,17 @@
 
 <p><em>Terrestrial Time</em> (TT) is a constant time scale based on an observer located on the geoid of the Earth, accounting for gravitational time dilation. The unit of time in TT is the SI second.</p>
 
-<p>Because TT has a constant time step, unlike the non-uniform rotation used in UT, the difference TT - UT1 varies over time and is known as ΔT<sup id="fnref:hmnao-delta-t"><a href="#fn:hmnao-delta-t" class="footnote">10</a></sup>.</p>
+<p>Because TT has a constant time step, unlike the non-uniform rotation used in UT, the difference TT - UT1 varies over time and is known as ΔT<sup id="fnref:hmnao-delta-t" role="doc-noteref"><a href="#fn:hmnao-delta-t" class="footnote">10</a></sup>.</p>
 
-<p><em>International Atomic Time</em> (TAI) is the practical realisation of TT based on atomic clocks. There is a fixed offset of 32.184 seconds due to historical reasons<sup id="fnref:hmnao-delta-t:1"><a href="#fn:hmnao-delta-t" class="footnote">10</a></sup>.</p>
+<p><em>International Atomic Time</em> (TAI) is the practical realisation of TT based on atomic clocks. There is a fixed offset of 32.184 seconds due to historical reasons<sup id="fnref:hmnao-delta-t:1" role="doc-noteref"><a href="#fn:hmnao-delta-t" class="footnote">10</a></sup>.</p>
 
 <h3 id="tcg-and-tcb">TCG and TCB</h3>
+
+<p>Geocentric Coordinate Time (TCG) and Barycentric Coordinate Time (TCB) are space-time coordinate systems defined with their origins at the centre of mass of the Earth and the Solar System barycentre respectively.</p>
+
+<p>TCG moves together with the centre of the Earth but is not influenced by the Earth’s gravitational potential; likewise TCB moves together with the Solar System barycentre but is not influenced by the gravitational potential of the Solar System. The unit of proper time in these systems is the SI second, and these systems match TT exactly at 1977 January 1, 0 h 0 m 0 s at the geocentre.<sup id="fnref:seidelmann-1992" role="doc-noteref"><a href="#fn:seidelmann-1992" class="footnote">11</a></sup></p>
+
+<p>By virtue of these definitions, TCG ticks at a slightly faster rate than TT, which is influenced by gravitational time dilation. TT is now defined as a scaled version of TCG.</p>
 
 <h2 id="equation-of-time">Equation of time</h2>
 
@@ -130,7 +136,7 @@
 <p>Meeus defines the concept of a <em>mean Sun</em> as follows:</p>
 
 <blockquote>
-  <p>Consider a first fictitious Sun travelling along the <em>ecliptic</em> with a constant speed and coinciding with the true Sun at the perigee and apogee (when the Earth is in perihelion and aphelion, respectively). Then consider a second fictitious Sun travelling along the <em>celestial equator</em> at a constant speed and coinciding with the first fictitious Sun at the equinoxes. This second fictitious Sun is the <em>mean Sun</em>, and by definition its right ascension increases at a uniform rate – that is, there are no periodic terms, but its expression contains small secular terms in <span class="kdmath">$\tau^2$</span>, <span class="kdmath">$\tau^3$</span>, …<sup id="fnref:meeus-1998"><a href="#fn:meeus-1998" class="footnote">11</a></sup></p>
+  <p>Consider a first fictitious Sun travelling along the <em>ecliptic</em> with a constant speed and coinciding with the true Sun at the perigee and apogee (when the Earth is in perihelion and aphelion, respectively). Then consider a second fictitious Sun travelling along the <em>celestial equator</em> at a constant speed and coinciding with the first fictitious Sun at the equinoxes. This second fictitious Sun is the <em>mean Sun</em>, and by definition its right ascension increases at a uniform rate – that is, there are no periodic terms, but its expression contains small secular terms in <span class="kdmath">$\tau^2$</span>, <span class="kdmath">$\tau^3$</span>, …<sup id="fnref:meeus-1998" role="doc-noteref"><a href="#fn:meeus-1998" class="footnote">12</a></sup></p>
 </blockquote>
 
 <p>Mean solar time is based on the hour angle of the fictitious mean Sun, while apparent solar time is based on the hour angle of the true Sun. The difference between the apparent solar time and the mean solar time is the <em>equation of time</em>. Although sign conventions vary, here we take a positive value to mean that apparent solar time is faster than mean solar time.</p>
@@ -151,7 +157,7 @@
 
 <p>An <em>anomalistic year</em> is the time taken for the Earth to make one revolution with respect to its apses, e.g. from one perihelion to the next.</p>
 
-<p>As a historical note, the <em>Besselian year</em> is defined to begin when the mean longitude of the Sun (affected by aberration) is 280° as measured from the mean equinox of the date<sup id="fnref:meeus-1998:1"><a href="#fn:meeus-1998" class="footnote">11</a></sup>.</p>
+<p>As a historical note, the <em>Besselian year</em> is defined to begin when the mean longitude of the Sun (affected by aberration) is 280° as measured from the mean equinox of the date<sup id="fnref:meeus-1998:1" role="doc-noteref"><a href="#fn:meeus-1998" class="footnote">12</a></sup>.</p>
 
 <h2 id="julian-day">Julian Day</h2>
 
@@ -164,40 +170,43 @@ http://articles.adsabs.harvard.edu/pdf/1982A%26A...105..359A
 https://www.iers.org/SharedDocs/Publikationen/EN/IERS/Publications/tn/TechnNote36/tn36_043.pdf?__blob=publicationFile&v=1
 https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so
 -->
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:nist-s-so">
-      <p>Time and Frequency from A to Z, S to So [Internet]. NIST. 2010 [cited 2020 Jan 23]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so">https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so</a> <a href="#fnref:nist-s-so" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:nist-s-so" role="doc-endnote">
+      <p>Time and Frequency from A to Z, S to So [Internet]. NIST. 2010 [cited 2020 Jan 23]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so">https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-s-so</a> <a href="#fnref:nist-s-so" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:aoki-1982">
-      <p>Aoki S, Kinoshita H, Guinot B, Kaplan GH, McCarthy DD, Seidelmann PK. The new definition of universal time. Astronomy and Astrophysics. 1982 Jan 1;105:359–61. <a href="#fnref:aoki-1982" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:aoki-1982" role="doc-endnote">
+      <p>Aoki S, Kinoshita H, Guinot B, Kaplan GH, McCarthy DD, Seidelmann PK. The new definition of universal time. Astronomy and Astrophysics. 1982 Jan 1;105:359–61. <a href="#fnref:aoki-1982" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:iers">
-      <p>IERS - IERS - ICRF [Internet]. [cited 2020 Jan 23]. Available from: <a href="https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html">https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html</a> <a href="#fnref:iers" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:iers" role="doc-endnote">
+      <p>IERS - IERS - ICRF [Internet]. [cited 2020 Jan 23]. Available from: <a href="https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html">https://www.iers.org/IERS/EN/DataProducts/ICRF/icrf.html</a> <a href="#fnref:iers" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:capitaine-2003">
-      <p>Capitaine N, Wallace PT, McCarthy DD. Expressions to implement the IAU 2000 definition of UT1. A&amp;A. 2003 Aug 1;406(3):1135–49. <a href="#fnref:capitaine-2003" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:capitaine-2003" role="doc-endnote">
+      <p>Capitaine N, Wallace PT, McCarthy DD. Expressions to implement the IAU 2000 definition of UT1. A&amp;A. 2003 Aug 1;406(3):1135–49. <a href="#fnref:capitaine-2003" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:iers-tn">
-      <p>IERS - IERS Technical Notes - IERS Conventions (2010) [Internet]. [cited 2020 Jan 23]. Available from: <a href="https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn36.html">https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn36.html</a> <a href="#fnref:iers-tn" class="reversefootnote">&#8617;</a> <a href="#fnref:iers-tn:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    <li id="fn:iers-tn" role="doc-endnote">
+      <p>IERS - IERS Technical Notes - IERS Conventions (2010) [Internet]. [cited 2020 Jan 23]. Available from: <a href="https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn36.html">https://www.iers.org/IERS/EN/Publications/TechnicalNotes/tn36.html</a> <a href="#fnref:iers-tn" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:iers-tn:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
-    <li id="fn:iau-nfa-glossary">
-      <p>IAU 2006 NFA Glossary [Internet]. [cited 2020 Feb 5]. Available from: <a href="https://syrte.obspm.fr/iauWGnfa/NFA_Glossary.html">https://syrte.obspm.fr/iauWGnfa/NFA_Glossary.html</a> <a href="#fnref:iau-nfa-glossary" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:iau-nfa-glossary" role="doc-endnote">
+      <p>IAU 2006 NFA Glossary [Internet]. [cited 2020 Feb 5]. Available from: <a href="https://syrte.obspm.fr/iauWGnfa/NFA_Glossary.html">https://syrte.obspm.fr/iauWGnfa/NFA_Glossary.html</a> <a href="#fnref:iau-nfa-glossary" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:iers-glossary-ut1">
-      <p>IERS - Universal Time [Internet]. [cited 2020 Feb 6]. Available from: <a href="https://www.iers.org/IERS/EN/Service/Glossary/ut1.html">https://www.iers.org/IERS/EN/Service/Glossary/ut1.html</a> <a href="#fnref:iers-glossary-ut1" class="reversefootnote">&#8617;</a> <a href="#fnref:iers-glossary-ut1:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    <li id="fn:iers-glossary-ut1" role="doc-endnote">
+      <p>IERS - Universal Time [Internet]. [cited 2020 Feb 6]. Available from: <a href="https://www.iers.org/IERS/EN/Service/Glossary/ut1.html">https://www.iers.org/IERS/EN/Service/Glossary/ut1.html</a> <a href="#fnref:iers-glossary-ut1" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:iers-glossary-ut1:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
-    <li id="fn:nist-u-w">
-      <p>Time and Frequency from A to Z, U to W [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-u-w">https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-u-w</a> <a href="#fnref:nist-u-w" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:nist-u-w" role="doc-endnote">
+      <p>Time and Frequency from A to Z, U to W [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-u-w">https://www.nist.gov/pml/time-and-frequency-division/popular-links/time-frequency-z/time-and-frequency-z-u-w</a> <a href="#fnref:nist-u-w" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:nist-leap-seconds">
-      <p>Leap Seconds FAQs [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/leap-seconds-faqs">https://www.nist.gov/pml/time-and-frequency-division/leap-seconds-faqs</a> <a href="#fnref:nist-leap-seconds" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:nist-leap-seconds" role="doc-endnote">
+      <p>Leap Seconds FAQs [Internet]. NIST. 2010 [cited 2020 Feb 5]. Available from: <a href="https://www.nist.gov/pml/time-and-frequency-division/leap-seconds-faqs">https://www.nist.gov/pml/time-and-frequency-division/leap-seconds-faqs</a> <a href="#fnref:nist-leap-seconds" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:hmnao-delta-t">
-      <p>HM Nautical Almanac Office: Delta T [Internet]. [cited 2020 Feb 6]. Available from: <a href="http://astro.ukho.gov.uk/nao/miscellanea/DeltaT/">http://astro.ukho.gov.uk/nao/miscellanea/DeltaT/</a> <a href="#fnref:hmnao-delta-t" class="reversefootnote">&#8617;</a> <a href="#fnref:hmnao-delta-t:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    <li id="fn:hmnao-delta-t" role="doc-endnote">
+      <p>HM Nautical Almanac Office: Delta T [Internet]. [cited 2020 Feb 6]. Available from: <a href="http://astro.ukho.gov.uk/nao/miscellanea/DeltaT/">http://astro.ukho.gov.uk/nao/miscellanea/DeltaT/</a> <a href="#fnref:hmnao-delta-t" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:hmnao-delta-t:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
-    <li id="fn:meeus-1998">
-      <p>Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. <a href="#fnref:meeus-1998" class="reversefootnote">&#8617;</a> <a href="#fnref:meeus-1998:1" class="reversefootnote">&#8617;<sup>2</sup></a></p>
+    <li id="fn:seidelmann-1992" role="doc-endnote">
+      <p>Seidelmann PK, editor. Explanatory Supplement to the Astronomical Almanac. University Science Books; 1992. Available from: https://archive.org/details/131123ExplanatorySupplementAstronomicalAlmanac/ <a href="#fnref:seidelmann-1992" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:meeus-1998" role="doc-endnote">
+      <p>Meeus J. Astronomical Algorithms. 2nd ed. Willmann-Bell, Inc.; 1998. <a href="#fnref:meeus-1998" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:meeus-1998:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
     </li>
   </ol>
 </div>
