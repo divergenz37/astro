@@ -778,6 +778,10 @@ $$
 
 The expression on the right hand side for $$\beta$$ is 0 when $$\beta = 0$$. Hence, in the case that $$m_2 \ll m_1$$, we can re-express the right hand side as a Taylor series about $$\beta = 0$$.
 
+{::comment}
+TODO: EXPANSION
+{:/comment}
+
 For L2, $$r_1 < r_2 < x'$$, and therefore
 
 $$
@@ -815,6 +819,10 @@ $$
 $$
 
 Once again, the expression on the right hand side for $$\beta$$ is 0 when $$\beta = 0$$.
+
+{::comment}
+TODO: EXPANSION
+{:/comment}
 
 For L3, $$x' < r_1 < r_2$$, and therefore
 
@@ -854,6 +862,9 @@ $$
 
 The expression on the right hand side for $$\alpha$$ is 0 when $$\alpha = 1$$ (and $$\beta = 2$$; the case where $$\alpha < 0$$ would not be physical).
 
+{::comment}
+TODO: EXPANSION
+{:/comment}
 
 Now consider the second condition, that $$0 = - \frac{G m_1}{\rho_1^3} - \frac{Gm_2}{\rho_2^3} + \Omega^2$$. We can rewrite the expression for $$-\frac{\partial U'}{\partial x'}$$ as:
 

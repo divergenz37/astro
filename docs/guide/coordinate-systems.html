@@ -9,13 +9,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Coordinate Systems" />
 <meta property="og:description" content="Coordinate Systems" />
-<link rel="canonical" href="https://divergenz37.github.io/astro/guide/coordinate" />
-<meta property="og:url" content="https://divergenz37.github.io/astro/guide/coordinate" />
+<link rel="canonical" href="https://divergenz37.github.io/astro/guide/coordinate-systems" />
+<meta property="og:url" content="https://divergenz37.github.io/astro/guide/coordinate-systems" />
 <meta property="og:site_name" content="Astronomy" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-09-17T23:32:44+08:00" />
+<meta property="article:published_time" content="2020-11-01T20:23:26+08:00" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/coordinate","headline":"Coordinate Systems","dateModified":"2020-09-17T23:32:44+08:00","datePublished":"2020-09-17T23:32:44+08:00","description":"Coordinate Systems","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate"},"@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://divergenz37.github.io/astro/guide/coordinate-systems","headline":"Coordinate Systems","dateModified":"2020-11-01T20:23:26+08:00","datePublished":"2020-11-01T20:23:26+08:00","description":"Coordinate Systems","mainEntityOfPage":{"@type":"WebPage","@id":"https://divergenz37.github.io/astro/guide/coordinate-systems"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/astro/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://divergenz37.github.io/astro/feed.xml" title="Astronomy" /></head>
 <body><header class="site-header" role="banner">
@@ -37,9 +37,9 @@
       <div class="wrapper">
         <nav>
         <div class="prev">
-        <a href="/astro/guide/optics">
+        <a href="/astro/guide/celestial-sphere">
                 <div>&lt;&nbsp;Previous</div>
-                <div>Optics</div>
+                <div>Celestial Sphere</div>
             </a>
         
         </div>
@@ -59,9 +59,13 @@
       <li><a href="#spherical-sine-rule" id="markdown-toc-spherical-sine-rule">Spherical sine rule</a></li>
     </ul>
   </li>
+  <li><a href="#geographic-coordinate-systems" id="markdown-toc-geographic-coordinate-systems">Geographic coordinate systems</a></li>
   <li><a href="#celestial-coordinate-systems" id="markdown-toc-celestial-coordinate-systems">Celestial coordinate systems</a>    <ul>
       <li><a href="#horizontal-coordinate-system" id="markdown-toc-horizontal-coordinate-system">Horizontal coordinate system</a></li>
-      <li><a href="#equatorial-coordinate-system" id="markdown-toc-equatorial-coordinate-system">Equatorial coordinate system</a></li>
+      <li><a href="#equatorial-coordinate-system" id="markdown-toc-equatorial-coordinate-system">Equatorial coordinate system</a>        <ul>
+          <li><a href="#hour-angle" id="markdown-toc-hour-angle">Hour angle</a></li>
+        </ul>
+      </li>
       <li><a href="#ecliptic-coordinate-system" id="markdown-toc-ecliptic-coordinate-system">Ecliptic coordinate system</a></li>
       <li><a href="#galactic-coordinate-system" id="markdown-toc-galactic-coordinate-system">Galactic coordinate system</a></li>
       <li><a href="#coordinate-conversions" id="markdown-toc-coordinate-conversions">Coordinate conversions</a>        <ul>
@@ -72,11 +76,6 @@
       </li>
     </ul>
   </li>
-  <li><a href="#circumpolar-stars" id="markdown-toc-circumpolar-stars">Circumpolar stars</a></li>
-  <li><a href="#atmospheric-refraction" id="markdown-toc-atmospheric-refraction">Atmospheric refraction</a></li>
-  <li><a href="#ecliptic" id="markdown-toc-ecliptic">Ecliptic</a></li>
-  <li><a href="#equinoxes-and-solstices" id="markdown-toc-equinoxes-and-solstices">Equinoxes and solstices</a></li>
-  <li><a href="#axial-precession-and-nutation" id="markdown-toc-axial-precession-and-nutation">Axial precession and nutation</a></li>
   <li><a href="#references" id="markdown-toc-references">References</a></li>
 </ul>
 
@@ -278,6 +277,10 @@ $$</div>
 \end{equation}
 $$</div>
 
+<h2 id="geographic-coordinate-systems">Geographic coordinate systems</h2>
+
+<!-- TODO: EXPANSION -->
+
 <h2 id="celestial-coordinate-systems">Celestial coordinate systems</h2>
 
 <h3 id="horizontal-coordinate-system">Horizontal coordinate system</h3>
@@ -291,6 +294,8 @@ $$</div>
 <p>The equatorial coordinate system is centred on the Earth’s centre (i.e. geocentric). It describes the declination (equivalent to latitude) and right ascension (equivalent to longitude) of celestial objects as measured relative to the Earth. The plane of the Earth’s equator serves as the plane of reference for 0° declination, forming the celestial equator. The limits of declination are +90° at the north celestial pole (the extension of the Earth’s north pole) and −90° at the south celestial pole (the extension of the Earth’s south pole). The symbol for declination is <span class="kdmath">$\delta$</span>.</p>
 
 <p>Right ascension is traditionally measured eastwards from the vernal equinox. This is the point where the ecliptic, the Sun’s mean path across the celestial sphere, crosses the celestial equator in a northwards direction. Right ascension is traditionally measured in hours, minutes and seconds, where 24 hours correspond to 360°. Therefore, the right ascension of the vernal equinox is 0 h. The symbol for right ascension is <span class="kdmath">$\alpha$</span>.</p>
+
+<h4 id="hour-angle">Hour angle</h4>
 
 <p>A quantity related to right ascension that may be used in local observations is the local hour angle of an object. The hour angle of an object is the angle between the plane of the local meridian, which passes through the local zenith and the celestial poles, and the plane containing the object and the celestial poles. It is measured from the local meridian and increases towards the west. The local hour angle <span class="kdmath">$H$</span> of an object is related to the local sidereal time <span class="kdmath">$LST$</span> of the observer and the right ascension <span class="kdmath">$\alpha$</span> of the object by</p>
 
@@ -388,44 +393,6 @@ $$</div>
 \end{gather}
 $$</div>
 
-<h2 id="circumpolar-stars">Circumpolar stars</h2>
-
-<p>Circumpolar stars are stars that never set below the horizon as seen by an observer on Earth. The latitude of the observer affects the altitude of the celestial poles. In turn, because the night sky appears to rotate about the celestial poles, stars that are close enough to one of the poles may never rise or set.</p>
-
-<p>For an observer with latitude <span class="kdmath">$\phi$</span>, stars within an apparent angular distance <span class="kdmath">$\lvert\phi\rvert$</span> of the celestial poles do not appear to cross the horizon.</p>
-
-<h2 id="atmospheric-refraction">Atmospheric refraction</h2>
-
-<p>The Earth’s atmosphere refracts light, especially for celestial objects near the horizon. Due to refraction, objects appear to have a higher altitude than they actually would in the absence of an atmosphere.</p>
-
-<p>The degree of refraction is influenced by environmental conditions, including temperature and pressure.</p>
-
-<h2 id="ecliptic">Ecliptic</h2>
-
-<p>The ecliptic is the mean plane of the Earth’s orbit around the Sun (without short-term periodic perturbations)<sup id="fnref:seidelmann-1992" role="doc-noteref"><a href="#fn:seidelmann-1992" class="footnote">4</a></sup>. It may also be seen as the mean plane of the path of the Sun across the celestial sphere during the course of a year.</p>
-
-<p>The obliquity of the ecliptic refers to the angle between the ecliptic and Earth’s equatorial plane; this is also Earth’s axial tilt.</p>
-
-<p>The points on the celestial sphere where the ecliptic crosses the celestial equator are the vernal and autumnal equinox. The vernal equinox is where the ecliptic crosses the celestial equator northwards as the Sun travels eastwards across the sky; the autumnal equinox is where the ecliptic crosses the equator southwards.</p>
-
-<p>In celestial coordinate systems, the mean equinox and the true equinox may be distinguished from each other. The mean equinox is determined by the ecliptic and the mean equator (not affected by nutation) of that date, while the true equinox is determined by the ecliptic and the true equator (affected by nutation) of that date.</p>
-
-<p>The ecliptic plane undergoes a slow movement due to the influence of the other bodies in the Solar System. This motion is known as precession of the ecliptic, or as planetary precession in older literature.</p>
-
-<h2 id="equinoxes-and-solstices">Equinoxes and solstices</h2>
-
-<p>The times of the year when the Sun’s apparent ecliptic longitude is an integer multiple of 90° are defined as the equinoxes and solstices. The vernal equinox corresponds to 0°, the summer solstice to 90°, the autumnal equinox to 180°, and the winter solstice to 270° (all terms are for seasons in the northern hemisphere)<sup id="fnref:seidelmann-1992:1" role="doc-noteref"><a href="#fn:seidelmann-1992" class="footnote">4</a></sup>.</p>
-
-<p>Because of perturbations to the Earth’s orbit around the Sun, the Earth does not always lie in the plane of the ecliptic, and as such the Sun’s ecliptic latitude also varies from 0° (but never by more than 1.2 arcseconds). Thus, at the times of the equinoxes (defined by the ecliptic longitude), the Sun’s declination is not exactly 0°. It is commonly claimed that the durations of day and night are equal at the time of the equinoxes. This is not true because the equinoxes are not defined in terms of the Sun’s declination, and other effects contribute to the day length including atmospheric refraction and the size of the Sun’s disc.</p>
-
-<h2 id="axial-precession-and-nutation">Axial precession and nutation</h2>
-
-<p>The direction of Earth’s rotational axis changes over time, and the change in direction is divided into precession, nutation, and polar motion.</p>
-
-<p>The Earth is not a perfect sphere, but closer to an oblate spheroid (hamburger-like) with an equatorial bulge. The gravitational pull of the Sun and Moon (as well as other Solar System objects) on Earth’s equatorial bulge produces a torque on the rotating Earth. This torque results in a gradual shift in the direction of Earth’s rotational axis, and causes it to trace out a cone around the ecliptic pole. This motion is commonly likened to that of a spinning top. Axial precession, or precession of the equator, refers to the long-term, average motion of the rotational axis along the cone. Currently, the period of this motion is about 26000 years.</p>
-
-<p>Shorter-term variations in the direction of the rotational axis are due to nutation and polar motion. Nutation refers to the small periodic motions of the rotational axis around the “average” axis described by precession, and can be thought of as an additional “wobble” of the rotational axis. It occurs due to external forces acting on the Earth, with the main contribution coming from the Moon. Polar motion refers to the movement of the Earth’s rotational axis relative to its surface, and is affected by free nutation (nutation not due to external forces, resulting from the axis of rotation not coinciding with the Earth’s figure axis) and other effects including the climate, the oceans, and earthquakes, and redistribution of mass within the Earth. Because polar motion is less predictable than precession or nutation, it is modelled based on observations and predictions of polar motion can only be made in the short term.</p>
-
 <h2 id="references">References</h2>
 
 <!--
@@ -445,18 +412,15 @@ https://www.aanda.org/articles/aa/pdf/2011/02/aa14961-10.pdf
     <li id="fn:liu-2011" role="doc-endnote">
       <p>Liu J-C, Zhu Z, Zhang H. Reconsidering the Galactic coordinate system. A&amp;A. 2011 Feb 1;526:A16. <a href="#fnref:liu-2011" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:seidelmann-1992" role="doc-endnote">
-      <p>Seidelmann PK, editor. Explanatory Supplement to the Astronomical Almanac. University Science Books; 1992. Available from: https://archive.org/details/131123ExplanatorySupplementAstronomicalAlmanac/ <a href="#fnref:seidelmann-1992" class="reversefootnote" role="doc-backlink">&#8617;</a> <a href="#fnref:seidelmann-1992:1" class="reversefootnote" role="doc-backlink">&#8617;<sup>2</sup></a></p>
-    </li>
   </ol>
 </div>
 
 </div>
 <nav>
         <div class="prev">
-        <a href="/astro/guide/optics">
+        <a href="/astro/guide/celestial-sphere">
                 <div>&lt;&nbsp;Previous</div>
-                <div>Optics</div>
+                <div>Celestial Sphere</div>
             </a>
         
         </div>
